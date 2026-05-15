@@ -1,7 +1,7 @@
 # ISO 42001 Certification Package
 
-**12th House AI - Federal AI Compliance**  
-**Last Updated:** January 31, 2026
+**12th House AI — Federal & Commonwealth of Virginia AI Compliance**
+**Last Updated:** May 15, 2026
 
 ---
 
@@ -9,8 +9,9 @@
 
 This package contains all documentation, templates, and marketing materials for:
 1. ISO 42001:2023 certification preparation
-2. Federal AI compliance consulting practice
-3. Business development and thought leadership
+2. **Federal** AI compliance consulting practice (M-25-21, M-25-22, NIST AI RMF, EO 14110)
+3. **Commonwealth of Virginia** AI compliance consulting practice (EO-30, VITA AI Policy Standard, EA-225, AI Education Guidelines)
+4. Business development and thought leadership
 
 **Certification Target:** February 28, 2026  
 **Current Status:** Documentation 95% complete, audit scheduling in progress
@@ -54,8 +55,8 @@ iso-42001-certification/
 | `vendor-management-procedure.md` | Third-party AI vendor oversight | ✅ Complete |
 | `competency-matrix.md` | Personnel qualifications | ✅ Complete |
 | `federal-compliance-mapping.md` | ISO ↔ OMB ↔ NIST mapping | ✅ Complete |
+| `virginia-compliance-mapping.md` | ISO ↔ Virginia EO-30 ↔ VITA ↔ EA-225 mapping | ✅ Complete |
 | `market-gap-analysis.md` | Credential gaps vs. market demand | ✅ Complete |
-| `cmmc-rp-guide.md` | CMMC RP certification guide ($635, 2 weeks) | ✅ Complete |
 | `case-study-market-validation.md` | Job posting analysis | ✅ Complete |
 
 ### `/templates/` - Reusable Templates (5 files, ~48KB)
@@ -89,17 +90,12 @@ iso-42001-certification/
    - Contact BSI, DNV, SGS for expedited quotes
    - Request Stage 1 audit by Feb 14
 
-2. **CMMC RP Registration**
-   - Go to: https://cyberab.org
-   - Pay $600 application fee
-   - Initiate background check ($35)
-
-3. **Sign AIMS Policy**
+2. **Sign AIMS Policy**
    - Review: `docs/12th-house-ai-policy.md`
    - Print, sign, scan
    - Store in `evidence/`
 
-4. **Start LinkedIn Series**
+3. **Start LinkedIn Series**
    - Post #1 ready in: `marketing/linkedin-posts.md`
    - Schedule for Tuesday 8am
 
@@ -109,10 +105,8 @@ iso-42001-certification/
 
 | Date | Milestone |
 |------|-----------|
-| Feb 3 | Contact certification bodies, start CMMC RP |
-| Feb 7 | Complete CMMC RP training modules |
+| Feb 3 | Contact certification bodies |
 | Feb 10-14 | Stage 1 Audit (document review) |
-| Feb 14 | CMMC RP certification expected |
 | Feb 17-21 | Address Stage 1 findings |
 | Feb 24-28 | Stage 2 Audit (implementation review) |
 | Feb 28 | ISO 42001 Certification Awarded |
@@ -137,14 +131,6 @@ iso-42001-certification/
 | Private Virtual | $3,500/session |
 | Private In-Person | $5,500/session |
 
-### CMMC Services (After RP Credential)
-
-| Service | Price |
-|---------|-------|
-| CMMC Gap Assessment | $7,500-$15,000 |
-| CMMC Implementation | $15,000-$50,000 |
-| Ongoing Monitoring | $2,500-$5,000/month |
-
 ---
 
 ## Credential Stack Progress
@@ -154,7 +140,6 @@ iso-42001-certification/
 | DoD Secret Clearance | ✅ Active | Current |
 | NIST AI RMF Expert | ✅ Active | Current |
 | ISO 42001:2023 | 🔄 In Progress | Feb 28, 2026 |
-| CMMC RP | 🔄 Starting | Feb 14, 2026 |
 | ISO 42001 Lead Implementer | 📅 Planned | Q2 2026 |
 
 ---
@@ -163,11 +148,17 @@ iso-42001-certification/
 
 After February 28, 2026:
 
-> "The only ISO 42001-certified federal AI compliance consultant with CMMC credentials, active DoD Secret clearance, and NIST AI RMF expertise, backed by 20+ years of Navy/defense experience."
+> "An ISO 42001-certified federal **and Commonwealth of Virginia** AI compliance consultant with active DoD Secret clearance, NIST AI RMF expertise, **and a documented ISO ↔ Virginia EO-30 / VITA / EA-225 control mapping**, backed by 20+ years of Navy/defense experience."
 
 ---
 
 ## File Quick Reference
+
+**Need the Federal compliance crosswalk?**
+→ `docs/federal-compliance-mapping.md`
+
+**Need the Virginia EO-30 / VITA / EA-225 crosswalk?**
+→ `docs/virginia-compliance-mapping.md`
 
 **Need to sign something?**
 → `docs/12th-house-ai-policy.md`

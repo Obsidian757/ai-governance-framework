@@ -2,7 +2,7 @@
 
 ---
 
-## Federal AI Compliance Solutions
+## Federal & Commonwealth of Virginia AI Compliance Solutions
 
 **CAGE Code:** [Your CAGE]  
 **UEI:** [Your UEI]  
@@ -18,7 +18,7 @@
 - **ISO/IEC 42001:2023** - AI Management System implementation and certification preparation *(In Progress)*
 - **NIST AI Risk Management Framework** - Full lifecycle implementation
 - **OMB M-25-21 & M-25-22** - Federal AI governance and procurement compliance
-- **CMMC 2.0** - AI cybersecurity integration with NIST 800-171
+- **Virginia Executive Order 30 (2024)** - VITA AI Policy Standard, EA-225 Enterprise Solutions Architecture for AI, Agency-Head AI Approval (Archer / CTP-Planview), AI Education Guidelines
 
 ### AI Solutions Development
 - **VoiceGuard™** - Compliant conversational AI for enterprise
@@ -40,6 +40,7 @@
 | **DoD Secret Clearance** | Can discuss CUI and sensitive projects |
 | **NIST AI RMF Expert** | Deep federal framework expertise |
 | **ISO 42001 (In Progress)** | International AI governance standard |
+| **Virginia EO-30 / VITA / EA-225 mapping** | Documented ISO ↔ Commonwealth control crosswalk |
 | **20+ Years Navy/Defense** | Understands mission requirements |
 | **8(a) Certified** | Sole-source up to $4.5M |
 
@@ -66,8 +67,9 @@
 
 ## TARGET MARKETS
 
-**Primary:** DoD contractors, federal civilian agencies  
-**Secondary:** Healthcare organizations requiring AI governance  
+**Primary:** DoD contractors, federal civilian agencies
+**Commonwealth of Virginia:** Executive branch agencies subject to EO-30, K-12 / VCCS / SCHEV-covered institutions, and vendors responding to eVA and cooperative procurements (e.g., Henrico / GovMVMT AI cooperative master agreement)
+**Secondary:** Healthcare organizations requiring AI governance
 **Geographic Focus:** Hampton Roads, DC Metro, National (remote)
 
 ---
@@ -79,7 +81,6 @@
 - [x] 8(a) Certified
 - [x] NIST AI RMF Implementation Experience
 - [ ] ISO/IEC 42001:2023 *(Target: February 2026)*
-- [ ] CMMC Registered Practitioner *(Target: February 2026)*
 
 ---
 
@@ -95,4 +96,4 @@ Founder & CEO
 
 ---
 
-*"Bridging the gap between AI innovation and federal compliance."*
+*"Bridging the gap between AI innovation and federal + Commonwealth of Virginia compliance."*
