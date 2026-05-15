@@ -33,7 +33,7 @@
 **Business Model:**
 - Free tool generates leads
 - High-risk findings → consulting engagement
-- Can bundle as "AI Discovery Workshop" ($2,500)
+- Can bundle as an AI Discovery Workshop (pricing per engagement scope)
 
 ---
 

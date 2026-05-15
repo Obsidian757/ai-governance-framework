@@ -1,6 +1,6 @@
 # AI Compliance Discovery Assessment — Template
 
-**Engagement type:** Federal AI Compliance Discovery Assessment (Tier 1 — $7,500)
+**Engagement type:** Federal AI Compliance Discovery Assessment (Tier 1 — Discovery)
 **Standard alignment:** ISO/IEC 42001:2023 · NIST AI RMF 1.0 · OMB M-25-21 · OMB M-25-22 · EO 14110
 **Prepared by:** 12th House AI
 **Client:** \<Organization Name>
@@ -165,8 +165,9 @@ Score each capability area 0–4 (Ad-hoc → Optimizing). Plot on a radar chart 
 
 ### 7.4 Suggested Next Engagement
 *Optional — only if the client has signaled interest in continued work. Do not push.*
-- **Tier 2 — Strategic Roadmap ($25,000):** 90-day implementation plan, governance documentation set, AIMS scaffolding aligned to ISO/IEC 42001.
-- **Tier 3 — Ultimate Warrior ($75,000):** Six-month engagement supporting full ISO 42001 implementation toward certification readiness.
+- **Tier 2 — Strategic Roadmap:** 90-day implementation plan, governance documentation set, AIMS scaffolding aligned to ISO/IEC 42001.
+- **Tier 3 — Ultimate Warrior:** Six-month engagement supporting full ISO 42001 implementation toward certification readiness.
+- Pricing for any next-tier engagement is provided in a follow-on statement of work.
 
 ---
 

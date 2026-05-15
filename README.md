@@ -74,7 +74,7 @@ iso-42001-certification/
 
 | File | Use |
 |---|---|
-| [`discovery-assessment-template.md`](templates/discovery-assessment-template.md) | Federal AI Compliance Discovery Assessment — the shape of the Tier-1 ($7,500) deliverable |
+| [`discovery-assessment-template.md`](templates/discovery-assessment-template.md) | Federal AI Compliance Discovery Assessment — the shape of the Tier-1 deliverable |
 | [`virginia-eo30-readiness-assessment-template.md`](templates/virginia-eo30-readiness-assessment-template.md) | Commonwealth of Virginia EO-30 / VITA Policy Standard / EA-225 readiness assessment deliverable |
 | [`gap-analysis-template.md`](templates/gap-analysis-template.md) | Reusable per-engagement ISO/IEC 42001 gap analysis worksheet (Clauses 4–10 + Annex A) |
 
@@ -92,23 +92,27 @@ iso-42001-certification/
 
 ---
 
-## Services overview
+## Engagement scopes
 
-| Tier | Investment | Scope |
-|---|---|---|
-| **Discovery Assessment** | $7,500 | AI inventory · gap analysis · risk assessment · executive briefing |
-| **Strategic Roadmap** | $25,000 | 90-day implementation plan plus governance documentation |
-| **Ultimate Warrior** | $75,000 | Six-month engagement supporting full ISO 42001 implementation toward certification readiness |
+We work as a **prime** on direct engagements and as a **subcontractor** under partner primes (notably on Commonwealth of Virginia eVA and cooperative procurements). Pricing is provided per RFP, per teaming agreement, or upon direct request — not published as a public retail rate card, because the right structure (fixed-fee, T&M, labor categories, or cooperative master) depends on the procurement vehicle.
 
-We also offer Commonwealth of Virginia EO-30 / VITA / EA-225 engagements:
+### Federal
 
-| Tier | Investment | Scope |
-|---|---|---|
-| **Virginia AI Compliance Readiness Assessment** | $7,500–$15,000 | Inventory, classification under VITA Policy Standard and EA-225, gap report |
-| **VITA Approval &amp; Registration Sprint** | $15,000–$35,000 | Archer + CTP/Planview registration, agency-head approval evidence packet, EA-225 instrumentation plan |
-| **Ongoing Quarterly Conformance** | $2,500 / quarter | Conformance review, successor-standards tracking |
+| Tier | Scope |
+|---|---|
+| **Discovery Assessment** | AI inventory · gap analysis (ISO 42001 + NIST AI RMF + OMB M-25-21/-22) · risk assessment · executive briefing |
+| **Strategic Roadmap** | 90-day implementation plan plus governance documentation set |
+| **Ultimate Warrior** | Six-month engagement supporting full ISO 42001 implementation toward certification readiness |
 
-Full one-pager: [`marketing/capability-statement.md`](marketing/capability-statement.md)
+### Commonwealth of Virginia (EO-30 / VITA / EA-225)
+
+| Tier | Scope |
+|---|---|
+| **Virginia AI Compliance Readiness Assessment** | Inventory, classification under VITA Policy Standard and EA-225, gap report |
+| **VITA Approval & Registration Sprint** | Archer + CTP/Planview registration, agency-head approval evidence packet, EA-225 instrumentation plan |
+| **Ongoing Quarterly Conformance** | Conformance review, successor-standards tracking |
+
+Deliverable shapes are published as templates under [`templates/`](templates/). Full one-pager: [`marketing/capability-statement.md`](marketing/capability-statement.md).
 
 ---
 

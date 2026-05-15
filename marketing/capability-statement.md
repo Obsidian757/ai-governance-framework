@@ -35,7 +35,7 @@
 - Public site: [12thhouseai.com](https://12thhouseai.com)
 
 ### Engagement-Deliverable Templates (published)
-- [Federal Discovery Assessment template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/discovery-assessment-template.md) — the actual shape of the $7,500 Tier-1 deliverable
+- [Federal Discovery Assessment template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/discovery-assessment-template.md) — the actual shape of the Tier-1 deliverable
 - [Virginia EO-30 / VITA / EA-225 Readiness Assessment template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/virginia-eo30-readiness-assessment-template.md)
 - [ISO/IEC 42001 Gap Analysis template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/gap-analysis-template.md) — Clauses 4–10 + Annex A worksheet
 
@@ -54,21 +54,25 @@
 
 ---
 
+## ENGAGEMENT MODEL
+
+12th House AI works as a **prime** on direct engagements and as a **subcontractor** under partner primes (notably on Commonwealth of Virginia eVA solicitations and the Henrico / GovMVMT AI cooperative master). Pricing is structured per procurement vehicle — fixed-fee, T&M, RFP-defined labor categories, or cooperative master rates — and is provided per RFP, per teaming agreement, or upon direct request.
+
 ## SERVICE TIERS — Federal
 
-| Tier | Investment | Deliverables |
-|---|---|---|
-| **Discovery Assessment** | $7,500 | AI inventory, gap analysis, risk assessment |
-| **Strategic Roadmap** | $25,000 | 90-day implementation plan, governance docs |
-| **Ultimate Warrior** | $75,000 | Six-month engagement supporting full ISO 42001 implementation toward certification readiness |
+| Tier | Deliverables |
+|---|---|
+| **Discovery Assessment** | AI inventory, gap analysis (ISO 42001 + NIST AI RMF + OMB M-25-21/-22), risk assessment, executive briefing |
+| **Strategic Roadmap** | 90-day implementation plan, governance documentation set |
+| **Ultimate Warrior** | Six-month engagement supporting full ISO 42001 implementation toward certification readiness |
 
 ## SERVICE TIERS — Commonwealth of Virginia (EO-30 / VITA)
 
-| Tier | Investment | Deliverables |
-|---|---|---|
-| **Virginia AI Compliance Readiness Assessment** | $7,500–$15,000 | Inventory + VITA Policy Standard / EA-225 gap report |
-| **VITA Approval &amp; Registration Sprint** | $15,000–$35,000 | Archer + CTP/Planview registration, agency-head approval evidence packet, EA-225 instrumentation plan |
-| **Ongoing Quarterly Conformance** | $2,500 / quarter | Conformance review, successor-standards tracking |
+| Tier | Deliverables |
+|---|---|
+| **Virginia AI Compliance Readiness Assessment** | Inventory + VITA Policy Standard / EA-225 gap report |
+| **VITA Approval & Registration Sprint** | Archer + CTP/Planview registration, agency-head approval evidence packet, EA-225 instrumentation plan |
+| **Ongoing Quarterly Conformance** | Conformance review, successor-standards tracking |
 
 ---
 

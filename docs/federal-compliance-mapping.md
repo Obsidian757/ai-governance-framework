@@ -447,8 +447,9 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 3. Update all federal proposals/RFPs with compliance credentials
 
 **Contact 12th House AI:**
-- Federal AI Compliance Readiness Assessment: $7,500 - $25,000 (DA/SR tiers)
-- ISO 42001 Implementation: $15,000 - $75,000 (SR/UW tiers)
+- Federal AI Compliance Readiness Assessment — Discovery and Strategic Roadmap tiers
+- ISO 42001 Implementation — Strategic Roadmap and Ultimate Warrior tiers
+- Pricing provided per RFP, per teaming agreement, or on direct request
 - Email: info@12thhouseai.com
 
 ---
