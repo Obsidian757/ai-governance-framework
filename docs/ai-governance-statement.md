@@ -37,7 +37,7 @@ Every engagement has a named owner. Every recommendation is traceable to a docum
 |---|---|
 | DoD Secret Clearance | Active |
 | NIST AI Risk Management Framework — implementation experience | Active practitioner; no formal NIST certification exists |
-| ISO/IEC 42001:2023 (organizational) | **In progress** — Stage 2 audit scheduled February 2026 |
+| ISO/IEC 42001:2023 (organizational) | **In progress** — full AIMS documentation set authored; Stage 2 audit date will be published once confirmed |
 
 We do not currently hold, and are not currently pursuing, a CMMC Registered Practitioner (RP) credential or any other CMMC certification. We will update this statement if that changes.
 

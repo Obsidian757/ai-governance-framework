@@ -51,7 +51,7 @@ This competency matrix documents the skills, qualifications, and expertise requi
 |-----------------|-------------|----------|
 | **NIST AI Risk Management Framework** | Practitioner | Implementation work performed at prior federal employer; documentation created at 12th House AI |
 | **OMB Memoranda (M-25-21, M-25-22)** | Practitioner | Published ISO ↔ federal compliance mapping; ongoing federal-policy tracking |
-| **ISO/IEC 42001:2023** | Implementing | Organizational certification in progress (Stage 2 audit scheduled Feb 2026); full AIMS documentation set authored |
+| **ISO/IEC 42001:2023** | Implementing | Organizational certification in progress; full AIMS documentation set authored and published in this repository |
 | **Virginia EO-30 / VITA / EA-225** | Practitioner | Published ISO ↔ Commonwealth of Virginia control mapping |
 | **NIST SP 800-171** | Practitioner | CUI-protection work performed at prior federal employer |
 | **DFARS 252.204-7012** | Knowledgeable | Defense-contractor flow-down review |

@@ -158,7 +158,7 @@ Brannon
 - **Federal-specific expertise** (OMB memo deep dive, DoD clearance)
 - **90-day implementation** (vs. 9 months)
 - **Tools & IP** (inventory template, compliance mapping—nobody else has this)
-- **Early adopter credentials** (among first ISO 42001 certified, Feb 2026)
+- **Early-adopter posture** (full AIMS package published; organizational ISO 42001 certification in progress)
 
 ### Pricing Differentiation
 

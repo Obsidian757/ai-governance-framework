@@ -17,7 +17,7 @@
 ## CORE CAPABILITIES
 
 ### AI Governance &amp; Compliance
-- **ISO/IEC 42001:2023** — AI Management System implementation, organizational certification *(in progress, Stage 2 audit scheduled February 2026)*
+- **ISO/IEC 42001:2023** — AI Management System implementation, organizational certification *(in progress; Stage 2 audit date posted publicly once confirmed)*
 - **NIST AI Risk Management Framework** — practitioner-level implementation
 - **OMB M-25-21 &amp; M-25-22** — federal AI governance and acquisition compliance
 - **Virginia Executive Order 30 (2024)** — VITA AI Policy Standard, EA-225 Enterprise Solutions Architecture for AI, agency-head AI approval (Archer / CTP-Planview), AI Education Guidelines
@@ -34,6 +34,11 @@
 - Federal &amp; Virginia AI policy RAG: [github.com/Obsidian757/federal-ai-policy-rag](https://github.com/Obsidian757/federal-ai-policy-rag)
 - Public site: [12thhouseai.com](https://12thhouseai.com)
 
+### Engagement-Deliverable Templates (published)
+- [Federal Discovery Assessment template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/discovery-assessment-template.md) — the actual shape of the $7,500 Tier-1 deliverable
+- [Virginia EO-30 / VITA / EA-225 Readiness Assessment template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/virginia-eo30-readiness-assessment-template.md)
+- [ISO/IEC 42001 Gap Analysis template](https://github.com/Obsidian757/iso-42001-certification/blob/main/templates/gap-analysis-template.md) — Clauses 4–10 + Annex A worksheet
+
 ---
 
 ## DIFFERENTIATORS
@@ -42,7 +47,7 @@
 |---|---|
 | **Active DoD Secret Clearance** (founder) | Can discuss CUI and sensitive projects |
 | **NIST AI RMF — practitioner experience** | Federal alignment, hands-on familiarity |
-| **ISO 42001 (in progress, Feb 2026)** | Audit-driven AIMS, the same controls we'll implement for you |
+| **ISO 42001 (in progress)** | Audit-driven AIMS — the same controls we use internally are what we implement for clients |
 | **Virginia EO-30 / VITA / EA-225 control mapping** | Documented ISO ↔ Commonwealth crosswalk — published |
 | **20+ Years Navy / defense systems** (founder) | Understands mission requirements |
 | **8(a) Certified** | Eligible for sole-source under SBA 8(a) thresholds |
@@ -92,7 +97,7 @@ This experience predates 12th House AI. 12th House AI is a new practice and its 
 - [x] Active DoD Secret Clearance — founder
 - [x] 8(a) Certified
 - [x] NIST AI RMF — practitioner experience
-- [ ] **ISO/IEC 42001:2023** *(target: February 2026 — Stage 2 audit scheduled)*
+- [ ] **ISO/IEC 42001:2023** *(implementation in progress — Stage 2 audit date will be published once confirmed)*
 - [ ] SAM.gov registration — status to be confirmed against current record before bid submission
 
 We are **not** CMMC-certified and are **not currently pursuing** CMMC Registered Practitioner status. Any CMMC requirements in a solicitation should be addressed through a teaming arrangement with a credentialed partner.

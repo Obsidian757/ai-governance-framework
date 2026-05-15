@@ -25,7 +25,7 @@ We publish it in the open because most consulting firms talk about their methodo
 ## Status (as of May 15, 2026)
 
 - **AIMS documentation:** Complete
-- **ISO/IEC 42001:2023 organizational certification:** **In progress.** Stage 2 audit scheduled for February 2026.
+- **ISO/IEC 42001:2023 organizational certification:** **In progress.** We will publish a date here once Stage 2 is scheduled and confirmed.
 - **Federal &amp; Virginia control mappings:** Published.
 - **Client engagement history under 12th House AI:** None yet — practice launching with this AIMS as proof-of-work.
 
@@ -70,13 +70,25 @@ iso-42001-certification/
 
 ## Templates — `/templates/`
 
+### Engagement-deliverable templates (assessment work)
+
 | File | Use |
 |---|---|
-| [`ai-impact-assessment.md`](templates/ai-impact-assessment.md) | Pre-deployment AI assessment, per system |
-| [`ai-system-inventory.md`](templates/ai-system-inventory.md) | AI inventory (also useful as a client discovery instrument) |
-| [`internal-audit-checklist.md`](templates/internal-audit-checklist.md) | ISO 42001 internal audit |
-| [`management-review-template.md`](templates/management-review-template.md) | AIMS management review meetings |
-| [`training-records.md`](templates/training-records.md) | Training log template |
+| [`discovery-assessment-template.md`](templates/discovery-assessment-template.md) | Federal AI Compliance Discovery Assessment — the shape of the Tier-1 ($7,500) deliverable |
+| [`virginia-eo30-readiness-assessment-template.md`](templates/virginia-eo30-readiness-assessment-template.md) | Commonwealth of Virginia EO-30 / VITA Policy Standard / EA-225 readiness assessment deliverable |
+| [`gap-analysis-template.md`](templates/gap-analysis-template.md) | Reusable per-engagement ISO/IEC 42001 gap analysis worksheet (Clauses 4–10 + Annex A) |
+
+### AIMS-operations templates (used inside an engagement or our own AIMS)
+
+| File | Use |
+|---|---|
+| [`ai-impact-assessment.md`](templates/ai-impact-assessment.md) | Pre-deployment AI impact assessment, per system |
+| [`ai-system-inventory.md`](templates/ai-system-inventory.md) | AI inventory — works as both client-discovery instrument and standing inventory |
+| [`internal-audit-checklist.md`](templates/internal-audit-checklist.md) | ISO 42001 internal audit (Clause 9.2) |
+| [`management-review-template.md`](templates/management-review-template.md) | AIMS management review meetings (Clause 9.3) |
+| [`training-records.md`](templates/training-records.md) | Competency / training log (Clause 7.2) |
+| [`communication-plan.md`](templates/communication-plan.md) | Internal & external AI communications (Clause 7.4) |
+| [`stakeholder-register.md`](templates/stakeholder-register.md) | Interested-parties register (Clause 4.2) |
 
 ---
 
@@ -113,7 +125,7 @@ Full one-pager: [`marketing/capability-statement.md`](marketing/capability-state
 |---|---|
 | DoD Secret Clearance — founder | Active |
 | NIST AI Risk Management Framework — practitioner experience | Active |
-| ISO/IEC 42001:2023 (organizational) | In progress — Stage 2 February 2026 |
+| ISO/IEC 42001:2023 (organizational) | In progress — date posted when Stage 2 is confirmed |
 | ISO/IEC 42001 Lead Implementer (PECB) | Under consideration, Q2 2026 |
 
 **Not** held and **not currently pursuing:**

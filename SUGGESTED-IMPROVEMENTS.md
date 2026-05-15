@@ -80,7 +80,7 @@ git commit -m "Add pre-signature verification evidence"
 
 **Issue:** No management review documentation exists.
 
-**Why it matters:** ISO 42001 Clause 9.3 requires management review. You need at least one documented review before Stage 2 audit to prove the AIMS is operational, not just documented. The template exists at `templates/management-review-template.md` but no completed review is in evidence.
+**Why it matters:** ISO 42001 Clause 9.3 requires management review. At least one documented review is needed before the Stage 2 audit to prove the AIMS is operational, not just documented. The template exists at `templates/management-review-template.md` but no completed review is in evidence.
 
 **Recommended fix:**
 - Create `evidence/governance-reviews/2026-Q1-management-review.md`
