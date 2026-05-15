@@ -49,34 +49,35 @@ This competency matrix documents the skills, qualifications, and expertise requi
 
 | Competency Area | Proficiency | Evidence |
 |-----------------|-------------|----------|
-| **NIST AI Risk Management Framework** | Expert | Client implementations, training materials developed |
-| **OMB Memoranda (M-25-21, M-25-22)** | Expert | Compliance mapping guide, federal consulting work |
-| **ISO/IEC 42001:2023** | Proficient → Expert | Certification in progress, documentation created |
-| **NIST SP 800-171** | Expert | CUI protection implementations |
-| **DFARS 252.204-7012** | Expert | Defense contractor compliance work |
-| **CMMC Framework** | Proficient | Assessment experience, audit support |
-| **FedRAMP / IL5** | Proficient | Azure GovCloud deployments |
-| **HIPAA** | Proficient | Healthcare compliance knowledge |
-| **FERPA** | Knowledgeable | Education sector compliance awareness |
-| **DoD AI Ethical Principles** | Expert | Training development, compliance assessments |
+| **NIST AI Risk Management Framework** | Practitioner | Implementation work performed at prior federal employer; documentation created at 12th House AI |
+| **OMB Memoranda (M-25-21, M-25-22)** | Practitioner | Published ISO ↔ federal compliance mapping; ongoing federal-policy tracking |
+| **ISO/IEC 42001:2023** | Implementing | Organizational certification in progress; full AIMS documentation set authored and published in this repository |
+| **Virginia EO-30 / VITA / EA-225** | Practitioner | Published ISO ↔ Commonwealth of Virginia control mapping |
+| **NIST SP 800-171** | Practitioner | CUI-protection work performed at prior federal employer |
+| **DFARS 252.204-7012** | Knowledgeable | Defense-contractor flow-down review |
+| **CMMC Framework** | Knowledgeable | Awareness only; **not** a CMMC Registered Practitioner and not currently pursuing |
+| **FedRAMP / IL5** | Knowledgeable | Aware; no current production deployments under 12th House AI |
+| **HIPAA** | Knowledgeable | Compliance awareness |
+| **FERPA** | Knowledgeable | Education-sector awareness (relevant to Virginia AI Education Guidelines work) |
+| **DoD AI Ethical Principles** | Practitioner | Practitioner-level familiarity through prior federal-employer work |
 
 #### 2.5 AI/ML Technical Skills
 
 | Technology | Proficiency | Evidence |
 |------------|-------------|----------|
-| **Large Language Models (Claude, GPT)** | Expert | Daily use, prompt engineering, API integration |
-| **Voice AI (ElevenLabs, Vapi)** | Expert | VoiceGuard platform development |
-| **Workflow Automation (n8n, Zapier)** | Proficient | Client implementations |
-| **Cloud AI (Azure AI, Azure GovCloud)** | Proficient | Federal deployments |
+| **Large Language Models (Claude, GPT, Kimi K2.5)** | Practitioner | Daily use, prompt engineering, API integration |
+| **Voice AI (ElevenLabs, Vapi)** | Familiar | Hands-on experimentation |
+| **Workflow Automation (n8n, Zapier)** | Familiar | Personal automation projects |
+| **Cloud AI (Azure AI, Azure GovCloud)** | Familiar | Awareness from prior federal-employer work |
 | **Python** | Competent | Scripting, automation, AI integration |
-| **API Integration** | Expert | Multiple AI service integrations |
-| **RAG (Retrieval-Augmented Generation)** | Proficient | Knowledge base implementations |
+| **API Integration** | Practitioner | Multiple AI service integrations |
+| **RAG (Retrieval-Augmented Generation)** | Practitioner | See companion repo `federal-ai-policy-rag` for a published RAG implementation |
 
 #### 2.6 Business Competencies
 
 | Competency | Proficiency | Evidence |
 |------------|-------------|----------|
-| **Federal Contracting** | Expert | SAM.gov registered, 8(a) certified, prime/sub experience |
+| **Federal Contracting** | Practitioner | Prior federal contractor employment (W-2); 8(a) status to be verified; SAM.gov registration status to be verified per current state |
 | **Strategic Consulting** | Expert | 5% Framework, Mission Planning Framework developed |
 | **Executive Engagement** | Proficient | C-level client interactions, executive training delivery |
 | **Technical Writing** | Expert | Documentation, proposals, frameworks |
@@ -115,10 +116,10 @@ This competency matrix documents the skills, qualifications, and expertise requi
 **Assessed Against:**
 | Requirement | Brannon Solomon | Status |
 |-------------|-----------------|--------|
-| AI risk categories | Expert level | ✅ Exceeds |
-| Risk assessment | Federal RMF experience | ✅ Exceeds |
-| NIST AI RMF | Expert | ✅ Exceeds |
-| AI impact evaluation | Consultant to clients | ✅ Exceeds |
+| AI risk categories | Practitioner-level familiarity | ✅ Meets |
+| Risk assessment | NIST RMF implementation work (prior employer) | ✅ Meets |
+| NIST AI RMF | Practitioner | ✅ Meets |
+| AI impact evaluation | Documented impact-assessment templates published | ✅ Meets |
 
 ---
 
@@ -151,10 +152,10 @@ This competency matrix documents the skills, qualifications, and expertise requi
 **Assessed Against:**
 | Requirement | Brannon Solomon | Status |
 |-------------|-----------------|--------|
-| Regulatory knowledge | OMB, NIST, DFARS, HIPAA, etc. | ✅ Exceeds |
-| Audit experience | Client audit support | ✅ Meets |
-| Documentation | Extensive | ✅ Exceeds |
-| Continuous learning | Ongoing research, Claude use | ✅ Meets |
+| Regulatory knowledge | OMB, NIST, Virginia EO-30 / VITA / EA-225, DFARS, HIPAA awareness | ✅ Meets |
+| Audit experience | Internal-audit experience as part of 12th House AIMS preparation; no external client audits performed under 12th House yet | ✅ Meets (in-progress evidence) |
+| Documentation | Comprehensive AIMS package, federal + Virginia control mappings | ✅ Exceeds |
+| Continuous learning | Ongoing federal + Virginia policy tracking | ✅ Meets |
 
 ---
 
@@ -173,9 +174,9 @@ This competency matrix documents the skills, qualifications, and expertise requi
 | Certification | Target Date | Status |
 |---------------|-------------|--------|
 | ISO/IEC 42001:2023 (Organizational) | Feb 28, 2026 | In progress |
-| PECB ISO 42001 Lead Implementer | Q2 2026 | Planned |
-| CMMC Registered Practitioner (RP) | Q3 2026 | Planned |
-| Certified Information Security Manager (CISM) | Q4 2026 | Considering |
+| PECB ISO 42001 Lead Implementer | Q2 2026 | Under consideration |
+
+12th House AI is **not** currently pursuing CMMC Registered Practitioner (RP) certification or CISM. These were on an earlier strategy draft and have been withdrawn from the active roadmap.
 
 ---
 
@@ -221,12 +222,12 @@ This competency matrix documents the skills, qualifications, and expertise requi
 
 ## 6. Evidence Repository
 
-All competency evidence is maintained in:
-- `/Users/brannonsolomon/Desktop/12th-house-ai/credentials/` (certificates, transcripts)
-- LinkedIn profile (verified endorsements, education)
-- SAM.gov registration (federal credentials)
-- Client testimonials and references (on request)
-- Project portfolios (VoiceGuard, RMF Navigator, VISTA)
+Competency evidence is maintained as follows:
+- Founder credentials (clearance, education, prior employment): retained by founder
+- LinkedIn profile: education and work-history record
+- Published artifacts in this repository: AIMS documentation, ISO ↔ federal control mapping, ISO ↔ Virginia EO-30 / VITA / EA-225 control mapping
+- SAM.gov registration: status to be verified per current state
+- Client testimonials / references: 12th House AI has no completed client engagements to reference at this time. This section will be updated when engagements complete.
 
 ---
 
