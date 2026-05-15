@@ -1,6 +1,6 @@
 # Virginia AI Compliance Readiness Assessment — Template
 
-**Engagement type:** Commonwealth of Virginia AI Compliance Readiness Assessment ($7,500–$15,000)
+**Engagement type:** Commonwealth of Virginia AI Compliance Readiness Assessment
 **Standard alignment:** Virginia Executive Order 30 (2024) · VITA Policy Standard for Utilization of AI by the Commonwealth (Rev 3, June 27 2024) · EA-225 Enterprise Solutions Architecture for AI (v1.2, Nov 16 2023) · Guidelines for AI Integration Throughout Education in Virginia (where applicable)
 **Crosswalk reference:** `docs/virginia-compliance-mapping.md`
 **Prepared by:** 12th House AI
@@ -166,8 +166,9 @@ Replace every `< >` placeholder. Delete instruction blocks (italicized) before s
 
 ### 7.4 Suggested Next Engagement
 *Optional. Only if the client has signaled interest.*
-- **VITA Approval & Registration Sprint ($15,000–$35,000):** Archer + CTP/Planview registration, agency-head approval evidence packet, EA-225 instrumentation plan.
-- **Ongoing Quarterly Conformance ($2,500 / quarter):** Conformance review, successor-standards tracking.
+- **VITA Approval & Registration Sprint:** Archer + CTP/Planview registration, agency-head approval evidence packet, EA-225 instrumentation plan.
+- **Ongoing Quarterly Conformance:** Periodic conformance review and successor-standards tracking.
+- Pricing for any next-tier engagement is provided in a follow-on statement of work.
 
 ---
 

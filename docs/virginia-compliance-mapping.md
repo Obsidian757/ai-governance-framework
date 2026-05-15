@@ -308,9 +308,8 @@ ISO 42001 Clauses 5.1, 7.5, 8.2, and 8.11 are the four controls that carry the w
 - Annual gap reassessment as VITA revises standards or as the Spanberger administration publishes successor EOs/Directives
 
 ### Pricing
-- Virginia AI Compliance Readiness Assessment: **$7,500–$15,000**
-- VITA Approval & Registration Sprint: **$15,000–$35,000**
-- Ongoing conformance (quarterly): **$2,500–$5,000 / quarter**
+
+Pricing is structured per procurement vehicle (direct engagement, eVA solicitation, cooperative master, or sub-to-prime teaming) and is provided per RFP, per teaming agreement, or upon direct request.
 
 Contact: **info@12thhouseai.com**
 
