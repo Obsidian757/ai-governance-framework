@@ -1,6 +1,6 @@
-# ISO 42001 Client Management System
+# Client Management Scaffolding (ISO 42001-aligned engagements)
 
-**Purpose:** Manage multiple clients through ISO 42001 certification cycles efficiently.
+**Purpose:** Manage multiple client engagements through ISO 42001-aligned AIMS implementation cycles efficiently. (12th House AI does not provide ISO 42001 certification services; this scaffolding tracks framework-implementation engagements, not certification cycles.)
 
 ---
 
@@ -58,12 +58,12 @@ Run through this checklist every Monday:
 ## Client Lifecycle Stages
 
 | Stage | Duration | Key Deliverables |
-|-------|----------|------------------|
+|---|---|---|
 | **Discovery** | 2-3 weeks | Assessment, Gap Analysis, Roadmap |
 | **Implementation** | 8-12 weeks | Policies, Risk Register, Training |
-| **Audit Prep** | 2-4 weeks | Evidence, Internal Audit, Mock Audit |
-| **Certification** | 2-4 weeks | Stage 1, Stage 2, Certificate |
-| **Maintenance** | Ongoing | Surveillance, Continuous Improvement |
+| **Internal Audit Readiness** | 2-4 weeks | Evidence, Internal Audit |
+| **Independent Certification (optional, client-elected)** | Variable | Client engages a certification body directly. 12th House AI does not provide certification services. |
+| **Maintenance** | Ongoing | Continuous Improvement, change-log discipline |
 
 ---
 
@@ -81,7 +81,7 @@ Run through this checklist every Monday:
 
 ---
 
-## Kimi Code CLI Workflows
+## Agent CLI Workflows (works with any code-assistant CLI)
 
 ### Check All Client Statuses
 
@@ -152,7 +152,7 @@ clients/[client-name]/
 
 ## Integration with Main Package
 
-This client management system works alongside your main ISO 42001 certification package:
+This client management system works alongside your main ISO 42001-aligned AIMS package:
 
 - **Main package** (`/docs/`, `/templates/`) = Your methodology & tools
 - **Client management** (`/client-management/`) = Client-specific work

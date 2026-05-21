@@ -166,7 +166,7 @@ Score each capability area 0–4 (Ad-hoc → Optimizing). Plot on a radar chart 
 ### 7.4 Suggested Next Engagement
 *Optional — only if the client has signaled interest in continued work. Do not push.*
 - **Tier 2 — Strategic Roadmap:** 90-day implementation plan, governance documentation set, AIMS scaffolding aligned to ISO/IEC 42001.
-- **Tier 3 — Ultimate Warrior:** Six-month engagement supporting full ISO 42001 implementation toward certification readiness.
+- **Tier 3 — Implementation Support:** Six-month engagement supporting full ISO 42001-aligned AIMS rollout. Independent ISO 42001 certification is optional and client-elected; 12th House AI does not provide certification services.
 - Pricing for any next-tier engagement is provided in a follow-on statement of work.
 
 ---

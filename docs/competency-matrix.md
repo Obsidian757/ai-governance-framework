@@ -51,7 +51,7 @@ This competency matrix documents the skills, qualifications, and expertise requi
 |-----------------|-------------|----------|
 | **NIST AI Risk Management Framework** | Practitioner | Implementation work performed at prior federal employer; documentation created at 12th House AI |
 | **OMB Memoranda (M-25-21, M-25-22)** | Practitioner | Published ISO ↔ federal compliance mapping; ongoing federal-policy tracking |
-| **ISO/IEC 42001:2023** | Implementing | Organizational certification in progress; full AIMS documentation set authored and published in this repository |
+| **ISO/IEC 42001:2023** | Implementing (framework-only) | Full AIMS documentation set authored and published in this repository. Organizational certification **not held** and **not being pursued**; the framework is used as the implementation spine. |
 | **Virginia EO-30 / VITA / EA-225** | Practitioner | Published ISO ↔ Commonwealth of Virginia control mapping |
 | **NIST SP 800-171** | Practitioner | CUI-protection work performed at prior federal employer |
 | **DFARS 252.204-7012** | Knowledgeable | Defense-contractor flow-down review |
@@ -65,7 +65,7 @@ This competency matrix documents the skills, qualifications, and expertise requi
 
 | Technology | Proficiency | Evidence |
 |------------|-------------|----------|
-| **Large Language Models (Claude, GPT, Kimi K2.5)** | Practitioner | Daily use, prompt engineering, API integration |
+| **Large Language Models** (multiple frontier-class providers; vendor selection per engagement) | Practitioner | Daily use, prompt engineering, API integration |
 | **Voice AI (ElevenLabs, Vapi)** | Familiar | Hands-on experimentation |
 | **Workflow Automation (n8n, Zapier)** | Familiar | Personal automation projects |
 | **Cloud AI (Azure AI, Azure GovCloud)** | Familiar | Awareness from prior federal-employer work |
@@ -77,7 +77,7 @@ This competency matrix documents the skills, qualifications, and expertise requi
 
 | Competency | Proficiency | Evidence |
 |------------|-------------|----------|
-| **Federal Contracting** | Practitioner | Prior federal contractor employment (W-2); 8(a) status to be verified; SAM.gov registration status to be verified per current state |
+| **Federal Contracting** | Practitioner | Prior federal contractor employment (W-2); SAM.gov registration status to be verified per current state. **No 8(a), SDVOSB, VOSB, HUBZone, or WOSB status held or pursued.** |
 | **Strategic Consulting** | Expert | 5% Framework, Mission Planning Framework developed |
 | **Executive Engagement** | Proficient | C-level client interactions, executive training delivery |
 | **Technical Writing** | Expert | Documentation, proposals, frameworks |
@@ -164,19 +164,22 @@ This competency matrix documents the skills, qualifications, and expertise requi
 ### 4.1 Current Gaps
 
 | Gap Area | Current Level | Target Level | Gap Closure Plan | Timeline |
-|----------|---------------|--------------|------------------|----------|
-| ISO 42001 formal certification | Self-taught | Certified | Pursue PECB Lead Implementer cert | Q2 2026 |
+|---|---|---|---|---|
+| ISO 42001 framework depth | Self-taught | Lead-implementer level | PECB ISO 42001 Lead Implementer course (individual credential, not organizational certification) | Under consideration |
 | HIPAA implementation | Knowledge | Expert | HIPAA training course | Q2 2026 |
-| Advanced ML/deep learning | Aware | Competent | Self-study, courses | Q3 2026 |
+| Advanced ML / deep learning | Aware | Competent | Self-study, courses | Q3 2026 |
 
-### 4.2 Planned Certifications
+### 4.2 Credential Posture
 
-| Certification | Target Date | Status |
-|---------------|-------------|--------|
-| ISO/IEC 42001:2023 (Organizational) | Feb 28, 2026 | In progress |
-| PECB ISO 42001 Lead Implementer | Q2 2026 | Under consideration |
+| Credential / Framework | Status |
+|---|---|
+| **ISO/IEC 42001:2023 organizational certification** | **Not held; not pursuing.** Framework used as the AIMS implementation spine. |
+| PECB ISO 42001 Lead Implementer (individual) | Under consideration |
+| SDVOSB / VOSB / 8(a) / HUBZone / WOSB | Not held; not pursuing |
+| CMMC RP or any CMMC certification | Not held; not pursuing |
+| FedRAMP authorization | Not held; not pursuing |
 
-12th House AI is **not** currently pursuing CMMC Registered Practitioner (RP) certification or CISM. These were on an earlier strategy draft and have been withdrawn from the active roadmap.
+12th House AI is **not** currently pursuing any of the credentials marked above. These were considered in earlier strategy drafts and have been withdrawn from the active roadmap. Veteran-owned status is self-attested per SBA definition; SDVOSB/VOSB certification has not been granted.
 
 ---
 
@@ -187,11 +190,11 @@ This competency matrix documents the skills, qualifications, and expertise requi
 | Training | Provider | Date | Hours | Verification |
 |----------|----------|------|-------|--------------|
 | NIST AI RMF Overview | NIST Self-Study | 2024 | 8 | Certificate |
-| Claude API & Best Practices | Anthropic | 2024 | 4 | Completion |
-| ElevenLabs Voice AI | ElevenLabs | 2024 | 4 | Completion |
-| Azure AI Fundamentals | Microsoft | 2023 | 8 | Certificate |
-| Federal Contracting | SBA | 2023 | 16 | Certificate |
-| 8(a) Business Development | SBA | 2023 | 8 | Certificate |
+| Enterprise LLM API & Best Practices | LLM vendor | 2024 | 4 | Completion |
+| Voice synthesis platform training | Voice synthesis vendor | 2024 | 4 | Completion |
+| Azure AI Fundamentals | Microsoft | 2023 | 8 | Course completion |
+| Federal Contracting | SBA | 2023 | 16 | Course completion |
+| Small-Business Contracting Programs (SBA) | SBA | 2023 | 8 | Course completion |
 | Cybersecurity Awareness | DoD (annual) | 2025 | 2 | Completion |
 | DFARS/CMMC Requirements | Industry | 2024 | 8 | Attendance |
 
@@ -203,7 +206,7 @@ This competency matrix documents the skills, qualifications, and expertise requi
 | OMB M-25-21/M-25-22 analysis | Regulatory review | 8 | Compliance mapping guide |
 | EO 14110 / EO 14179 | Regulatory review | 6 | Analysis documents |
 | Voice AI development (VoiceGuard) | Hands-on project | 100+ | Working product |
-| Claude Code / MCP Servers | Practical application | 40+ | Configurations, workflows |
+| Agentic LLM CLIs / MCP servers | Practical application | 40+ | Configurations, workflows |
 | AI compliance frameworks | Research + synthesis | 50+ | Client deliverables |
 
 **Total Self-Directed Learning (2025-2026):** 214+ hours

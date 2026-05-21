@@ -40,10 +40,10 @@
 ### RISK-001: Third-Party AI Data Leakage
 
 **Category:** Privacy & Data Protection  
-**Affected Systems:** VoiceGuard (uses ElevenLabs, Vapi), RMF Navigator, consulting work using Claude
+**Affected Systems:** VoiceGuard (uses voice synthesis + voice agent platforms), RMF Navigator, consulting work using a third-party LLM API
 
 **Description:**
-Client data (including CUI, PII, or proprietary information) is inadvertently shared with third-party AI providers (ElevenLabs, Claude, Vapi, etc.) without proper safeguards, leading to unauthorized disclosure.
+Client data (including CUI, PII, or proprietary information) is inadvertently shared with third-party AI providers (LLM APIs, voice synthesis, voice agent platforms, etc.) without proper safeguards, leading to unauthorized disclosure.
 
 **Likelihood:** Possible (3)  
 **Impact:** Major (4)  
@@ -114,7 +114,7 @@ Failure to stay current with evolving federal AI regulations (OMB M-25-21, M-25-
 **Mitigation Measures:**
 1. Subscribe to federal register updates (OMB, NIST, DoD AI)
 2. Quarterly regulatory review and framework updates
-3. Maintain ISO 42001 certification (forces compliance discipline)
+3. Maintain ISO 42001-aligned AIMS under change control (forces compliance discipline)
 4. Participate in NavalX and industry forums for early awareness
 5. Document regulatory assumptions in all client engagements
 6. Include change order provisions for regulatory shifts
@@ -165,7 +165,7 @@ Voice agents collect or process personally identifiable information (PII) or pro
 **Affected Systems:** VoiceGuard, RMF Navigator, client production deployments
 
 **Description:**
-AI system failure, API downtime (ElevenLabs, Claude), or configuration errors cause service outage, disrupting client operations and damaging reputation.
+AI system failure, third-party API downtime (voice synthesis, LLM provider, voice agent platform), or configuration errors cause service outage, disrupting client operations and damaging reputation.
 
 **Likelihood:** Likely (4)  
 **Impact:** Moderate (3)  
@@ -315,7 +315,7 @@ AI makes decisions (e.g., appointment denials, risk assessments) that cannot be 
 ### RISK-010: Vendor Lock-In (Third-Party AI Dependency)
 
 **Category:** Business Continuity  
-**Affected Systems:** All systems using ElevenLabs, Vapi, Claude, OpenRouter
+**Affected Systems:** All systems using third-party AI providers (LLM API, voice synthesis, voice agent platforms, multi-model gateways)
 
 **Description:**
 Over-reliance on single third-party AI vendor creates business continuity risk if vendor raises prices, changes terms, suffers outage, or exits market.
@@ -370,4 +370,5 @@ Over-reliance on single third-party AI vendor creates business continuity risk i
 
 | Date | Change | Author |
 |------|--------|--------|
-| Feb 1, 2026 | Initial risk register created for ISO 42001 certification | Brannon Solomon |
+| Feb 1, 2026 | Initial risk register created for ISO 42001-aligned AIMS | Brannon Solomon |
+| May 21, 2026 | Repository-wide reframe: ISO 42001 used as implementation framework only; certification not claimed or pursued | Brannon Solomon |

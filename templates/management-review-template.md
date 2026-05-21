@@ -103,12 +103,13 @@
 
 ### 1.8 Third-Party AI Performance
 
-| Vendor | Performance | Issues | Action |
-|--------|-------------|--------|--------|
-| Claude/Anthropic | ☐ Good ☐ Acceptable ☐ Poor | | |
-| ElevenLabs | ☐ Good ☐ Acceptable ☐ Poor | | |
-| Vapi | ☐ Good ☐ Acceptable ☐ Poor | | |
-| Azure AI | ☐ Good ☐ Acceptable ☐ Poor | | |
+| Vendor Category | Performance | Issues | Action |
+|---|---|---|---|
+| Enterprise LLM API provider | ☐ Good ☐ Acceptable ☐ Poor | | |
+| Voice synthesis platform | ☐ Good ☐ Acceptable ☐ Poor | | |
+| Voice agent platform | ☐ Good ☐ Acceptable ☐ Poor | | |
+| Microsoft Azure AI | ☐ Good ☐ Acceptable ☐ Poor | | |
+| Multi-model API gateway | ☐ Good ☐ Acceptable ☐ Poor | | |
 
 ### 1.9 Opportunities for Improvement
 
@@ -171,9 +172,10 @@ ___________________________________________________________________________
 - Target maturity: ________________________________
 - Gap closure plan: ________________________________
 
-**ISO 42001 Certification Status:**
-- Current status: ________________________________
+**ISO 42001-aligned AIMS Status:**
+- Framework adherence (Clauses 4–10 + Annex A): ________________________________
 - Next milestone: ________________________________
+- Independent certification (optional, client-elected): ☐ Not pursued ☐ Under consideration ☐ Engaged with certification body
 - Support needed: ________________________________
 
 ---

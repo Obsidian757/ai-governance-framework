@@ -1,9 +1,11 @@
-# Pre-Audit Readiness Checklist - [CLIENT NAME]
+# Pre-Audit Readiness Checklist — [CLIENT NAME]
 
-**Audit Date:** [DATE]  
-**Certification Body:** [BSI/DNV/SGS/etc]  
-**Auditor:** [NAME if known]  
-**Stage:** [Stage 1 (Documentation) / Stage 2 (Implementation)]
+**Used for:** Internal AIMS audit, OR — if the client has independently engaged a certification body — pre-certification audit prep. 12th House AI does not provide certification services.
+
+**Audit Date:** [DATE]
+**Certification Body (only if client has engaged one):** [BSI / DNV / SGS / etc.]
+**Auditor:** [NAME if known]
+**Audit Type:** [Internal annual audit / Stage 1 (Documentation) / Stage 2 (Implementation)]
 
 ---
 

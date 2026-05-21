@@ -17,33 +17,35 @@ This procedure establishes requirements for selecting, managing, and monitoring 
 ## 2. Scope
 
 This procedure applies to all third-party AI technologies used by 12th House AI, including:
-- AI APIs and services (Claude, ElevenLabs, Vapi, OpenRouter)
+- Large language model APIs and services
+- Voice / speech / multimodal AI services
 - AI models and frameworks (pre-trained models, embeddings)
-- AI-enabled software platforms (Azure AI)
-- AI components in broader solutions (AI features in SaaS products)
+- AI-enabled cloud platforms
+- AI components embedded in broader SaaS solutions
 
 ---
 
-## 3. Current Third-Party AI Vendor Inventory
+## 3. Third-Party AI Vendor Inventory (categorized)
 
-### Active Vendors
+Specific vendor identities are recorded in the per-engagement Vendor Management record, not in this publicly published procedure. The category-level inventory below shows the *kinds* of vendors in scope and the controls that apply.
 
-| Vendor | Service | Classification | Data Allowed | Annual Cost | Contract Status | Last Review |
-|--------|---------|----------------|--------------|-------------|-----------------|-------------|
-| **Anthropic (Claude)** | LLM API, Claude Code | Enterprise | Internal, Confidential | ~$1,200/yr | Business tier | Jan 2026 |
-| **ElevenLabs** | Voice synthesis | Business | Internal, Confidential | ~$600/yr | Business tier | Jan 2026 |
-| **Vapi** | Voice agent platform | Business | Internal, Confidential | ~$480/yr | Business tier | Jan 2026 |
-| **OpenRouter** | Multi-model API gateway | Standard | Public, Internal | ~$200/yr | Standard | Jan 2026 |
-| **Microsoft Azure AI** | Cloud AI services | Enterprise | All (commercial) | Variable | EA agreement | Jan 2026 |
-| **OpenAI** | GPT models (via Azure) | Enterprise | Per Azure controls | Via Azure | Azure Marketplace | Jan 2026 |
+### Active vendor categories
 
-### Conditional/Restricted Vendors
+| Vendor Category | Service | Classification | Data Allowed | Selection Rules |
+|---|---|---|---|---|
+| **Large language model API (enterprise tier)** | Primary LLM service | Enterprise | Internal, Confidential | For federal-facing engagements, only federally-cleared providers; for foreign-AI-excluded engagements, foreign-AI providers are excluded |
+| **Voice synthesis / voice agent platforms** | Voice automation | Business | Internal, Confidential | DPA required; data residency confirmed |
+| **Multi-model API gateways** | Routed access to multiple LLMs | Standard | Public, Internal only | No client confidential data unless the gateway is itself enterprise-tier and the underlying model is approved |
+| **Cloud AI platforms (e.g., Microsoft Azure AI)** | Cloud AI services | Enterprise | All (commercial) | Under enterprise agreement with documented data-residency and "do not train" terms |
 
-| Vendor | Status | Restriction | Action Required |
-|--------|--------|-------------|-----------------|
-| **Any free-tier AI** | Prohibited for production | No client or sensitive data | Use business/enterprise tiers only |
-| **ChatGPT free** | Prohibited for work | No work data | Do not use for client work |
-| **Consumer AI apps** | Case-by-case | Evaluate per use case | Risk assessment before use |
+### Conditional/Restricted vendor categories
+
+| Vendor Category | Status | Restriction | Action Required |
+|---|---|---|---|
+| **Free-tier AI services** | Prohibited for production | No client or sensitive data | Use business/enterprise tiers only |
+| **Consumer-grade chat assistants** | Prohibited for client work | No work data | Do not use for client work |
+| **Foreign-AI-component providers** (where prohibited by client procurement terms, e.g., Advancing American AI Act §7223 flow-downs) | Prohibited for in-scope engagements | Excluded entirely | Flag at vendor selection; document exclusion in engagement Vendor Management record |
+| **Federally-blacklisted providers** for federal-facing engagements | Prohibited for federal-facing client work | No federal-facing engagement use | Flag at vendor selection; route federal-facing work to a federally-cleared provider |
 
 ---
 
@@ -178,12 +180,12 @@ For vendors processing PHI:
 
 **Current BAA Status:**
 
-| Vendor | BAA Available? | BAA Executed? | Notes |
-|--------|----------------|---------------|-------|
-| ElevenLabs | Yes (Enterprise) | Pending | Required before healthcare deployments |
-| Vapi | Unknown | No | Evaluate before healthcare use |
-| Azure AI | Yes | Yes | Standard Microsoft HIPAA BAA |
-| Claude | Yes (Enterprise) | Pending | Required for healthcare-related work |
+| Vendor Category | BAA Available? | BAA Executed? | Notes |
+|---|---|---|---|
+| Voice synthesis (enterprise tier) | Yes (Enterprise) | Pending | Required before healthcare deployments |
+| Voice agent platform | Per-vendor evaluation | No | Evaluate before healthcare use |
+| Cloud AI platform (Microsoft Azure AI) | Yes | Yes | Standard Microsoft HIPAA BAA |
+| Enterprise LLM API | Per-vendor; check at engagement scoping | Pending | Required for healthcare-related work |
 
 ### 6.3 Federal Contract Flow-Down
 
@@ -350,9 +352,11 @@ Before selecting vendors, confirm:
 
 ---
 
-## 11. Specific Vendor Profiles
+## 11. Vendor Category Profiles
 
-### 11.1 Anthropic (Claude)
+Specific vendor identities are recorded in the per-engagement Vendor Management record under change control, not published in this procedure. The category profiles below describe the *controls* applied to each kind of vendor.
+
+### 11.1 Enterprise LLM API Provider (primary)
 
 **Use:** Primary LLM for code generation, analysis, documentation
 
@@ -360,70 +364,66 @@ Before selecting vendors, confirm:
 
 **Data Allowed:** Public, Internal, Confidential (per DPA)
 
-**DPA Status:** Yes, executed
+**DPA Requirement:** Executed before any non-public data flows
 
-**Security:** SOC 2 Type II, encryption, no training on prompts by default
+**Security Baseline:** SOC 2 Type II, encryption, no training on prompts by default
 
 **Restrictions:**
-- No CUI without Azure deployment option
-- No PHI without BAA (explore enterprise tier)
+- For federal-facing engagements, the selected provider must be federally cleared. Providers under federal supply-chain restriction are excluded from federal-facing client work; private/internal company use is governed separately.
+- For foreign-AI-prohibited engagements (e.g., Advancing American AI Act §7223 flow-down), the selected provider must not contain a prohibited foreign-AI component.
+- No CUI without an appropriate sovereign-cloud or federally-authorized deployment path.
+- No PHI without a Business Associate Agreement on the enterprise tier.
 
-**Renewal Date:** Annual
-
-**Alternative:** Azure OpenAI, Gemini
+**Renewal Cadence:** Annual
 
 ---
 
-### 11.2 ElevenLabs
+### 11.2 Voice Synthesis Platform
 
-**Use:** Voice synthesis for VoiceGuard
+**Use:** Voice synthesis for AI workflow products
 
 **Tier:** Business
 
 **Data Allowed:** Internal, Confidential (per DPA)
 
-**DPA Status:** Yes
+**DPA Requirement:** Executed
 
-**Security:** SOC 2, encryption
+**Security Baseline:** SOC 2, encryption
 
 **Restrictions:**
 - No PHI until BAA executed
 - Voice cloning requires explicit consent documentation
-- Retain voice data per retention policy (30 days)
+- Voice-data retention per retention policy (default 30 days)
 
 **HIPAA Ready:** Pending BAA execution
 
-**Renewal Date:** Annual
-
-**Alternative:** Azure Speech Services, Play.ht
+**Renewal Cadence:** Annual
 
 ---
 
-### 11.3 Vapi
+### 11.3 Voice Agent Conversation Platform
 
-**Use:** Voice agent conversation platform for VoiceGuard
+**Use:** Voice agent conversation platform
 
 **Tier:** Business
 
 **Data Allowed:** Internal, Confidential
 
-**DPA Status:** In progress
+**DPA Requirement:** In progress at intake
 
-**Security:** Encryption, access controls
+**Security Baseline:** Encryption, access controls
 
 **Restrictions:**
 - No PHI until HIPAA compliance confirmed
-- No CUI (not FedRAMP authorized)
+- No CUI unless the specific vendor is FedRAMP-authorized
 
-**Renewal Date:** Annual
-
-**Alternative:** Retell.ai, custom build with Twilio
+**Renewal Cadence:** Annual
 
 ---
 
-### 11.4 OpenRouter
+### 11.4 Multi-Model API Gateway
 
-**Use:** Multi-model API gateway for flexible model access
+**Use:** Routed access to multiple LLM providers (testing, non-sensitive workloads)
 
 **Tier:** Standard
 
@@ -431,19 +431,18 @@ Before selecting vendors, confirm:
 
 **DPA Status:** Standard terms
 
-**Security:** Basic encryption, no advanced controls
+**Security Baseline:** Basic encryption
 
 **Restrictions:**
 - Do NOT use for confidential or regulated data
 - Use only for testing and non-sensitive workloads
-
-**Alternative:** Direct provider APIs
+- Underlying-model selection at the gateway must itself satisfy federal-facing / foreign-AI-exclusion rules for any in-scope engagement
 
 ---
 
 ### 11.5 Microsoft Azure AI Services
 
-**Use:** Enterprise AI platform, GPT models, Cognitive Services
+**Use:** Enterprise AI platform, hosted models, Cognitive Services
 
 **Tier:** Enterprise Agreement
 

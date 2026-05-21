@@ -37,12 +37,13 @@
 - [ ] Management review held
 - [ ] Pre-audit checklist complete
 
-### Certification Phase
-- [ ] Stage 1 audit scheduled
+### Independent Certification Phase (only if client elects to pursue — 12th House AI does not provide certification services)
+- [ ] Client engages certification body directly
+- [ ] Stage 1 audit scheduled (by client / certification body)
 - [ ] Stage 1 audit passed
 - [ ] Stage 2 audit scheduled
 - [ ] Stage 2 audit passed
-- [ ] Certificate received
+- [ ] Certificate received (by client, from certification body)
 
 ---
 
@@ -82,7 +83,7 @@
 
 ## Risk Flags
 
-- [ ] **Schedule Risk:** At risk of missing certification date
+- [ ] **Schedule Risk:** At risk of missing engagement-end / framework-readiness milestone
 - [ ] **Resource Risk:** Client resources not available
 - [ ] **Scope Risk:** Scope creep or undefined requirements
 - [ ] **Quality Risk:** Documentation not meeting standards

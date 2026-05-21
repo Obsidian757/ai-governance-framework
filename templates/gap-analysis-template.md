@@ -56,7 +56,7 @@ Delete this instruction block before delivery.
 | Annex A — A.9 Use of AI systems | 4 | | | | |
 | Annex A — A.10 Third-party / customer relationships | 4 | | | | |
 
-**Overall readiness:** \<Pre-Stage-1 · Stage-1-ready · Stage-2-ready · Certified>
+**Overall readiness:** \<Framework-aligned-baseline · Framework-aligned-mature · Internal-audit-passed · Pre-certification-ready (if client elects independent certification) · Certified (if client has engaged certification body)>
 
 ---
 

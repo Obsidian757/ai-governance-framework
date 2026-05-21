@@ -51,7 +51,7 @@ Define AI system requirements, assess feasibility, and plan development approach
 **1.4 Technology Selection**
 - Evaluate AI technologies and vendors (build vs. buy)
 - Apply decision criteria: compliance, cost, time-to-deliver, maintainability
-- Select appropriate third-party AI if applicable (ElevenLabs, Claude, Vapi)
+- Select appropriate third-party AI if applicable (LLM API provider, voice synthesis, voice agent platform — vendor identities chosen per engagement to satisfy regulatory posture, recorded in the Vendor Management record)
 
 **1.5 Data Planning**
 - Identify data sources and requirements
@@ -439,4 +439,5 @@ Retire the AI system securely and responsibly.
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | Feb 1, 2026 | Brannon Solomon | Initial lifecycle process for ISO 42001 certification |
+| 1.0 | Feb 1, 2026 | Brannon Solomon | Initial lifecycle process under the ISO 42001 implementation framework |
+| 1.1 | May 21, 2026 | Brannon Solomon | Reframed: ISO 42001 used as framework; certification not claimed |

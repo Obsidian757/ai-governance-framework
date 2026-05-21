@@ -1,6 +1,6 @@
-# Kimi Code CLI Cheatsheet for Client Management
+# Client-Management CLI Cheatsheet
 
-Quick commands to manage multiple ISO 42001 clients efficiently.
+Quick commands to manage multiple AIMS engagements efficiently. The original version of this file referenced a deprecated internal coding-assistant CLI; the conceptual commands below work with any agent CLI that supports `ReadFile`, `StrReplaceFile`, and `Shell` operations (or their equivalents in your editor of choice).
 
 ---
 
@@ -99,7 +99,7 @@ Task:
 ```
 Task:
   description="Create client gap analysis"
-  prompt="Using client-management/templates/gap-analysis-template.md, create a gap analysis for [CLIENT]. Their current state: [DESCRIPTION]. Target certification: [DATE]."
+  prompt="Using client-management/templates/gap-analysis-template.md, create a gap analysis for [CLIENT]. Their current state: [DESCRIPTION]. Engagement milestones: [DATES]."
   subagent_name="coder"
 ```
 
@@ -159,7 +159,7 @@ Shell: command="grep -c 'Discovery' client-management/MASTER_TRACKING.md && grep
 1. **Use consistent naming** - lowercase, hyphens for spaces
 2. **Update MASTER_TRACKING.md weekly** - Even if no changes, confirm status
 3. **Document blockers immediately** - Don't let issues linger
-4. **Archive completed clients** - Move to `clients/archived/` when certified
+4. **Archive completed clients** - Move to `clients/archived/` when the engagement closes
 
 ---
 

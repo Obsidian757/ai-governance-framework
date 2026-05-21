@@ -19,7 +19,7 @@
 | Objective | Target | Can You Measure This? |
 |-----------|--------|----------------------|
 | 90-Day Implementation Cycles | Deliver in 90 days or less | Project tracking system? |
-| AI System Uptime | 99.5% | Vapi/ElevenLabs dashboards |
+| AI System Uptime | 99.5% | Vendor dashboards (per engagement Vendor Management record) |
 | Zero Critical Incidents | No data breaches, bias events, safety failures | Incident monitoring plan |
 | Client NPS | >50 | Post-engagement surveys |
 | AI Project Success Rate | >95% | Project retrospective tracking |
@@ -74,12 +74,12 @@ You are currently assigned to ALL roles:
 
 ### 7. Third-Party Vendor Oversight
 
-Vendors you must monitor annually:
-- [ ] Anthropic (Claude)
-- [ ] ElevenLabs
-- [ ] Vapi
-- [ ] OpenRouter
-- [ ] Azure AI
+Vendor categories you must monitor annually (specific vendor identities recorded per engagement):
+- [ ] Enterprise LLM API provider (federally-cleared, no foreign-AI component where prohibited)
+- [ ] Voice synthesis platform
+- [ ] Voice agent platform
+- [ ] Multi-model API gateway
+- [ ] Microsoft Azure AI
 
 **Question:** Do you have access to their SOC 2/compliance docs?
 
@@ -96,13 +96,13 @@ Signing commits you to maintaining:
 
 ### 9. Legal & Compliance Alignment
 
-You are certifying compliance with:
-- ISO/IEC 42001:2023
-- NIST AI Risk Management Framework
-- OMB M-25-21, M-25-22, M-26-04
+You are attesting that the AIMS is aligned to:
+- ISO/IEC 42001:2023 (used as the implementation framework — **not a certification claim**)
+- NIST AI Risk Management Framework 1.0 + Generative AI Profile
+- OMB M-24-10, M-24-18 (and successor M-25-21, M-25-22)
 - DoD AI Ethical Principles
-- NIST SP 800-171
-- DFARS 252.204-7012
+- NIST SP 800-171 (where CUI is in scope under teaming)
+- DFARS 252.204-7012 (where CUI flow-down applies under teaming)
 
 **Question:** Have you reviewed these requirements?
 
@@ -110,7 +110,7 @@ You are certifying compliance with:
 
 - [ ] You are the Founder & CEO of 12th House AI
 - [ ] You have authority to bind the company to this policy
-- [ ] You understand this will be presented to ISO 42001 auditors
+- [ ] You understand this AIMS may be presented to client evaluators, federal-grant program officers, state agency reviewers, or (if the organization ever elects) ISO 42001 certification body auditors. 12th House AI does **not** currently engage a certification body.
 
 ---
 

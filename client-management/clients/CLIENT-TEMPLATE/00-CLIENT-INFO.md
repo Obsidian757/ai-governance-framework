@@ -18,10 +18,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Service Tier** | [Discovery / Strategic Roadmap / Ultimate Warrior] |
+| **Service Tier** | [Compliance Readiness Assessment / Governance Documentation Pack / Implementation Support] |
 | **Contract Value** | $[AMOUNT] |
 | **Start Date** | [DATE] |
-| **Target Certification** | [DATE] |
+| **Engagement End / Framework-Readiness Milestone** | [DATE] |
+| **Independent ISO 42001 certification?** | ☐ Not pursued (default) ☐ Client electing to pursue with [BSI/DNV/SGS/etc] — 12th House AI does not provide certification services |
 | **Contract Status** | [Signed / In Progress / Pending] |
 
 ---

@@ -33,7 +33,7 @@ _______________________________________________________________________________
 _______________________________________________________________________________
 
 ### 1.3 Third-Party Components
-*List any third-party AI services or models (ElevenLabs, Claude, Vapi, etc.)*
+*List any third-party AI services or models (LLM API providers, voice synthesis platforms, voice agent platforms, multi-model gateways, embedded AI in SaaS). For federal-facing engagements, confirm the provider is federally cleared; for foreign-AI-prohibited engagements, confirm no prohibited foreign-AI component.*
 
 _______________________________________________________________________________
 

@@ -10,10 +10,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Stage | [Discovery/Implementation/Audit Prep/Certification] |
+| Current Stage | [Discovery / Implementation / Internal-Audit-Ready / Client-Engaged Certification (if applicable)] |
 | Overall Progress | [XX]% |
 | Status | [🟢 On Track / 🟡 At Risk / 🔴 Critical] |
-| Target Certification | [DATE] |
+| Engagement-End / Framework-Readiness Milestone | [DATE] |
 
 ---
 

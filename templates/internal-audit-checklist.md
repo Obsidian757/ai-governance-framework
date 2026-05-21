@@ -10,9 +10,9 @@
 |-------|---------|
 | Audit Date | ________________ |
 | Auditor | ________________ |
-| Audit Type | ☐ Initial / ☐ Surveillance / ☐ Recertification |
-| Scope | AI Management System for AI compliance consulting services |
-| Standard | ISO/IEC 42001:2023 |
+| Audit Type | ☐ Initial (internal) / ☐ Annual (internal) / ☐ Pre-certification (only if a client has engaged a certification body) |
+| Scope | AI Management System (AIMS) for the engaged client |
+| Framework | ISO/IEC 42001:2023 (used as the implementation framework — internal audit only unless the client has engaged a certification body) |
 
 ---
 
@@ -352,7 +352,7 @@ Record evidence examined and any observations.
 
 **Overall AIMS Status:** ☐ Effective / ☐ Effective with improvements needed / ☐ Significant gaps requiring attention
 
-**Recommendation for Certification Audit:** ☐ Ready / ☐ Ready with corrective actions / ☐ Not ready
+**Recommendation if the client is considering independent ISO 42001 certification:** ☐ Ready for certification body engagement / ☐ Ready with corrective actions / ☐ Not ready (note: independent certification is optional and client-elected)
 
 **Next Audit Date:** ________________
 

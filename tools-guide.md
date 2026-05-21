@@ -130,8 +130,8 @@ exactly where your compliance gaps are.
 Would you like me to send it over? I can also schedule a 30-min call to 
 walk through your results.
 
-I'm the first DoD-cleared consultant with ISO 42001 certification—
-happy to share my compliance mapping framework.
+I'm a DoD-cleared, veteran-owned consultant working on AI governance
+using the ISO 42001 framework — happy to share my compliance-mapping work.
 
 Brannon
 12th House AI
@@ -149,16 +149,17 @@ Brannon
 ## Competitive Advantages
 
 ### What Competitors Offer:
-- Generic ISO 42001 consulting (no federal context)
-- NIST AI RMF only (no certification path)
+- Generic ISO 42001 consulting (no federal or vertical-compliance context)
+- NIST AI RMF only (no framework integration)
 - Big 4 firms (9+ month timelines, $500K+ budgets)
 
 ### What 12th House AI Offers:
-- **ISO 42001 + NIST AI RMF hybrid** (only one doing both)
-- **Federal-specific expertise** (OMB memo deep dive, DoD clearance)
+- **ISO 42001-aligned + NIST AI RMF integrated**
+- **Vertical-compliance literacy** (HUD HMIS, Title IV-E, USDA TEFAP, FERPA, VCDPA, VAWA — not just abstract ISO clauses)
+- **Federal-aware expertise** (OMB memos, DoD-cleared founder under teaming arrangements)
 - **90-day implementation** (vs. 9 months)
-- **Tools & IP** (inventory template, compliance mapping—nobody else has this)
-- **Early-adopter posture** (full AIMS package published; organizational ISO 42001 certification in progress)
+- **Tools and templates** (inventory template, compliance mappings — all published in the public repo)
+- **Honest posture** (full AIMS package published; ISO 42001 organizational certification **not held and not pursued** — framework used as the implementation spine)
 
 ### Pricing Differentiation
 

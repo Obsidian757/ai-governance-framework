@@ -14,10 +14,12 @@ This document maps **ISO/IEC 42001:2023** (AI Management Systems) to federal AI 
 - **Executive Order 14179:** Removing Barriers to American Leadership in AI (Trump Administration)
 
 **Why This Matters:**
-Federal contractors face overlapping AI compliance requirements. ISO 42001 provides a unified governance framework that addresses all federal mandates. This mapping shows exactly how ISO 42001 certification satisfies OMB and EO requirements.
+Federal contractors and federal-funds recipients face overlapping AI compliance requirements. The ISO/IEC 42001:2023 framework provides a unified governance structure that addresses all federal mandates. This mapping shows exactly how an ISO 42001-aligned AIMS satisfies OMB and EO requirements.
+
+**Framing note.** 12th House AI uses ISO/IEC 42001:2023 as the implementation framework for client AIMS work. We do not represent that this repository, or any deliverable produced from it, is independently certified to ISO/IEC 42001:2023.
 
 **Key Insight:**
-ISO 42001 is **more comprehensive** than any single federal requirement. Achieving ISO 42001 certification means you exceed minimum federal standards.
+The ISO 42001 framework is **more comprehensive** than any single federal requirement. Aligning to ISO 42001 means a federal contractor or grantee exceeds minimum federal standards across NIST AI RMF, OMB M-24-10 / M-24-18, and successor M-25-21 / M-25-22.
 
 ---
 
@@ -281,10 +283,10 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 - Free to download and implement
 - Not certifiable (self-attestation)
 
-### ISO 42001:2023 (Paid, Internationally Recognized)
+### ISO 42001:2023 (Internationally Recognized Framework)
 - Formal management system structure
-- Certifiable by third-party auditors
-- External credibility and validation
+- Audit-ready: can be assessed by third-party auditors if a client chooses to pursue certification (12th House AI does not provide certification services and is not itself certified)
+- External credibility and validation when paired with an independent audit
 - Enterprise governance framework
 - Global applicability
 
@@ -300,9 +302,9 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 
 **Why this works:**
 - Satisfies OMB M-25-21 requirement for NIST alignment
-- Provides certifiable compliance via ISO 42001
+- Builds an AIMS the client *could* take to an independent ISO 42001 auditor if they later choose certification
 - Demonstrates both federal and international standards adherence
-- **Competitive advantage:** Few consultants offer integrated ISO + NIST approach
+- **Differentiator:** Integrated ISO 42001-aligned + NIST AI RMF approach calibrated to the client's vertical (nonprofit-grantee, state agency, SMB)
 
 ---
 
@@ -346,16 +348,15 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 3. Implement monitoring and metrics tracking
 4. Train staff on compliance requirements
 
-### Phase 4: Certification (Month 6-9)
-1. Complete ISO 42001 implementation
-2. Conduct internal audit
-3. Engage certification body for ISO 42001 audit
-4. Achieve certification
+### Phase 4: Audit Readiness (Month 6-9) — optional, client-elected
+1. Complete ISO 42001-aligned AIMS implementation
+2. Conduct internal audit against ISO 42001 Annex A
+3. If the client elects to pursue independent certification, engage a third-party certification body directly (12th House AI does not provide certification services)
 
 ### Phase 5: Ongoing Compliance (Continuous)
 1. Quarterly management reviews
-2. Annual surveillance audits (ISO 42001)
-3. Biennial compliance plan updates (OMB M-25-21)
+2. Annual internal audit cycle
+3. Biennial compliance plan updates (OMB M-25-21 successor)
 4. Continuous NIST AI RMF risk assessments
 
 ---
@@ -394,7 +395,7 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 - [ ] AI lifecycle process documented
 - [ ] Internal audits conducted quarterly
 - [ ] Management reviews conducted quarterly
-- [ ] Certification achieved (or in progress)
+- [ ] Independent ISO 42001 certification — *optional, client-elected*; mark as "Not pursued" if it is not part of the client's procurement strategy
 
 ---
 
@@ -404,9 +405,9 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 - ISO 42001 covers OMB M-25-21, M-25-22, and EO 14110 requirements in one system
 - Reduces compliance burden compared to managing multiple frameworks separately
 
-**2. External Validation**
-- Third-party ISO certification provides proof of compliance
-- Stronger than self-attestation for federal procurement
+**2. Independently Auditable**
+- A client who later elects independent ISO 42001 certification will already have the AIMS in place; certification is an option, not a requirement, and is pursued directly by the client with a certification body.
+- Even without certification, an ISO 42001-aligned AIMS is stronger than ad-hoc self-attestation for federal procurement.
 
 **3. Competitive Advantage**
 - Early adopter status (standard published Dec 2023)
@@ -414,7 +415,7 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 - Demonstrates commitment to AI excellence
 
 **4. Contract Flow-Down Ready**
-- When primes require AI compliance from subs, ISO cert satisfies requirement
+- When primes require AI compliance from subs, an ISO 42001-aligned AIMS provides a defensible governance record
 - Pre-built governance structure adapts quickly to new mandates
 
 **5. Risk Mitigation**
@@ -442,13 +443,13 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 3. Develop compliance roadmap with 90-day implementation cycles
 
 **Long-Term (6-12 Months):**
-1. Implement ISO 42001 + NIST AI RMF hybrid framework
-2. Pursue ISO 42001:2023 certification
-3. Update all federal proposals/RFPs with compliance credentials
+1. Implement ISO 42001-aligned + NIST AI RMF hybrid framework
+2. Decide whether independent ISO 42001 certification is worth the cost for your procurement strategy (12th House AI does not provide certification services)
+3. Update all federal proposals/RFPs with the compliance evidence the AIMS produces
 
 **Contact 12th House AI:**
 - Federal AI Compliance Readiness Assessment — Discovery and Strategic Roadmap tiers
-- ISO 42001 Implementation — Strategic Roadmap and Ultimate Warrior tiers
+- ISO 42001-aligned AIMS implementation — via teaming for federal-direct work
 - Pricing provided per RFP, per teaming agreement, or on direct request
 - Email: info@12thhouseai.com
 

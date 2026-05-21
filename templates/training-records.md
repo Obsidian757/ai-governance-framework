@@ -20,13 +20,13 @@ This template tracks all training activities related to AI governance, complianc
 | Jan 2026 | OMB M-25-21/M-25-22 Analysis | Self | Research | 8 | Federal AI governance, procurement requirements | No (research) |
 | Jan 2026 | Federal AI Compliance Mapping | Self | Development | 12 | ISO to OMB mapping, EO 14110 requirements | No (internal) |
 | 2025 | Cybersecurity Awareness (DoD) | DoD | Annual required | 2 | Phishing, data protection, incident reporting | Yes |
-| 2025 | Claude API Best Practices | Anthropic | Vendor | 4 | Prompt engineering, API integration, safety | Yes |
+| 2025 | LLM API Best Practices (enterprise LLM vendor) | LLM vendor | Vendor training | 4 | Prompt engineering, API integration, safety | Yes |
 | 2025 | ElevenLabs Voice AI | ElevenLabs | Vendor | 4 | Voice synthesis, API, voice cloning ethical use | Yes |
 | 2024 | NIST AI RMF Overview | NIST | Self-paced | 8 | Govern, Map, Measure, Manage functions | Yes |
 | 2024 | Azure AI Fundamentals | Microsoft | Online course | 8 | Azure Cognitive Services, ML basics | Yes |
 | 2024 | DFARS/CMMC Requirements | Industry | Conference | 8 | CUI protection, contractor requirements | Attendance cert |
 | 2023 | Federal Contracting | SBA | Training | 16 | FAR, proposal writing, compliance | Yes |
-| 2023 | 8(a) Business Development | SBA | Program | 8 | Small business contracting, certifications | Yes |
+| 2023 | Small Business Contracting (SBA) | SBA | Program | 8 | Federal small-business contracting basics, set-aside categories | Yes |
 
 ---
 
@@ -38,8 +38,8 @@ This template tracks all training activities related to AI governance, complianc
 | Q1 | Privacy/Data Protection Fundamentals | Various | 8 | Medium | Planned |
 | Q2 | HIPAA for AI Applications | Online | 8 | Medium | Planned |
 | Q2 | Bias/Fairness in AI Systems | Online | 4 | Medium | Planned |
-| Q3 | CMMC Registered Practitioner (RP) | Accredited | 40 | Medium | Planned |
-| Q4 | CISM Preparation | Self-study | 100 | Low | Considering |
+| ~~Q3~~ | ~~CMMC Registered Practitioner (RP)~~ | — | — | — | **Withdrawn from roadmap.** 12th House AI is not pursuing CMMC RP. |
+| ~~Q4~~ | ~~CISM Preparation~~ | — | — | — | **Withdrawn from roadmap.** |
 
 ---
 
@@ -112,7 +112,7 @@ All training certificates stored in:
 |-------------|--------|------------|------------|---------------|
 | NIST AI RMF Overview | NIST | 2024 | None | /credentials/training/nist-ai-rmf.pdf |
 | Azure AI Fundamentals | Microsoft | 2023 | None | /credentials/training/azure-ai-fundamentals.pdf |
-| Claude API Completion | Anthropic | 2025 | None | /credentials/training/anthropic-api.pdf |
+| Enterprise LLM API Completion | LLM vendor | 2025 | None | /credentials/training/llm-api.pdf |
 | Federal Contracting | SBA | 2023 | None | /credentials/training/sba-contracting.pdf |
 | DoD Cyber Awareness | DoD | 2025 | Dec 2025 | /credentials/training/dod-cyber-2025.pdf |
 
@@ -127,7 +127,7 @@ For learning activities that don't have formal certificates:
 | Jan 2026 | ISO 42001:2023 standard | 10 | ISO standard document, articles | Documentation created (gap analysis, policy) |
 | Jan 2026 | OMB memo analysis | 8 | Federal Register, OMB.gov | Compliance mapping guide created |
 | Jan 2026 | Voice AI architecture | 6 | ElevenLabs docs, Vapi docs | VoiceGuard improvements |
-| Ongoing | Claude capabilities | 40+ | Daily use, experimentation | Productivity gains, workflow automation |
+| Ongoing | Frontier LLM capabilities | 40+ | Daily use, experimentation across multiple LLM providers | Productivity gains, workflow automation |
 | 2025 | Federal AI landscape | 20+ | Research, conferences, network | Client consultations, frameworks |
 
 ---

@@ -6,9 +6,11 @@
 
 ## Who We Are
 
-12th House AI is a **founder-led** federal and Commonwealth of Virginia AI compliance consulting practice based in Hampton Roads, Virginia. We help defense contractors, federal agencies, and Commonwealth of Virginia executive branch agencies plan for, govern, and document AI systems that meet federal and state regulatory requirements.
+12th House AI is a **founder-led, veteran-owned** AI governance and workflow-automation consulting practice based in Hampton Roads, Virginia. Our primary 2026 lane is **nonprofit and state/local government** in Virginia, with SMB workflow automation alongside, and federal work performed only via teaming with credentialed primes.
 
-We are a new practice. We do not claim a long list of past engagements we have not performed. Our credibility comes from published source-of-truth artifacts — including this AIMS package, our ISO 42001 ↔ federal control mapping, and our ISO 42001 ↔ Virginia EO-30 / VITA / EA-225 mapping — not from manufactured testimonials.
+We help our clients plan for, govern, and document AI systems that meet the federal, state, and vertical-specific regulatory requirements that apply to them — NIST AI RMF, OMB M-24-10 / M-24-18 (where federal funds flow), Virginia EO 30 / VITA Policy Standard / EA-225, VCDPA, HUD HMIS, Title IV-E, USDA TEFAP, FERPA, COPPA, VAWA, and others as applicable.
+
+We are a new practice. We do not claim a long list of past engagements we have not performed. Our credibility comes from published source-of-truth artifacts — including this AIMS package, our framework crosswalks, and our published deliverable templates — not from manufactured testimonials.
 
 ---
 
@@ -31,15 +33,17 @@ Every engagement has a named owner. Every recommendation is traceable to a docum
 
 ---
 
-## Our Certifications & Credentials
+## Our Credentials &amp; Framework Posture
 
-| Credential | Status |
+| Credential / Framework | Status |
 |---|---|
 | DoD Secret Clearance | Active |
+| Veteran-owned (founder, U.S. Navy 20+ years) | Confirmed |
 | NIST AI Risk Management Framework — implementation experience | Active practitioner; no formal NIST certification exists |
-| ISO/IEC 42001:2023 (organizational) | **In progress** — full AIMS documentation set authored; Stage 2 audit date will be published once confirmed |
+| ISO/IEC 42001:2023 | **Used as the implementation framework for our AIMS.** We are **not** certified and are **not pursuing** organizational certification. |
+| Virginia SWaM application #845183 | In process — not yet active |
 
-We do not currently hold, and are not currently pursuing, a CMMC Registered Practitioner (RP) credential or any other CMMC certification. We will update this statement if that changes.
+**Explicitly NOT held and NOT pursuing:** SDVOSB / VOSB / 8(a) / HUBZone / WOSB / CMMC Registered Practitioner or any CMMC certification / FedRAMP / ISO 42001 organizational certification. We will update this statement if that changes.
 
 ---
 
@@ -68,7 +72,7 @@ These cadences are designed *into client engagements* per scope; they are not bl
 
 ## Third-Party AI Tooling We Use Internally
 
-For our own internal work, we use industry-recognized AI platforms (Claude, Microsoft Azure AI, and others) under those vendors' standard enterprise terms. We do not share client confidential data with third-party AI without explicit consent and contractual basis.
+For our own internal work, we use industry-recognized large language model platforms and cloud AI services under those vendors' standard enterprise terms. We do not share client confidential data with third-party AI without explicit consent and contractual basis. The specific LLM provider in use for any client engagement is disclosed in the engagement-specific Vendor Management record and is selected to be compatible with that engagement's regulatory posture (for federal-facing work, we select federally-cleared providers; for foreign-AI-prohibited engagements, we exclude prohibited vendors).
 
 ---
 
@@ -100,4 +104,10 @@ Founder, 12th House AI
 
 ---
 
-*For detailed operational procedures, see our AIMS package at https://github.com/Obsidian757/iso-42001-certification.*
+*For detailed operational procedures, see our AIMS package at https://github.com/Obsidian757/iso-42001-certification. The repository name is historical; the package is an ISO 42001-aligned AIMS, not an ISO 42001 certification artifact.*
+
+---
+
+## AI Provenance Disclosure
+
+Portions of this statement were drafted with the assistance of large language models under human review. The author named below is accountable for every word. No AI system in our workflow makes consequential client-facing decisions without a human-in-the-loop checkpoint.

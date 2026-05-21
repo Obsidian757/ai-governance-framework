@@ -191,7 +191,7 @@ Specifically it covers:
 | Disclaimer on AI outputs | ISO 8.7 transparency control |
 | Ongoing performance monitoring | ISO 9.1 + EA-225 metrics |
 
-**ISO 42001 benefit.** A certified AIMS produces the exact evidence packet a Commonwealth agency or cooperative-procurement lead reviewer expects to see: documented approval, impact assessment, traceability, monitoring, and vendor due diligence.
+**ISO 42001 benefit.** An ISO 42001-aligned AIMS produces the exact evidence packet a Commonwealth agency or cooperative-procurement lead reviewer expects to see: documented approval, impact assessment, traceability, monitoring, and vendor due diligence. (Independent ISO 42001 certification is optional and is pursued directly by the client with a certification body if desired; it is not required for the AIMS to produce this evidence.)
 
 ---
 

@@ -1,12 +1,14 @@
-# ISO 42001:2023 Explained Like You're in 10th Grade
+# ISO 42001:2023 Explained Plainly
 
 ## What Is ISO 42001?
 
-**Simple version:** It's a rulebook that proves your company uses AI responsibly and safely.
+**Simple version:** It's an international framework for proving an organization uses AI responsibly and safely.
 
-**Why it matters:** When clients ask "How do I know your AI won't leak my data or make biased decisions?", you can say "We're ISO 42001 certified—an independent auditor checked our work."
+**Why it matters:** When stakeholders, funders, or evaluators ask "How do I know your AI won't leak our data or produce biased outputs?", an organization that has built an AIMS aligned to ISO 42001 can point to documented controls, impact assessments, vendor due diligence, monitoring, and incident response — and (if the organization elects) an independent third-party audit on top.
 
-Think of it like a health inspection for restaurants, but for AI systems.
+**12th House AI's stance:** We use the ISO 42001 framework as the *implementation spine* for the AIMS in this repository and for client AIMS work. **We are not ISO 42001 certified and we are not pursuing organizational certification.** Independent certification is an optional, client-elected step pursued with a certification body — not a 12th House AI service offering and not a claim we make.
+
+Think of it like a health-inspection rubric for AI systems. We use the rubric. We do not claim to hold the inspector's certificate.
 
 ---
 
@@ -68,7 +70,7 @@ Think of it like a health inspection for restaurants, but for AI systems.
 
 **For 12th House AI:**
 - ✅ Your expertise: 20 years DoD, Master's degree, NIST AI RMF knowledge
-- ✅ Tech stack: Claude, ElevenLabs, Vapi, Azure, n8n
+- ✅ Tech stack: large language model API access, voice/AI APIs, Azure cloud, n8n automation (specific vendors documented in the Vendor Management record on a per-engagement basis)
 - **TODO:** Document your training/credentials
 - **TODO:** Create communication templates
 
@@ -85,7 +87,7 @@ Think of it like a health inspection for restaurants, but for AI systems.
 
 **For 12th House AI:**
 - ✅ You have frameworks: 5% Framework, Mission Planning
-- ✅ You use third-party AI: ElevenLabs, Claude, OpenRouter
+- ✅ You use third-party AI: documented per engagement under the Vendor Management Procedure, with vendor selection calibrated to the engagement's regulatory posture (federally-cleared providers for federal-facing work, foreign-AI-excluded vendors where applicable)
 - **TODO:** Document lifecycle steps for VoiceGuard deployments
 - **TODO:** Create vendor management process
 
@@ -173,11 +175,11 @@ Auditor verifies you actually *do* what your documents say.
 
 ---
 
-### After Certification
+### After Independent Certification (optional, client-elected)
 
-You get a 3-year certificate. Every year, a surveillance audit checks you're still compliant.
+If a client elects to pursue independent certification, they receive a 3-year certificate from the certification body. Every year a surveillance audit checks that the AIMS is still operating. 12th House AI does not provide certification services.
 
-**Annual work:** ~1 day prep + 2-hour audit
+**Annual work (for organizations that choose certification):** ~1 day prep + 2-hour audit
 
 ---
 
@@ -202,10 +204,10 @@ Based on your context doc, here's where you stand:
 
 ## Simple 4-Week Checklist
 
-**Week 1:** Write all the policies and procedures (AI can draft, you edit)
-**Week 2:** Gather evidence (screenshot your VoiceGuard process, document client work)
+**Week 1:** Write all the policies and procedures (AI can draft, you edit — under human review)
+**Week 2:** Gather evidence (document your processes, archive client work)
 **Week 3:** Run internal audit (check your own work against requirements)
-**Week 4:** External audit (certification body validates everything)
+**Week 4 (optional, client-elected):** External audit by an independent certification body — only if the client has decided independent ISO 42001 certification is warranted for their procurement strategy
 
 **Each week = ~15-20 hours work with AI assistance**
 

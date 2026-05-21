@@ -221,7 +221,7 @@ Based on your inventory, here's what to prioritize:
 ### Long-Term (6-12 Months)
 
 **For mature AI governance:**
-1. Pursue ISO 42001:2023 certification for competitive advantage
+1. Build an AIMS aligned to the ISO/IEC 42001:2023 framework. Pursue independent certification only if a procurement strategy specifically requires it.
 2. Build AI Center of Excellence or assign AI governance owner
 3. Implement continuous AI monitoring and performance tracking
 4. Establish AI ethics and responsible AI principles
@@ -232,19 +232,19 @@ Based on your inventory, here's what to prioritize:
 
 **Consider AI compliance consulting if:**
 - ☐ You identified 3+ high-priority AI systems
-- ☐ You have federal contracts requiring OMB/NIST compliance
-- ☐ You have regulated data (CUI, PHI, PII) in AI systems
+- ☐ You have federal contracts or federal grant funding subjecting you to OMB/NIST flow-down
+- ☐ You have regulated data (CUI, PHI, PII, HMIS, Title IV-E, FERPA, etc.) in AI systems
 - ☐ You discovered significant shadow IT usage
 - ☐ You're planning major AI investments or deployments
-- ☐ You need ISO 42001 certification for contracts
+- ☐ You need an ISO 42001-aligned AIMS for procurement evidence
 - ☐ You don't have internal AI governance expertise
 
 **12th House AI can help with:**
-- Federal AI compliance readiness assessments (OMB, NIST, DFARS)
-- ISO 42001:2023 certification preparation
+- AI compliance readiness assessments (federal OMB/NIST flow-down, Virginia EO 30 / VITA / EA-225, VCDPA, vertical-specific federal regimes such as HUD HMIS, Title IV-E, USDA TEFAP, FERPA/COPPA, VAWA)
+- ISO 42001-aligned AIMS implementation (framework-based, not certification preparation — certification is optional and client-elected)
 - AI governance framework implementation (90-day cycles)
-- VoiceGuard deployment for compliant voice AI
-- Executive training and AI upskilling
+- Workflow-automation deployments with human-in-the-loop checkpoints
+- Executive briefings and staff AI upskilling
 
 **Contact:** info@12thhouseai.com
 
@@ -269,17 +269,17 @@ Don't forget to include these often-overlooked AI tools:
 
 ---
 
-## Example: Completed Inventory Entry
+## Example: Completed Inventory Entry (illustrative)
 
-**AI System Name:** ChatGPT (Staff Use)
+**AI System Name:** Consumer-grade LLM chat assistant (staff personal-account use) — **example only**
 
 **Category:** ☑ Productivity Tool
 
-**Vendor/Provider:** OpenAI
+**Vendor/Provider:** Free-tier consumer LLM service
 
 **Who Uses It?** ☑ Sales/Marketing ☑ Operations ☑ All Staff
 
-**What does it do?** Staff use ChatGPT to draft emails, summarize documents, brainstorm ideas, and research topics
+**What does it do?** Staff use a consumer LLM to draft emails, summarize documents, brainstorm ideas, and research topics
 
 **Data Access:** ☑ Company internal documents ☑ Customer data (PII) ← **RISK!**
 
@@ -287,14 +287,14 @@ Don't forget to include these often-overlooked AI tools:
 
 **Contract:** ☑ Free/Consumer version ← **RISK!**
 
-**Compliance Needs:** ☑ OMB M-25-21 (we're a federal contractor) ☑ ISO 42001 (pursuing certification)
+**Compliance Needs:** ☑ OMB M-24-10 / M-25-21 flow-down (we're a federal grantee) ☑ ISO 42001-aligned AIMS in development
 
 **Risk Score:** Impact (2) + Data (3) + Users (3) = **8 / 9** → **HIGH PRIORITY**
 
 **Priority:** ☑ High
 
 **Action Needed:**
-1. Purchase ChatGPT Team or Enterprise with Business Associate Agreement
+1. Move to an enterprise-tier LLM with a DPA (and BAA if PHI is in scope)
 2. Establish data handling policy (no CUI, no customer PII in prompts)
 3. Train staff on acceptable use
 4. Set up audit logging

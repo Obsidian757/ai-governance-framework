@@ -48,24 +48,26 @@ This register identifies all stakeholders relevant to 12th House AI's AI Managem
 |-------------|--------------|---------------------|-------------------|-----------|
 | **NavalX** | Innovation partner | Defense AI innovation, compliance, technology transfer | Partner meetings, joint proposals | Monthly |
 | **757 Collab** | Regional network | Regional AI ecosystem, collaboration opportunities | Networking events, referrals | Quarterly |
-| **Certification Bodies** | BSI, DNV, SGS | ISO 42001 conformance, audit readiness | Audit preparation, surveillance audits | Annual |
+| **Certification Bodies (BSI, DNV, SGS, etc.)** | External | Only engaged if a client elects to pursue independent ISO 42001 certification | As-needed; not on the 12th House AI default vendor list | As-needed |
 | **Legal Counsel** | TBD | Contract review, liability, compliance guidance | As needed consultations | As needed |
 
 ---
 
 ### 4. Third-Party AI Vendors
 
-| Vendor | Service | AI-Related Interests | Engagement Method | Frequency |
-|--------|---------|---------------------|-------------------|-----------|
-| **Anthropic (Claude)** | LLM API | Data protection, service reliability, API performance | Vendor portal, support tickets | Monthly review |
-| **ElevenLabs** | Voice synthesis | Voice data security, bias prevention, uptime | Dashboard monitoring, support | Monthly review |
-| **Vapi** | Voice agent platform | Integration reliability, data handling, compliance | Dashboard, technical support | Monthly review |
+Specific vendor identities are recorded in the engagement-specific Vendor Management record; the category-level view below shows the kinds of vendors that appear in our stakeholder register.
+
+| Vendor Category | Service | AI-Related Interests | Engagement Method | Frequency |
+|---|---|---|---|---|
+| **Enterprise LLM API provider** | LLM API | Data protection, service reliability, API performance | Vendor portal, support tickets | Monthly review |
+| **Voice synthesis platform** | Voice synthesis | Voice data security, bias prevention, uptime | Dashboard monitoring, support | Monthly review |
+| **Voice agent platform** | Voice agent platform | Integration reliability, data handling, compliance | Dashboard, technical support | Monthly review |
 | **Microsoft Azure** | Cloud AI services | Security, compliance (FedRAMP), data residency | Enterprise agreement, support | Quarterly review |
-| **OpenRouter** | Multi-model gateway | Service availability, data handling | Standard support | As needed |
+| **Multi-model API gateway** | Multi-model gateway | Service availability, data handling | Standard support | As needed |
 
 **Vendor Requirements from 12th House AI:**
 - Comply with Data Processing Agreements
-- Maintain security certifications (SOC 2)
+- Maintain independent security audits (e.g., SOC 2 Type II)
 - Provide incident notification within 72 hours
 - Support audit requests
 
@@ -78,8 +80,8 @@ This register identifies all stakeholders relevant to 12th House AI's AI Managem
 | **Office of Management and Budget (OMB)** | Federal | M-25-21, M-25-22 compliance | Policy monitoring, compliance documentation | Ongoing |
 | **NIST** | Federal | AI RMF adoption, standards compliance | Framework implementation, updates monitoring | Ongoing |
 | **Department of Defense** | Federal/Defense | AI security, ethical AI principles, CMMC | Contract compliance, DoD guidance monitoring | Per contract |
-| **CyberAB** | CMMC ecosystem | CMMC RP compliance, practitioner standards | Certification maintenance | Annual |
-| **ISO/IEC** | International | 42001 standard compliance | Certification audits | Annual |
+| **CyberAB** | CMMC ecosystem | Not currently in scope (12th House AI is not CMMC RP) | Monitoring only | As-needed |
+| **ISO/IEC** | International | 42001 framework alignment | Framework standards monitoring | Ongoing |
 | **HHS/OCR** | Healthcare | HIPAA compliance for healthcare AI | Compliance documentation | Per engagement |
 | **Department of Education** | Education | FERPA compliance for education AI | Compliance documentation | Per engagement |
 

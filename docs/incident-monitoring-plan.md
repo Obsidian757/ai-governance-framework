@@ -58,7 +58,7 @@ This plan covers all AI systems in scope of the AIMS:
 **Tools Used:**
 - AWS CloudTrail & CloudWatch
 - RMF Navigator Admin Dashboard
-- Anthropic Console (Claude API usage/performance)
+- Enterprise LLM API provider console (LLM API usage and performance)
 
 ---
 
@@ -167,7 +167,7 @@ This plan covers all AI systems in scope of the AIMS:
 
 1. **Immediate (0-5 min):**
    - Verify system status via monitoring dashboards
-   - Check third-party service status (Vapi, ElevenLabs, Anthropic)
+   - Check third-party service status (voice agent platform, voice synthesis platform, LLM API provider — vendor identities per engagement Vendor Management record)
    - Notify team via Slack #ai-incidents
 
 2. **Short-term (5-30 min):**
@@ -266,7 +266,7 @@ This plan must be updated when:
 | Better Uptime | Status page monitoring | https://betteruptime.com | AI Engineer |
 | AWS CloudWatch | Infrastructure metrics | AWS Console | AI Engineer |
 | AWS CloudTrail | Security auditing | AWS Console | AI Engineer + CTO |
-| Anthropic Console | Claude API usage | https://console.anthropic.com | AI Engineer |
+| Enterprise LLM API provider console | LLM API usage | Vendor-specific (per engagement Vendor Management record) | AI Engineer |
 | UptimeRobot | API endpoint monitoring | https://uptimerobot.com | AI Engineer |
 
 ---

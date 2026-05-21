@@ -191,19 +191,21 @@ For production AI systems:
 **Approved environments for AI data processing:**
 
 | Environment | Data Classifications Allowed | Notes |
-|-------------|------------------------------|-------|
+|---|---|---|
 | Local development machine | Public, Internal | No client or regulated data |
-| Claude (Anthropic - Business) | Public, Internal, Confidential | Enterprise DPA required |
-| ElevenLabs (Business) | Public, Internal, Confidential | Enterprise DPA required |
-| Vapi (Business) | Public, Internal, Confidential | DPA required |
-| Azure AI (Commercial) | Public, Internal, Confidential | Commercial cloud |
-| Azure GovCloud (IL5) | All except Classified | FedRAMP High, DoD CC SRG IL5 |
-| OpenRouter | Public only | No sensitive data |
+| Enterprise LLM API (federally-cleared provider) | Public, Internal, Confidential | Enterprise DPA required; provider selection driven by engagement regulatory posture |
+| Voice synthesis platform (enterprise tier) | Public, Internal, Confidential | Enterprise DPA required |
+| Voice agent platform (enterprise tier) | Public, Internal, Confidential | DPA required |
+| Microsoft Azure AI (Commercial) | Public, Internal, Confidential | Commercial cloud |
+| Microsoft Azure Government (IL5) | All except Classified | FedRAMP High, DoD CC SRG IL5 |
+| Multi-model API gateway | Public only | No sensitive data |
 
 **Prohibited environments:**
-- Free-tier AI services (ChatGPT free, Claude free, etc.) for any client or sensitive data
+- Free-tier consumer LLM services for any client or sensitive data
 - Personal devices for regulated data
 - Non-U.S. data centers for CUI
+- Federally-restricted LLM providers for federal-facing client engagements
+- Foreign-AI-component providers where the engagement procurement terms prohibit them (e.g., Advancing American AI Act §7223 flow-down)
 
 ### 7.2 Data Transformation
 

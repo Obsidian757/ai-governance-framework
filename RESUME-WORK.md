@@ -1,51 +1,19 @@
-# 🔄 How to Resume Work on This Project
+# How to Resume Work on This Repository
 
-Quick guide for continuing development on the ISO 42001 certification package.
+Quick guide for continuing development on the ISO 42001-aligned AIMS package.
 
 ---
 
-## Quick Resume (30 seconds)
+## Quick Resume
 
 ```bash
-# 1. Check what we were doing
+# 1. Check the working tree
 cd ~/Desktop/iso-42001-certification
 git status
 git log --oneline -3
 
-# 2. View current state
-cat ~/.kimi-agent/STATE.md
-
-# 3. Start Kimi with context
-kimi-agent-init
-```
-
----
-
-## Full Resume Routine
-
-### In Your Terminal:
-
-```bash
-# Check pickup summary
-kimi-pickup
-
-# Start Kimi with full context
-kimi-agent-init
-```
-
-### In Kimi Code CLI:
-
-```
-# Load agent context
-ReadFile: path="/Users/brannonsolomon/.kimi-agent/SOUL.md"
-ReadFile: path="/Users/brannonsolomon/.kimi-agent/USER.md"
-ReadFile: path="/Users/brannonsolomon/.kimi-agent/STATE.md"
-
-# Load today's memory
-ReadFile: path="/Users/brannonsolomon/.kimi-agent/memory/2026-01-31.md"
-
-# Or just say:
-"Pick up where we left off. Read my STATE.md and tell me what's next."
+# 2. Re-read the framing
+cat docs/GOVERNANCE-FRAMEWORKS.md | less
 ```
 
 ---
@@ -53,43 +21,47 @@ ReadFile: path="/Users/brannonsolomon/.kimi-agent/memory/2026-01-31.md"
 ## What's In This Repo
 
 | Directory | Purpose | Status |
-|-----------|---------|--------|
-| `docs/` | Core ISO 42001 documentation | ✅ Complete |
-| `templates/` | Reusable templates | ✅ Complete |
-| `marketing/` | Sales & marketing materials | ✅ Complete |
-| `client-management/` | Multi-client tracking system | ✅ Complete |
-| `cmmc-training/` | CMMC + ISO unified offering | ✅ Complete |
+|---|---|---|
+| `docs/` | Core AIMS documentation + framework crosswalks | Maintained |
+| `templates/` | Reusable templates | Maintained |
+| `marketing/` | Capability statement | Maintained |
+| `client-management/` | Multi-client engagement scaffolding (templates only — no live clients) | Maintained |
+| `evidence/` | Audit-trail artifacts | Maintained |
 
 ---
 
 ## Common Tasks
 
-### Add New Client
+### Add a new client folder
+
 ```bash
 cp -r client-management/clients/CLIENT-TEMPLATE \
       client-management/clients/[client-name]
 ```
 
-### Update GitHub
+### Commit and push
+
 ```bash
 git add -A
 git commit -m "Description"
 git push
 ```
 
-### Check Client Status
-```
-ReadFile: path="client-management/MASTER_TRACKING.md"
-```
+### Check client status
+
+Open `client-management/MASTER_TRACKING.md`.
 
 ---
 
-## Need Help?
+## Framing reminders (do not regress)
 
-- **Quick commands:** `kimi-help`
-- **Agent status:** `kimi-status`
-- **Full pickup guide:** `cat ~/.kimi-agent/PICKUP.md`
+- ISO 42001 is the **implementation framework**. Not a certification claim. Not pursued.
+- Veteran-owned. **Not** SDVOSB / VOSB / 8(a) / HUBZone / CMMC / FedRAMP.
+- SWaM #845183 **in process**, not active.
+- No name-dropping specific LLM vendors in federally-facing documents. Vendor identities live in the engagement-specific Vendor Management record.
+- Human-in-the-loop on every consequential AI-driven recommendation.
+- AI provenance disclosure stays in.
 
 ---
 
-*This project uses the Kimi Agent system for persistent context*
+*Drafted with LLM assistance under human editorial control.*

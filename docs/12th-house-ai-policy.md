@@ -95,7 +95,7 @@ This policy aligns with:
 
 ### 4.3 Technical Lead (Brannon Solomon)
 - Implementation of AI technical controls
-- Selection and management of third-party AI vendors (ElevenLabs, Vapi, Claude, etc.)
+- Selection and management of third-party AI vendors (LLM API providers, voice synthesis, voice agent platforms, cloud AI services; specifics recorded per engagement)
 - Security hardening of AI systems
 - Technical documentation and knowledge management
 
@@ -111,7 +111,7 @@ This policy aligns with:
 
 With a single individual holding all governance roles, 12th House AI implements the following controls to prevent self-audit bias and ensure objective oversight:
 
-- **External Annual Audit:** Engage an independent third party (e.g., ISO certification body, external consultant) to conduct annual AIMS audits
+- **External Annual Audit:** Engage an independent third party (an external consultant qualified to audit against the ISO 42001 framework, or an ISO 42001 certification body if a client engagement ever requires formal certification) to conduct annual AIMS audits
 - **Client Feedback Loop:** Collect and review client feedback on AI governance practices as an independent validation mechanism
 - **Documented Decision Rationale:** All risk acceptance decisions, policy exceptions, and incident resolutions require written justification that can be reviewed by external parties
 - **Peer Review Network:** Participate in industry peer reviews through NavalX, 757 Collab, or similar professional networks to obtain external perspective on governance practices
@@ -138,7 +138,7 @@ With a single individual holding all governance roles, 12th House AI implements 
 
 ### 5.3 Market Leadership
 - **Thought Leadership:** Publish AI governance insights via LinkedIn, blogs, and workshops
-- **Certification Excellence:** Maintain ISO 42001, pursue additional credentials
+- **Framework Discipline:** Maintain ISO 42001-aligned AIMS under change control (organizational certification not pursued; framework adherence is the standard)
 - **Partner Ecosystem:** Strengthen relationships with NavalX, 757 Collab, and federal agencies
 
 ### 5.4 Ethical Standards
@@ -226,7 +226,7 @@ All identified AI risks are logged in the AI Risk Register (see `evidence/ai-ris
 
 ## 8. Third-Party AI Management
 
-12th House AI uses third-party AI technologies (e.g., Claude, ElevenLabs, Vapi, OpenRouter, Azure AI). All third-party AI is managed as follows:
+12th House AI uses third-party AI technologies (large language model APIs, voice synthesis platforms, voice agent platforms, multi-model gateways, cloud AI services). Specific vendor identities are recorded under change control in the Vendor Management record and are selected per engagement to satisfy that engagement's regulatory posture (federally-cleared providers for federal-facing work, foreign-AI-excluded vendors where prohibited). All third-party AI is managed as follows:
 
 ### 8.1 Vendor Selection Criteria
 - **Compliance:** Vendor meets SOC 2, GDPR, or equivalent standards
@@ -458,4 +458,5 @@ Date: ________________
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | Feb 1, 2026 | Brannon Solomon | Initial policy established for ISO 42001 certification |
+| 1.0 | Feb 1, 2026 | Brannon Solomon | Initial policy established under the ISO 42001 implementation framework |
+| 1.1 | May 21, 2026 | Brannon Solomon | Reframed: ISO 42001 used as the implementation framework for the AIMS; organizational certification not claimed and not pursued |

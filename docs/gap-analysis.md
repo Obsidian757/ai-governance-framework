@@ -1,8 +1,8 @@
-# 12th House AI - ISO 42001 Gap Analysis
+# 12th House AI — ISO 42001-Aligned AIMS Gap Analysis
 
 **Assessment Date:** January 31, 2026  
 **Assessor:** Brannon Solomon (Self-Assessment)  
-**Target:** ISO 42001:2023 certification by February 28, 2026
+**Purpose:** Evaluate the 12th House AI internal AIMS against the ISO/IEC 42001:2023 framework as the implementation spine. **No certification is being claimed or pursued.** This document is published as a worked example of the framework — the same kind of gap analysis 12th House AI produces for client engagements.
 
 ---
 
@@ -10,7 +10,7 @@
 
 **Overall Readiness: 65%**
 
-12th House AI has a strong foundation for ISO 42001 certification due to existing NIST AI RMF expertise, operational AI systems (VoiceGuard, RMF Navigator), and deep federal compliance knowledge. Primary gaps are in formal documentation, metrics tracking, and audit processes.
+12th House AI has a strong foundation for ISO 42001-aligned AIMS implementation due to existing NIST AI RMF expertise, operational AI systems, and deep federal/state AI policy knowledge. Primary gaps are in formal documentation, metrics tracking, and audit processes.
 
 **Critical Path Items (Must Complete):**
 1. Document AI lifecycle processes for VoiceGuard/RMF Navigator
@@ -88,7 +88,7 @@
 
 | Sub-requirement | Current State | Gap | Evidence | Action Needed |
 |-----------------|---------------|-----|----------|---------------|
-| 7.1: Resources | ✅ **Strong** - Tech stack (Claude, ElevenLabs, Azure), budget control | None | Tools in use, financial control | Document resource allocation |
+| 7.1: Resources | ✅ **Strong** — Tech stack (enterprise LLM API, voice synthesis, Azure cloud), budget control | None | Tools in use, financial control | Document resource allocation |
 | 7.2: Competence | ✅ **Strong** - 20 years DoD, Master's, NIST expert, security clearance | None | Resume, credentials, clearance | Document competency matrix |
 | 7.3: Awareness | 🟡 **Partial** - Personal knowledge high, no formal training program | Minor | Self-training, research | Create training records |
 | 7.4: Communication | 🟡 **Partial** - Strong external comms (LinkedIn), informal internal | Minor | Thought leadership, client comms | Document communication plan |
@@ -98,7 +98,7 @@
 
 **Priority Actions:**
 1. Create competency matrix documenting skills/credentials
-2. Record training/self-learning activities (Claude usage, research)
+2. Record training/self-learning activities (LLM tool usage, research)
 3. Organize documentation repository
 
 ---
@@ -114,7 +114,7 @@
 | 8.3: Data management | ✅ **Strong** - Understand CUI, PII, HIPAA requirements | Minor | Federal compliance work | Document data governance |
 | 8.4: Data quality | 🟡 **Partial** - Quality considerations in VoiceGuard | **Moderate** | VoiceGuard testing | Document quality criteria |
 | 8.5: AI system development | 🟡 **Partial** - Build VoiceGuard agents, no formal process doc | **High** | VoiceGuard deployments | **Document lifecycle** |
-| 8.6: Third-party relationships | ✅ **Strong** - Use ElevenLabs, Vapi, Claude with awareness | Minor | Vendor selection, usage | Document vendor management |
+| 8.6: Third-party relationships | ✅ **Strong** — Use of LLM API, voice synthesis, voice agent platforms with documented selection criteria | Minor | Vendor selection, usage | Document vendor management |
 
 **Clause 8 Readiness: 60%**
 
@@ -251,7 +251,7 @@ Annex A contains 39 controls. Below is the assessment of applicability and curre
 **Hours:** ~12 hours ✅ COMPLETE
 
 ### Week 3 (Feb 17-23): Monitoring & Audit
-**Critical for Certification:**
+**Critical for AIMS framework alignment:**
 - [x] Define AI Governance Metrics (COMPLETE - Policy Section 12)
 - [x] Set up Metrics Tracking (COMPLETE - `evidence/metrics-tracking.xlsx`)
 - [x] Conduct Internal Audit (COMPLETE - use `templates/internal-audit-checklist.md`)
@@ -262,70 +262,47 @@ Annex A contains 39 controls. Below is the assessment of applicability and curre
 
 **Hours:** ~18 hours (mostly complete, audit execution remaining)
 
-### Week 4 (Feb 24-28): Audit Prep
+### Week 4 (Feb 24-28): Internal Audit Readiness
 **Final Readiness:**
 - [x] Organize all evidence in central repository (`evidence/` folder)
 - [x] Create AIMS document index (COMPLETE - `AIMS-operations-manual.md`)
-- [ ] Prepare certification body briefing materials
+- [ ] Prepare internal-audit briefing materials
 - [ ] Complete any remaining corrective actions
-- [ ] Final management review and sign-off (requires signature)
+- [ ] Final management review and sign-off
 
-**Hours:** ~10 hours (certification body engagement remaining)
+**Hours:** ~10 hours
 
 **Total Estimated Effort:** 55 hours over 4 weeks (~14 hours/week, ~2-3 hours/day)
 
 ---
 
-## Risk Assessment: Can We Hit Feb 28?
+## Decision Point — Pursue Independent Certification?
 
-**Feasibility Analysis:**
-
-| Factor | Assessment | Risk Level |
-|--------|------------|------------|
-| **Documentation Volume** | 55 hours work, AI can draft 70% of it | 🟡 Medium |
-| **Your Domain Expertise** | Extremely strong - know the content, just need to write it down | ✅ Low |
-| **Certification Body Availability** | Unknown - need quotes ASAP | 🔴 High |
-| **Audit Timeline** | Stage 1 + Stage 2 typically 2-4 weeks apart | 🔴 High |
-| **Scope Complexity** | Consulting services + VoiceGuard = moderate scope | 🟡 Medium |
-
-**Overall Risk: High**
-
-**Recommendation:**
-- **Plan A:** Contact certification bodies Monday (Feb 3) and request expedited timeline. If they can schedule Stage 1 by Feb 10 and Stage 2 by Feb 24, Feb 28 is achievable.
-- **Plan B:** If certification bodies can't accommodate, target "ISO 42001 implementation in progress" status by Feb 28, full certification by March 31.
-- **Plan C:** Pursue individual ISO 42001 Lead Implementer certification (PECB 5-day course) while completing organizational cert. Still valuable credential.
+**Decision (revisited May 2026):** 12th House AI is **not** pursuing organizational ISO 42001 certification. The framework is used as the implementation spine for our AIMS and for client AIMS work; independent certification is a client-elected option, not a 12th House AI claim or service offering.
 
 ---
 
-## Competitive Advantage Analysis
+## Differentiators (Honest)
 
-**What You Have That Others Don't:**
+**What 12th House AI brings:**
 
-1. **Deep Federal Knowledge** - Most ISO consultants don't understand OMB memos or DFARS
-2. **Operational AI Systems** - VoiceGuard gives you real implementation evidence
-3. **NIST + ISO Hybrid** - Can offer integrated compliance, not just one framework
-4. **DoD Clearance** - Work on classified AI (competitive moat for defense)
-5. **Rapid Implementation Culture** - 90-day cycles vs. 9-month enterprise timelines
+1. **Practitioner-level NIST AI RMF + ISO 42001 framework knowledge** — translated into deliverables a nonprofit ED or state-agency program manager can act on
+2. **Vertical compliance literacy** — HUD HMIS, Title IV-E, USDA TEFAP, FERPA/COPPA, VCDPA, VAWA — not just abstract ISO clauses
+3. **Active DoD Secret clearance** — for engagements that require it under teaming arrangements
+4. **Rapid implementation cadence** — 90-day cycles, not 9-month enterprise timelines
+5. **Published proof-of-work** — the AIMS in this repository is the same shape we deliver to clients
 
-**Market Positioning Once Certified:**
+**Honest positioning:**
 
-> "The only ISO 42001-certified AI consultant with active DoD clearance and NIST AI RMF expertise, exclusively serving defense contractors in the Hampton Roads region."
-
-**This gap analysis shows you're not starting from scratch - you're translating existing expertise into ISO format.**
+> "Veteran-owned AI governance consultancy that publishes its own AIMS in the open. ISO 42001 framework as the implementation spine; vertical-compliance literacy on top. Not ISO 42001 certified, not SDVOSB, not CMMC."
 
 ---
 
-## Next Steps (Monday, Feb 3)
+## Next Steps (May 2026)
 
-1. **Contact Certification Bodies** - Get expedited quotes from:
-   - BSI: https://www.bsigroup.com/
-   - DNV: https://www.dnv.com/
-   - SGS: https://www.sgs.com/
-   - Request: "ISO 42001 certification for solo AI consultant, target completion Feb 28, 2026. Can you accommodate?"
-
-2. **Create Risk Register** - Start populating with VoiceGuard/client engagement risks
-
-3. **Set Up Documentation Repository** - Centralize all AIMS documents
+1. **Continue client outreach** in the nonprofit and state/local-gov lane.
+2. **Maintain the AIMS** under change control — every published doc is dated and signed.
+3. **Do not pursue independent ISO 42001 certification** unless a specific client engagement requires it and the client funds the certification body engagement directly.
 
 4. **Review Policy** - Read the AI policy created, edit as needed, prepare to sign
 

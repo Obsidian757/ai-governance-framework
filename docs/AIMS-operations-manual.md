@@ -186,7 +186,7 @@ Document Control:
 | ElevenLabs | Voice synthesis | elevenlabs.io | Email/Password |
 | AWS Console | Infrastructure | aws.amazon.com | IAM credentials |
 | Better Uptime | External monitoring | betteruptime.com | Email/Password |
-| Anthropic Console | Claude API usage | console.anthropic.com | Google OAuth |
+| Enterprise LLM API provider console | LLM API usage | Vendor-specific (per engagement) | SSO / OAuth |
 | SurveyMonkey | Client surveys | surveymonkey.com | Email/Password |
 | GitHub | Documentation | github.com | OAuth |
 

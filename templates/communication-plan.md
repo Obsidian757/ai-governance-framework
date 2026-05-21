@@ -60,12 +60,12 @@ This plan defines how 12th House AI communicates about AI governance matters to 
 
 | What | Who | When | How | Owner |
 |------|-----|------|-----|-------|
-| ISO 42001 surveillance audit | Certification body | Annual (scheduled) | Formal audit process | CEO |
-| Compliance documentation | Auditors | Upon request | Document package submission | Compliance Officer |
+| ISO 42001-aligned AIMS internal audit | Internal (or client-elected certification body, if engaged) | Annual | Formal audit process | CEO |
+| Compliance documentation | Evaluators / auditors | Upon request | Document package submission | Compliance Officer |
 | Incident reports (CUI breach) | DoD contracting officer | Within 72 hours | Formal written notification | CEO |
 | HIPAA breach notification | HHS OCR | Within 60 days | HHS breach portal | CEO |
 | Regulatory inquiries | Requesting agency | Per inquiry requirements | Formal written response | CEO |
-| Certification status updates | Certification body | Upon material changes | Written notification | CEO |
+| Status updates to a client-engaged certification body (if applicable) | Certification body | Upon material changes | Written notification | CEO |
 
 ---
 
@@ -87,7 +87,7 @@ This plan defines how 12th House AI communicates about AI governance matters to 
 |------|-----|------|-----|-------|
 | AI Governance Statement | Public/prospects | Published continuously | Website, provided on request | CEO |
 | Thought leadership content | Industry audience | Per content calendar | LinkedIn, blog, workshops | CEO |
-| Certification announcements | Public/prospects | Upon achievement | Press release, LinkedIn, website | CEO |
+| Credential milestone announcements (e.g., SWaM activation when granted; explicitly **not** ISO 42001 certification — not pursued) | Public/prospects | Upon material change | LinkedIn, website | CEO |
 | Speaking engagements | Conference attendees | As scheduled | Presentation materials | CEO |
 | Media inquiries | Journalists | As received | Written response via CEO | CEO |
 
@@ -155,7 +155,7 @@ All significant communications are documented:
 | Month | Key Communications |
 |-------|-------------------|
 | **January** | Q4 governance review results, annual planning |
-| **February** | ISO 42001 certification anniversary (if applicable) |
+| **February** | Annual AIMS framework review (independent ISO 42001 certification anniversary only applicable if the client has engaged a certification body) |
 | **March** | Q1 vendor reviews |
 | **April** | Q1 governance review results |
 | **May** | OMB compliance deadline communications |
@@ -164,7 +164,7 @@ All significant communications are documented:
 | **August** | Annual training reminder |
 | **September** | Q3 vendor reviews |
 | **October** | Q3 governance review results, annual planning kickoff |
-| **November** | CMMC updates communications |
+| **November** | Federal AI policy update communications (OMB, NIST, executive orders) |
 | **December** | Q4 vendor reviews, year-end summary |
 
 ---
