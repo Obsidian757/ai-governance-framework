@@ -63,7 +63,9 @@
 
 ## ENGAGEMENT MODEL
 
-12th House AI works as a **prime** on direct nonprofit and SMB engagements and as a **subcontractor** under partner primes (notably on Commonwealth of Virginia eVA solicitations and the Henrico cooperative master). Pricing is structured per procurement vehicle — fixed-fee, T&M, RFP-defined labor categories, or cooperative master rates — and is provided per RFP, per teaming agreement, or upon direct request.
+12th House AI works as a **prime** on direct nonprofit and SMB engagements and as a **subcontractor** under partner primes on Commonwealth of Virginia eVA solicitations and AI-scoped cooperative master agreements. Pricing is structured per procurement vehicle — fixed-fee, T&M, RFP-defined labor categories, or cooperative master rates — and is provided per RFP, per teaming agreement, or upon direct request.
+
+**Federal partners and clients.** 12th House AI stands ready to support federal partners and clients with AI governance work — NIST AI RMF implementation, OMB M-25-21 / M-25-22 alignment, CUI-handling controls, prime-contractor flow-down compliance, and the federal-contractor system-prompt security controls framework published in this repository. Federal engagements are performed via teaming with credentialed primes; 12th House does not currently hold and is not pursuing CMMC certification, CMMC Registered Practitioner status, FedRAMP authorization, or ISO 42001 organizational certification, and the SDVOSB application (federal, SBA VetCert) is in process pending SAM.gov CAGE-code issuance.
 
 ## SERVICE TIERS — Nonprofit &amp; State/Local Government (primary 2026 lane)
 

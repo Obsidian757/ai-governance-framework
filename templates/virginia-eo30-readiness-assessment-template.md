@@ -18,7 +18,7 @@ This is the deliverable shape for a 12th House AI Virginia EO-30 / VITA / EA-225
 
 - **Executive-branch agencies** subject to Virginia EO-30 (VITA, DVS, VEC, DBHDS, VDOE, and others),
 - **K-12 LEAs, VCCS colleges, and SCHEV-covered institutions** evaluating AI under the Virginia AI Education Guidelines,
-- **Vendors** preparing for eVA solicitations or the Henrico / GovMVMT AI cooperative master agreement who need to demonstrate EO-30 / VITA alignment in their response.
+- **Vendors** preparing for eVA solicitations or AI-scoped Commonwealth cooperative master agreements who need to demonstrate EO-30 / VITA alignment in their response.
 
 Replace every `< >` placeholder. Delete instruction blocks (italicized) before sending the deliverable.
 

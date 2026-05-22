@@ -16,7 +16,7 @@ Specifically it covers:
 - **VITA Enterprise Architecture Standard EA-225 — Enterprise Solutions Architecture for Artificial Intelligence** (v1.2, November 16, 2023).
 - **Guidelines for AI Integration Throughout Education in Virginia** (Office of the Secretary of Education, 2024) — applicable where a Commonwealth or local education client is in scope.
 
-**Why this matters.** Virginia has stood up a parallel — and in some places stricter — AI compliance regime alongside the federal stack. Any vendor doing business with a Commonwealth executive branch agency (eVA procurement, Commonwealth cooperative master agreements such as Henrico/GovMVMT, or state agency direct contracts) is touched by EO-30. A 12th House AI client that has implemented ISO 42001 has already done the majority of the work; this document shows them exactly which existing controls satisfy which Virginia requirement.
+**Why this matters.** Virginia has stood up a parallel — and in some places stricter — AI compliance regime alongside the federal stack. Any vendor doing business with a Commonwealth executive branch agency (eVA procurement, Commonwealth cooperative master agreements for AI services, or state agency direct contracts) is touched by EO-30. A 12th House AI client that has implemented ISO 42001-aligned controls has already done the majority of the work; this document shows them exactly which existing controls satisfy which Virginia requirement.
 
 **Key insight.** EO-30 plus VITA's standards together impose specific *operational* obligations — agency-head approval before AI is used, registration in the Commonwealth Technology Portfolio (CTP / Planview) and Archer, logged decision paths, monitored model performance, public disclaimers on AI-generated outputs, and ethical-use commitments — that ISO 42001 satisfies through Clauses 5–10 and Annex A. The mapping below pins each Virginia obligation to a specific ISO 42001 control.
 
@@ -181,13 +181,13 @@ Specifically it covers:
 
 ### Procurement Path — eVA, Cooperative Master Agreements, Direct Buy
 
-**Virginia requirement.** Any AI procured by a Commonwealth executive branch agency — including through eVA, cooperative master agreements (e.g., the Henrico/GovMVMT $100M cooperative AI master agreement), or direct buy — is in scope of the VITA Policy Standard and EA-225.
+**Virginia requirement.** Any AI procured by a Commonwealth executive branch agency — including through eVA, AI-scoped cooperative master agreements, or direct buy — is in scope of the VITA Policy Standard and EA-225.
 
 | Virginia Procurement Reality | ISO 42001 Solution |
 |---|---|
 | Agency-head approval gating procurement | ISO 5.1 leadership commitment + ISO 8.2 impact assessment evidence packet |
 | Registration in CTP / Planview and Archer | ISO 7.5 documented information + 8.11 traceability |
-| Foreign-AI-component prohibitions in some AI-scoped procurements (e.g., Henrico §VIII.C.14.b under Advancing American AI Act §7223) | ISO 8.6 third-party AI vendor selection + provenance documentation |
+| Foreign-AI-component prohibitions in some Virginia AI-scoped procurements (under Advancing American AI Act § 7223) | ISO 8.6 third-party AI vendor selection + provenance documentation |
 | Disclaimer on AI outputs | ISO 8.7 transparency control |
 | Ongoing performance monitoring | ISO 9.1 + EA-225 metrics |
 
