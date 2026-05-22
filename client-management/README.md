@@ -1,5 +1,9 @@
 # Client Management Scaffolding (ISO 42001-aligned engagements)
 
+> ## ⚡ Scaffolding in place. Ready to deploy.
+>
+> Folder structure, status-tracking templates, weekly-status template, gap-analysis template, audit-readiness checklist, and master-tracking dashboard are **published and ready**. Onboard a client today by copying the `CLIENT-TEMPLATE` folder and filling in the brackets — the entire engagement runs out of this scaffolding from day one.
+
 **Purpose:** Manage multiple client engagements through ISO 42001-aligned AIMS implementation cycles efficiently. (12th House AI does not provide ISO 42001 certification services; this scaffolding tracks framework-implementation engagements, not certification cycles.)
 
 ---
@@ -161,4 +165,4 @@ When implementing for a client, copy templates from the main package and customi
 
 ---
 
-*Last Updated: January 31, 2026*
+*Last Updated: May 21, 2026*

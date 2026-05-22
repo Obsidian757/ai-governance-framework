@@ -3,6 +3,10 @@
 **ISO/IEC 42001-aligned AI Management System (AIMS) — full documentation set**
 **Federal, Commonwealth of Virginia, and nonprofit-sector AI governance — control mappings**
 
+> ## ⚡ Framework in place. Ready to deploy.
+>
+> This repository is the **complete AI governance framework 12th House AI deploys on engagements** — not a roadmap, not a work-in-progress, not aspirational. Every policy, procedure, template, crosswalk, and system-prompt control document has been authored, reviewed, and is in production use. A client can onboard tomorrow and the engagement runs out of this repo.
+
 12th House AI is a founder-led, veteran-owned AI governance and workflow-automation consultancy based in Hampton Roads, Virginia. We serve **nonprofits, state and local government, and SMBs**, with federal work under teaming arrangements. This repository is our **publicly published AI Management System (AIMS) package** — the documentation framework we use for our own practice and the same framework we implement for clients.
 
 We publish it in the open because most consulting firms talk about their methodology. We show ours.
@@ -31,9 +35,13 @@ The ISO/IEC 42001 framework underneath is the *spine*. The vertical-specific obl
 **Important framing notes:**
 
 - We use ISO/IEC 42001:2023 as the **implementation framework** for AI Management Systems. We are **not** ISO 42001 certified, and we are **not** pursuing organizational ISO 42001 certification. Wherever you see "ISO 42001" in this repository, read it as "ISO 42001-aligned."
-- We are **veteran-owned**. We are **not** SDVOSB, VOSB, 8(a), HUBZone, CMMC-certified, or FedRAMP-authorized.
-- Virginia SWaM application **#845183 in process**. Not yet active.
+- We are **veteran-owned** and the founder holds a **90% VA service-connected disability rating**.
+- **SDVOSB (federal, SBA VetCert):** application **in process** — gated on SAM.gov CAGE-code issuance. Until granted, SDVOSB boxes are not checked on federal solicitations.
+- **Virginia SWaM-V (state, DSBSD #845183):** application **in process** — assigned to a certification officer 2026-05-20; projected decision July–August 2026. Until granted, SWaM-V boxes are not checked on state solicitations.
+- We are **not** 8(a), HUBZone, WOSB, CMMC-certified, FedRAMP-authorized, or ISO 42001 organizationally certified, and are not pursuing any of those.
 - Every AI workflow we recommend keeps **a human in the loop** on consequential decisions. We do not deploy autonomous decision-making AI.
+
+**Federal partners and clients.** 12th House AI stands ready to support federal partners and clients with AI governance work today — NIST AI RMF implementation, OMB M-25-21 / M-25-22 alignment, CUI-handling controls, prime-contractor flow-down compliance, and the [federal-contractor system-prompt security controls framework](templates/federal-contractor-system-prompt-security-controls-template.md) published in this repository. Federal engagements are performed via teaming with credentialed primes while SDVOSB certification is pending.
 
 ---
 
@@ -53,14 +61,16 @@ The ISO/IEC 42001 framework underneath is the *spine*. The vertical-specific obl
 
 ---
 
-## Status (as of May 21, 2026)
+## Status (as of May 21, 2026) — Ready to deploy
 
-- **AIMS documentation:** Complete and published as the framework we implement against.
+- **AIMS documentation:** Complete, published, and in production use as the framework we implement against. **Deploy-ready, not draft.**
 - **ISO/IEC 42001:2023 framework application:** In use as the implementation spine. **No certification claim.** We are not certified and are not pursuing certification.
-- **Federal / Virginia / vertical-specific control mappings:** Published.
-- **Client engagement history under 12th House AI:** Active outreach to first cohort (nonprofit + SMB). Engagements will be reflected here as they are delivered, not before.
+- **Federal / Virginia / vertical-specific control mappings:** Published and deployable per engagement.
+- **System-prompt security controls (federal-contractor + state/local):** Published as deployable templates. Drop into any engagement, fill the brackets, ship the annex.
+- **Per-engagement AI Use Disclosure 1-pager:** Published. Customer-facing disclosure ready to attach to any engagement kickoff.
+- **Client engagement history under 12th House AI:** Active outreach to first cohort (nonprofit + SMB). Engagements will be reflected here as they are delivered, not before. Framework readiness is independent of past-performance ledger.
 
-We are explicit about stage. We do not exaggerate scale we don't have.
+We are explicit about stage. We do not exaggerate scale we don't have — *and* we do not understate readiness we do have.
 
 ---
 
@@ -165,19 +175,20 @@ Deliverable shapes are published as templates under [`templates/`](templates/). 
 |---|---|
 | DoD Secret Clearance — founder | Active |
 | NIST AI Risk Management Framework — practitioner experience | Active |
-| Veteran-owned (founder, U.S. Navy) | Confirmed |
-| Virginia SWaM (#845183) | Application in process — not yet active |
+| Veteran-owned (founder, U.S. Navy 20+ years) | Confirmed |
+| 90% VA service-connected disability rating | Confirmed |
+| SDVOSB (federal — SBA VetCert) | **In process** — gated on SAM.gov CAGE-code issuance. Eligibility met (90% DAV); application files once CAGE is assigned. |
+| Virginia SWaM-V (state — DSBSD #845183) | **In process** — assigned to a certification officer 2026-05-20; projected decision July–August 2026. |
 | ISO/IEC 42001:2023 (organizational certification) | **Not held; not pursuing.** Framework used as the AIMS implementation spine. |
 | ISO/IEC 42001 Lead Implementer (PECB) | Under consideration |
 
 **Explicitly NOT held and NOT pursuing:**
-- SDVOSB / VOSB certification (eligibility under review; certification not granted)
 - 8(a), HUBZone, WOSB
 - CMMC Registered Practitioner or any CMMC certification
 - FedRAMP authorization
 - ISO 42001 organizational certification
 
-We will update this README as credentials evolve.
+Until SDVOSB and SWaM-V are granted, the corresponding socioeconomic boxes are not checked on federal or state solicitations. We will update this README as credentials evolve.
 
 ---
 
