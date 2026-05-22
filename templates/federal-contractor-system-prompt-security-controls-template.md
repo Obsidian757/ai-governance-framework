@@ -473,6 +473,298 @@ PRIME CONTACTS
 
 ---
 
+## COMPONENT 9 — AI Security & Defensible Operations
+
+**Purpose:** Address the LLM-native attack surface that DFARS 252.204-7012, NIST SP 800-171, FAR 52.204-21, and traditional cloud-security frameworks (FedRAMP, NIST CSF) do not specifically cover. Production LLM systems used in federal-contractor scope introduce a distinct security topology — prompt injection, agentic tool-call risk, context rot, RAG corpus poisoning, API key lifecycle, token-usage adversarial signals, output-injection into downstream systems, and model supply-chain integrity — that requires explicit controls layered on top of the CUI-handling and NIST SP 800-171 controls already in place.
+
+**Anchored to four published authorities:**
+
+- **OWASP Top 10 for LLM Applications 2025** — current industry standard for LLM-specific threats.
+- **NIST AI Risk Management Framework 1.0** (Jan 2023) — the *MEASURE* and *MANAGE* functions are the primary alignment surface.
+- **NIST AI 600-1 Generative AI Profile** (July 2024) — GenAI-specific overlay on AI RMF 1.0.
+- **CISA "AI Data Security — Best Practices for Securing Data Used to Train and Operate AI Systems"** (May 22, 2025) — co-sealed with NSA AISC, FBI, ASD/ACSC, NCSC-UK, NCSC-NZ.
+
+### 9.1 — Agentic-AI Tool Surface Controls
+
+**Threat:** Agentic AI systems extend the model's blast radius beyond text generation into **system action** — tool invocation, API calls, downstream effects. In federal-contractor scope, an agent that can read CUI can usually disclose it; an agent that can summarize a document can usually transmit it.
+
+**Maps to:** OWASP **LLM06:2025 Excessive Agency** (absorbed the prior LLM07 Insecure Plugin Design); NIST AI RMF **MANAGE 1.2**; OMB **M-25-21** human-oversight expectation.
+
+**Controls:**
+
+```
+AGENTIC TOOL-CALL CONTROLS
+
+1. TOOL REGISTRY
+   - Every tool the AI can invoke is registered, signed off by the
+     engagement owner (FSO / contract manager), and documented in
+     the AI Use Disclosure.
+   - Default-deny posture: no tool is invocable unless registered
+     and approved.
+
+2. ALLOWLIST SCOPING PER AGENT
+   - Each agent receives an explicit allowlist of registered tools.
+   - No agent can invoke tools beyond its allowlist.
+   - Allowlist changes require documented change-management approval
+     and (for CUI-touching agents) FSO concurrence.
+
+3. CRITICALITY-TIERED HITL GATES
+   - Each tool is assigned a criticality tier (read-only / write /
+     external-effect / irreversible / CUI-touching).
+   - Tool calls above the configured threshold are held for human
+     review before execution.
+   - CUI disclosure decisions are categorically non-autonomous
+     (cross-reference Component 6 Human Oversight Framework).
+
+4. TOOL-CALL AUDIT LOG
+   - Every invocation logged per NIST SP 800-171 3.3.1: agent ID,
+     tool ID, parameters (sanitized — no embedded CUI in the log),
+     human reviewer (if any), outcome, rollback status.
+
+5. PER-AGENT TOOL-CALL RATE LIMITING
+   - Anomalous tool-call frequency triggers session pause and
+     reviewer notification. If the anomaly meets the DFARS
+     252.204-7012(c) reportable-incident threshold, the FSO
+     initiates the 72-hour DIBNet report.
+
+6. EXPLICIT "AI DOES NOT HAVE AUTHORITY TO" LIST
+   - Ratified by the contractor + customer at engagement kickoff.
+   - Cross-referenced with Component 6 Human Oversight Framework.
+```
+
+### 9.2 — Indirect Prompt Injection & Context-Boundary Enforcement
+
+**Threat:** Direct injection via user input is well known. Indirect injection — a malicious instruction smuggled into a retrieved document the RAG layer surfaces — is harder. Context rot adds a temporal dimension: multi-turn conversations accumulate drift, retrieved content erodes system-prompt authority, conversation memory carries influence past its intended lifetime.
+
+**Maps to:** OWASP **LLM01:2025 Prompt Injection** (indirect family); NIST AI RMF **MEASURE 2.7 Security and Resilience**.
+
+**Controls:**
+
+```
+CONTEXT-BOUNDARY ENFORCEMENT
+
+1. SYSTEM-PROMPT PRECEDENCE PER TURN
+   - The original system prompt is re-asserted each request.
+   - The system prompt is not silently overridden by accumulated
+     conversation context or retrieved content.
+
+2. TRUSTED vs UNTRUSTED CONTEXT SEPARATION
+   - Retrieved content is structurally delimited as "untrusted
+     retrieved content" before being passed to the model.
+   - The model is instructed (at system level) that instructions
+     appearing within untrusted-retrieved-content blocks are not
+     authoritative.
+
+3. PER-SESSION CONTEXT BOUNDARIES
+   - Explicit session reset triggers documented per engagement.
+   - Long-running agent sessions have documented maximum lifetimes.
+   - Conversation memory scope is bounded and resettable.
+
+4. MULTI-TURN SESSION-ANOMALY DETECTION
+   - Length drift, terminology drift, and instruction-override
+     frequency tracked across turns.
+   - Anomalies trigger reviewer notification and (if severe) session
+     pause.
+```
+
+### 9.3 — API Key & Credential Lifecycle for LLM Providers
+
+**Threat:** LLM provider API keys are high-leverage credentials — they unlock token-spend, model access, and customer-data egress to a third party. Mismanagement is a primary AI-specific data-leak vector in federal-contractor scope.
+
+**Maps to:** NIST AI RMF **GOVERN 1.4 / MANAGE 4.1**; NIST SP 800-171 IA-5 family; CISA "Trusted Infrastructure" recommendation.
+
+**Controls:**
+
+```
+CREDENTIAL LIFECYCLE
+
+1. VAULT STORAGE
+   - Keys stored in Azure Key Vault (GCC / GCC-High), AWS Secrets
+     Manager (GovCloud), HashiCorp Vault, or customer-equivalent.
+   - No long-lived keys in code, configuration files, or operator
+     notebooks. Aligned with NIST SP 800-171 3.5.10.
+
+2. PER-ENGAGEMENT KEY ISOLATION
+   - A key issued for one contract or subcontract cannot be used
+     for another. Cross-contract CUI separation enforced at the
+     credential layer.
+   - Key issuance documented in the engagement kickoff record.
+
+3. LEAST-PRIVILEGE SCOPING
+   - Keys scoped per workload to the minimum model + endpoint set
+     required. Aligned with NIST SP 800-171 3.1.5.
+
+4. SCHEDULED ROTATION
+   - Rotation cadence documented (typically 90 days or per
+     contract requirement, whichever is shorter).
+   - Rotation events logged per NIST SP 800-171 3.3.1.
+
+5. AUTOMATED LEAK DETECTION
+   - GitHub / source-code-host secret scanning enabled.
+   - Credential canaries deployed (decoy keys whose use triggers
+     alert).
+
+6. PROVIDER-SIDE TELEMETRY
+   - Per-key usage telemetry monitored for anomalous patterns
+     (geographic origin, request volume, model selection drift).
+```
+
+### 9.4 — Token Usage Monitoring (Cost + Adversarial Signal)
+
+**Threat:** Token consumption serves dual purposes. Operationally, runaway token-spend is a budget and contract-overrun risk. Adversarially, token-rate spikes are a leading indicator of model-extraction attacks, exfiltration probes, or compromised credentials — any of which may trigger DFARS 252.204-7012(c) reporting obligations.
+
+**Maps to:** OWASP **LLM10:2025 Unbounded Consumption** (NEW in 2025); NIST AI RMF **MANAGE 2.4 — deactivation/disengage mechanisms**; NIST SP 800-171 3.14 (system monitoring).
+
+**Controls:**
+
+```
+TOKEN MONITORING
+
+1. PER-USER AND PER-WORKLOAD QUOTAS
+   - Hard daily caps configured per user role and per workload.
+   - Quota breaches trigger throttling, not silent overrun.
+
+2. COST-ANOMALY ALERTS
+   - Alert thresholds set against baseline + variance.
+   - Alerts route to engagement owner + CISO / FSO.
+
+3. ADVERSARIAL-SIGNAL DETECTION
+   - Token-rate spike detection (per user, per session).
+   - Query-pattern anomaly detection: repeated near-identical
+     queries indicate model-extraction-attack heuristics.
+   - Prompt-length distribution monitoring.
+   - Detections evaluated against DFARS 252.204-7012(c) reportable-
+     incident criteria; FSO initiates DIBNet report within 72 hours
+     where threshold met.
+
+4. KILL-SWITCH
+   - Per-workload kill-switch documented and tested quarterly.
+   - Engagement owner can disable an AI workload without engaging
+     the LLM provider.
+```
+
+### 9.5 — Improper Output Handling (Downstream Injection Defense)
+
+**Threat:** LLM outputs frequently flow into downstream systems — a chat interface rendering as HTML, a tool executing generated SQL or shell, a workflow building an API call from the output. Any untrusted user input that influenced the output can propagate as injection into the downstream system. In federal-contractor scope, that injection can be a vector for CUI disclosure or contract-system manipulation.
+
+**Maps to:** OWASP **LLM05:2025 Improper Output Handling**; NIST AI RMF **MEASURE 2.7**.
+
+**Controls:**
+
+```
+OUTPUT-HANDLING DEFENSE
+
+1. SCHEMA VALIDATION
+   - Outputs intended for downstream consumption are validated
+     against an expected schema before use.
+
+2. STRUCTURED-OUTPUT ENFORCEMENT
+   - Function-calling JSON schemas used wherever the downstream
+     is code. Free-text parsing avoided.
+
+3. ESCAPING AT EVERY RENDER BOUNDARY
+   - HTML, SQL, shell, JSON, URL escaping at the consumer.
+   - LLM-generated content treated as untrusted user input by
+     every downstream consumer.
+
+4. NO DIRECT-TO-EXECUTION
+   - LLM-generated code or commands do not execute without a
+     human-in-the-loop checkpoint at the criticality tier
+     defined in Component 9.1.
+   - CUI-touching downstreams categorically gated.
+```
+
+### 9.6 — Model & Fine-Tuning Supply Chain Integrity
+
+**Threat:** The foreign-AI exclusion documented in Component 1 addresses one supply-chain dimension — geographic origin. The broader supply-chain surface includes model-weight integrity, fine-tune artifact provenance, training-data integrity, and version stability. In federal-contractor scope this aligns with DFARS 252.204-7012's supply-chain integrity expectations and Advancing American AI Act § 7223 implementing posture.
+
+**Maps to:** OWASP **LLM03:2025 Supply Chain** + **LLM04:2025 Data and Model Poisoning**; NIST AI RMF **MAP 4.1 + MANAGE 3.1 + GOVERN 6.1/6.2**; CISA "Data Sourcing with Provenance Tracking" + "Quantum-Resistant Digital Signatures on Training/Fine-Tune Artifacts" + "Secure Deletion per NIST SP 800-88"; Advancing American AI Act § 7223.
+
+**Controls:**
+
+```
+SUPPLY-CHAIN INTEGRITY
+
+1. MODEL-WEIGHT INTEGRITY
+   - Cryptographic hash verification on model weights at load time.
+   - Quantum-resistant signatures applied to artifacts where
+     vendor supports (per CISA guidance).
+
+2. FINE-TUNE ARTIFACT SIGNING
+   - LoRA / adapter / fine-tune artifacts cryptographically signed
+     before deployment.
+
+3. PROVENANCE DATABASE
+   - Any Hugging Face / open-weight / open-source model used has
+     documented source, hash, license, and contributor base.
+   - Provenance database is the system of record.
+   - Foreign-developer-origin verification documented per
+     Advancing American AI Act § 7223.
+
+4. VERSION PINNING
+   - Closed-API model versions pinned for the engagement duration.
+   - Provider-initiated version rotations trigger re-baseline
+     measurement before continued use.
+
+5. FINE-TUNING DATASET INTEGRITY
+   - Source, hash, ingest date, and access-control entries logged
+     per dataset.
+   - CUI and PII not fine-tuned into models (personal layer and
+     CUI layer handled through retrieval, where deletion is
+     mechanically possible).
+
+6. VENDOR TERMS
+   - Enterprise terms verified to forbid training on customer data.
+   - Verification documented per engagement in Vendor Management
+     records.
+
+7. SECURE DELETION
+   - End-of-engagement data deletion per NIST SP 800-88
+     (cryptographic erase, block erase, or overwrite as
+     applicable).
+```
+
+### 9.7 — Memorization, CUI / PII Regurgitation & System-Prompt Leakage
+
+**Threat:** Three failure modes that the controls above touch but do not specifically address: (a) the model regurgitating training data including CUI or PII it memorized; (b) the model leaking its own system prompt under extraction pressure; (c) the system prompt itself being a sensitive artifact that, if leaked, gives an adversary a roadmap for follow-on attacks.
+
+**Maps to:** OWASP **LLM02:2025 Sensitive Information Disclosure** + **LLM07:2025 System Prompt Leakage** (NEW in 2025); NIST AI RMF **MEASURE 2.10 Privacy**; CISA "Privacy-Preserving Techniques"; DFARS 252.204-7012(c) reportable disclosure threshold.
+
+**Controls:**
+
+```
+DISCLOSURE DEFENSES
+
+1. INBOUND CUI / PII REDACTION
+   - Pattern + entity detection on prompts before transmission to
+     the LLM provider.
+   - Configurable block / redact / warn behavior per data class
+     (CUI by category, PII by Privacy Act type, proprietary by
+     NDA tag).
+   - Redaction events logged with category and timestamp.
+
+2. SYSTEM-PROMPT EXTRACTION DETECTION
+   - Patterns documented in Component 3 extended with extraction-
+     specific signatures.
+   - Outputs scanned for system-prompt-leakage signatures before
+     send.
+
+3. MEMORIZATION PROBING
+   - Quarterly adversarial testing for memorization regurgitation.
+   - Baseline measured and tracked over time.
+
+4. CUI / PII REGURGITATION ALARMS
+   - Outputs scanned for known-CUI patterns and known-PII patterns
+     before send.
+   - Detections held for human review.
+   - Confirmed CUI regurgitation triggers DFARS 252.204-7012(c)
+     reportable-incident evaluation.
+```
+
+**Why this works:** Component 9 closes the LLM-native attack surface gap that traditional federal-contractor frameworks (DFARS 252.204-7012, NIST SP 800-171, FAR 52.204-21, FedRAMP) leave open. Every sub-component maps to a published OWASP 2025 category, a NIST AI RMF function, a CISA-specific control (where applicable), and an existing federal-contractor obligation (DFARS reporting, CUI handling, Advancing American AI Act § 7223). The category coverage is comprehensive against the OWASP Top 10 for LLM Applications 2025, the CISA AI Data Security recommendations, and the operational categories CISA and OWASP both leave underspecified (token-usage adversarial signal, context rot, agentic tool-surface scoping). Every control is implementable as a unit-tested check, not an abstract principle.
+
+---
+
 ## COMPLETE TEMPLATE — COPY/PASTE READY
 
 ```
