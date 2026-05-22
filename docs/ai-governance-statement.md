@@ -41,9 +41,12 @@ Every engagement has a named owner. Every recommendation is traceable to a docum
 | Veteran-owned (founder, U.S. Navy 20+ years) | Confirmed |
 | NIST AI Risk Management Framework — implementation experience | Active practitioner; no formal NIST certification exists |
 | ISO/IEC 42001:2023 | **Used as the implementation framework for our AIMS.** We are **not** certified and are **not pursuing** organizational certification. |
-| Virginia SWaM application #845183 | In process — not yet active |
+| SDVOSB (federal — SBA VetCert) | **In process.** Application gated on SAM.gov CAGE-code issuance; will be filed once CAGE is assigned. |
+| Virginia SWaM-V — Veteran-Owned (state — DSBSD), application #845183 | **In process.** Assigned to a certification officer 2026-05-20; projected decision July–August 2026. |
 
-**Explicitly NOT held and NOT pursuing:** SDVOSB / VOSB / 8(a) / HUBZone / WOSB / CMMC Registered Practitioner or any CMMC certification / FedRAMP / ISO 42001 organizational certification. We will update this statement if that changes.
+**In-process — not yet granted, not yet claimed:** SDVOSB (federal) and SWaM-V (Virginia state). Until these are granted, 12th House AI does **not** check the corresponding socioeconomic boxes on federal or state solicitations.
+
+**Explicitly NOT held and NOT pursuing:** 8(a) / HUBZone / WOSB / CMMC Registered Practitioner or any CMMC certification / FedRAMP / ISO 42001 organizational certification. We will update this statement if that changes.
 
 ---
 
