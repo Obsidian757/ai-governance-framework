@@ -28,7 +28,7 @@ ISO 31000 defines a generic risk management process. AI governance maps to each 
 
 | ISO 31000 Process Step | AI Governance Implementation | Framework Reference |
 |------------------------|------------------------------|-------------------|
-| Scope, context, criteria | Risk classification matrices define scope; regulatory context mapped | [Risk Matrix](../risk-classification/risk-matrix.md), [EU AI Act Mapping](../compliance/eu-ai-act-mapping.md) |
+| Scope, context, criteria | Risk classification matrices define scope; regulatory context mapped | [Risk Matrix](../risk-classification/risk-matrix.md), [Regulatory Change Monitoring](../compliance/regulatory-change-monitoring.md) |
 | Risk identification | Risk assessment template; GenAI and multimodal risk dimensions | [Assessment Template](../risk-classification/assessment-template.yaml), [GenAI Risk Matrix](../risk-classification/genai-risk-matrix.md) |
 | Risk analysis | Tier determination (T1–T4); dimension scoring; impact assessment | [Impact Assessment Template](../../templates/impact-assessment-template.md) |
 | Risk evaluation | Governance intensity mapped to tier; risk acceptance decisions | [Risk Matrix — Governance Intensity](../risk-classification/risk-matrix.md) |

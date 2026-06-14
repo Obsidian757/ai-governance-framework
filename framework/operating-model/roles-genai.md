@@ -31,7 +31,7 @@ This document defines GenAI-specific roles, their responsibilities, required ski
 | Aspect | Description |
 |--------|-------------|
 | Core responsibilities | GenAI risk assessments; hallucination and bias monitoring; incident investigation; regulatory compliance mapping; vendor model risk assessment |
-| Required skills | Model risk management; understanding of LLM systems; regulatory knowledge (EU AI Act, SR 11-7); quantitative analysis |
+| Required skills | Model risk management; understanding of LLM systems; regulatory knowledge (NIST AI RMF, SR 11-7, applicable AI regulation); quantitative analysis |
 | Reports to | Head of AI Risk or Chief Risk Officer |
 | Interacts with | AI engineering, compliance, legal, business stakeholders |
 | Career path | Senior AI Risk Analyst → Head of AI Risk → CRO (AI) |
@@ -102,7 +102,7 @@ This document defines GenAI-specific roles, their responsibilities, required ski
 
 | Existing Responsibility | GenAI Extension |
 |------------------------|-----------------|
-| Regulatory compliance | EU AI Act mapping, AI system inventory, transparency obligations |
+| Regulatory compliance | AI regulation mapping (NIST AI RMF, SR 11-7, applicable jurisdiction-specific rules), AI system inventory, transparency obligations |
 | Risk assessment | GenAI risk classification, HITL requirement determination |
 | Audit | Prompt audit trail review, AI system examination readiness |
 

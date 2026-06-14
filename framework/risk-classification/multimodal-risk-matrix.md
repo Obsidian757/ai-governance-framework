@@ -85,7 +85,7 @@ Regardless of aggregate score, a system is automatically classified as:
 |-------------|-------------|
 | Content safety | Mandatory classifiers for CSAM, violence, explicit content on all image/video inputs and outputs |
 | Synthetic media labeling | C2PA/Content Credentials metadata on all generated media; visible watermarking for external distribution |
-| Biometric compliance | GDPR Article 9 (special categories), explicit consent, DPIA completed |
+| Biometric compliance | Applicable biometric data law (e.g., BIPA in Illinois, CCPA/CPRA, state biometric laws, sector-specific rules), explicit consent, Privacy Impact Assessment (PIA) completed |
 | Deepfake detection | Deploy detection capability on all video/image inputs for systems processing identity |
 | Cross-modal validation | Automated consistency checking between modalities |
 | Evaluation | Modality-specific eval suites: 200+ test cases per modality, demographic parity testing |

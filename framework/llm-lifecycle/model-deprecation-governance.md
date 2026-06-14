@@ -49,7 +49,7 @@ When a deprecation trigger is identified, complete the following assessment.
 | Question | Document |
 |----------|----------|
 | Does the replacement model require re-assessment? | New risk assessment if model capabilities, provider, or architecture change |
-| Does migration affect regulatory compliance? | EU AI Act conformity, audit trail continuity, data residency |
+| Does migration affect regulatory compliance? | Audit trail continuity, data residency, applicable regulatory compliance (re-assess if model change affects regulatory posture) |
 | Do existing model cards need updating? | Always — document model change and rationale |
 | Are there audit trail implications? | Ensure traceability across model versions |
 

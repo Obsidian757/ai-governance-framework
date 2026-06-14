@@ -14,10 +14,10 @@ This document defines lifecycle governance standards for multimodal systems. For
 
 | Risk | Required Control | Tier |
 |------|-----------------|:---:|
-| CSAM / child exploitation content | Mandatory content safety classifier (PhotoDNA, CSAM detection API, or equivalent); block and report per applicable jurisdiction (US: 18 U.S.C. 2258A; EU: Directive 2011/93/EU; other: local mandatory reporting laws) | All |
+| CSAM / child exploitation content | Mandatory content safety classifier (PhotoDNA, CSAM detection API, or equivalent); block and report per applicable jurisdiction (US: 18 U.S.C. 2258A; other jurisdictions: local mandatory reporting laws) | All |
 | Violence / explicit content | Content safety classifier; block or flag per policy | T1/T2 mandatory; T3/T4 recommended |
 | PII in images (faces, documents, license plates) | PII detection and redaction before processing; consent verification | T1/T2 |
-| Biometric data (faces for identification) | Explicit consent; GDPR Article 9 DPIA; legal basis documented | T1 mandatory |
+| Biometric data (faces for identification) | Explicit consent; Privacy Impact Assessment (PIA) per applicable biometric data law (e.g., BIPA, CCPA/CPRA, state biometric laws); legal basis documented | T1 mandatory |
 | Medical / diagnostic imagery | Clinical validation requirements; regulatory compliance (MDR, FDA) | T1 mandatory |
 
 ### Audio Inputs
@@ -33,7 +33,7 @@ This document defines lifecycle governance standards for multimodal systems. For
 
 | Risk | Required Control | Tier |
 |------|-----------------|:---:|
-| Surveillance-grade analysis | Legal basis required; DPIA for GDPR; proportionality assessment | T1 mandatory |
+| Surveillance-grade analysis | Legal basis required; Privacy Impact Assessment (PIA); proportionality assessment | T1 mandatory |
 | Behavioral analysis | Explicit purpose limitation; no repurposing without re-assessment | T1/T2 |
 | PII in video (faces, vehicle plates, locations) | PII detection; anonymization where identity is not required | T1/T2 |
 | Content moderation (violence, explicit material) | Content safety classification; block or flag per policy | All |
@@ -41,7 +41,7 @@ This document defines lifecycle governance standards for multimodal systems. For
 ### All Modalities
 
 - Classify input data per existing data classification policy before processing
-- Apply data residency requirements per [data-residency-llm.md](../compliance/data-residency-llm.md) — biometric data has additional residency restrictions under GDPR
+- Apply data residency requirements per [data-residency-llm.md](../compliance/data-residency-llm.md) — biometric data has additional residency restrictions under applicable data protection law
 - Document which modalities each system processes in the model card
 
 ---
@@ -55,8 +55,8 @@ This document defines lifecycle governance standards for multimodal systems. For
 | Generated images | Machine-readable provenance metadata (C2PA / Content Credentials) | C2PA 1.4+ | T1/T2 mandatory |
 | Generated images for external distribution | Visible watermark in addition to metadata | Organizational standard | T1 mandatory |
 | Generated audio | Provenance metadata; disclosure of AI generation | C2PA where supported | T1/T2 |
-| Synthetic voice (text-to-speech) | Disclosure that voice is AI-generated when presented to end users (EU AI Act Art. 50 where applicable; check local jurisdiction requirements) | C2PA where supported | All customer-facing |
-| Generated video | Disclosure of AI generation (EU AI Act Art. 50 where applicable); machine-readable metadata | C2PA | T1/T2 |
+| Synthetic voice (text-to-speech) | Disclosure that voice is AI-generated when presented to end users; check applicable jurisdiction disclosure requirements | C2PA where supported | All customer-facing |
+| Generated video | Disclosure of AI generation per applicable jurisdiction requirements; machine-readable metadata | C2PA | T1/T2 |
 | Modified images/video | Disclosure of AI modification; original preserved for audit | C2PA | T1/T2 |
 
 ### Content Safety on Outputs

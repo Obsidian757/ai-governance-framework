@@ -124,9 +124,8 @@ Maintain a public (or regulator-accessible) inventory of AI systems in use:
 
 | Regulation | Transparency Requirement | Framework Control |
 |-----------|------------------------|-------------------|
-| EU AI Act (Article 50) | Inform users of AI interaction; label AI-generated content | User disclosure; content labeling |
-| EU AI Act (Article 13) | Transparency for high-risk systems | Explainability mechanisms; system documentation |
-| GDPR (Articles 13-14) | Inform data subjects of automated decision-making | Decision disclosure; right to explanation |
-| GDPR (Article 22) | Right not to be subject to solely automated decisions | Human oversight; opt-out mechanism |
-| SR 11-7 | Model documentation and validation transparency | Model cards; validation reports |
-| Consumer Duty (FCA) | Clear communications; consumer understanding | Plain-language AI disclosures |
+| NIST AI RMF (Govern / Map) | Organizational accountability and AI system documentation | AI system inventory; model cards; governance documentation |
+| SR 11-7 (OCC / Fed) | Model documentation and validation transparency | Model cards; validation reports; audit trail |
+| FTC Act (Section 5) | Unfair or deceptive AI practices prohibited; clear disclosure of AI involvement | User disclosure; content labeling; plain-language notices |
+| CCPA / CPRA | Right to know about automated decision-making; opt-out of certain uses | Decision disclosure; opt-out mechanism; privacy notice |
+| Sector-specific AI regulation (jurisdiction-specific) | Disclosure requirements vary by sector and jurisdiction; verify applicable rules | Explainability mechanisms; system documentation; compliance review |

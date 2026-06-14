@@ -166,11 +166,9 @@ Agentic AI systems require special HITL considerations due to their autonomous, 
 
 | Regulation | Requirement | Minimum Pattern |
 |-----------|-------------|-----------------|
-| EU AI Act (Article 14) | High-risk systems must have human oversight measures | Pattern 1 or 2 for high-risk; specific requirements vary |
-| GDPR (Article 22) | Right not to be subject to solely automated decisions with legal effects | Pattern 1 for decisions with legal/significant effects |
+| High-risk AI regulation (jurisdiction-specific) | High-risk AI systems must have human oversight measures enabling review, intervention, and override | Pattern 1 or 2; verify applicable requirements for your jurisdiction and sector |
+| Automated decision-making law (jurisdiction-specific) | Right not to be subject to solely automated decisions with legal or significant effects; varies by jurisdiction (US: FCRA, ECOA; state laws; sector-specific rules) | Pattern 1 for decisions with legal/significant effects on individuals |
 | SR 11-7 | Model outputs used in consequential decisions require appropriate oversight | Pattern 1 or 2 based on model risk tier |
-| Consumer Duty (FCA) | Fair outcomes for consumers | Pattern appropriate to consumer impact |
-| EBA Guidelines on ML | Human judgment in credit decisions | Pattern 1 for credit decisions |
 
 ---
 
