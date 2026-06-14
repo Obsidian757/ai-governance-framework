@@ -84,14 +84,14 @@ Third-party model risk management ensures that the organization understands, mon
 | Liability | Who is liable when model outputs cause harm? |
 | Regulatory non-compliance | Provider's practices don't meet your regulatory obligations |
 | Jurisdictional conflict | Provider subject to laws that conflict with your regulatory requirements |
-| EU AI Act compliance | Provider doesn't meet GPAI obligations (Articles 53–55) |
+| Supply chain origin risk | Provider or model is subject to federal or state supply chain risk designations |
 
 **Controls:**
 - Legal review of provider terms and liability allocation
 - IP indemnification clause in contract (if available)
 - Regulatory compliance attestation from provider
-- EU AI Act compliance verification for GPAI model obligations
-- Documented legal basis for cross-border data transfers
+- Verify provider is not subject to federal or state supply chain risk designations (e.g., DoD procurement exclusions, state PRC-origin bans)
+- Data Processing Agreement (DPA) in place with adequate data protection clauses
 
 ---
 

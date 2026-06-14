@@ -2,9 +2,7 @@
 
 ## Overview
 
-AI regulation is evolving faster than any other technology regulation in history. Between 2023 and 2026, the EU AI Act moved from proposal to enforcement, NIST published the AI RMF, multiple US states enacted AI legislation, and Singapore, Brazil, Canada, and the UAE all advanced AI governance frameworks.
-
-Organizations deploying AI systems cannot treat compliance as a one-time exercise. A structured process to detect, assess, and respond to regulatory changes is essential.
+AI regulation is evolving faster than any other technology regulation in history. Between 2023 and 2026, NIST published the AI RMF and its Generative AI Profile (AI 600-1), multiple US states enacted AI legislation, and federal agencies issued guidance governing AI use in their sectors. Organizations deploying AI systems cannot treat compliance as a one-time exercise. A structured process to detect, assess, and respond to regulatory changes is essential.
 
 ---
 
@@ -13,7 +11,7 @@ Organizations deploying AI systems cannot treat compliance as a one-time exercis
 | Activity | Frequency | Responsibility | Output |
 |----------|-----------|---------------|--------|
 | Monitor regulatory body publications | Weekly | Compliance / AI Risk | Regulatory change log entry |
-| Track industry body guidance (OECD, FSB, BIS) | Monthly | Compliance | Briefing note if material |
+| Track industry body guidance (NIST, CISA, OMB) | Monthly | Compliance | Briefing note if material |
 | Review peer institution approaches | Quarterly | AI Risk | Competitive intelligence summary |
 | Attend regulatory consultations and working groups | As published | Compliance / Legal | Feedback submissions; internal impact notes |
 | Review academic and industry publications on AI regulation | Monthly | AI Risk | Trend assessment |
@@ -22,20 +20,37 @@ Organizations deploying AI systems cannot treat compliance as a one-time exercis
 
 ## Sources to Monitor
 
-### By Jurisdiction
+### Federal
 
-| Jurisdiction | Key Sources | Focus Areas |
-|-------------|-------------|-------------|
-| **EU** | AI Office (European Commission), EDPB, EBA, ESMA, EIOPA, CEN/CENELEC | AI Act enforcement, GPAI codes of practice, harmonized standards |
-| **US** | NIST, Fed/OCC (SR letters, guidance), SEC, FTC, state legislatures (CA, CO, IL, TX, NY) | AI RMF updates, sector guidance, state AI laws, enforcement actions |
-| **UK** | FCA, PRA, ICO, DSIT, Alan Turing Institute | Sector-specific AI guidance, data protection enforcement, AI safety |
-| **Singapore** | MAS, PDPC, IMDA, AI Verify Foundation | Model Governance Framework updates, FEAT principles, AI Verify toolkit |
-| **UAE** | ADGM, DIFC, AI Office | AI governance guidance, data protection, financial services AI |
-| **Brazil** | ANPD, Congress (AI Bill), Central Bank | LGPD enforcement, AI Bill progress, financial sector guidance |
-| **Canada** | OSFI, Privacy Commissioners, Parliament (AIDA) | AIDA progress, provincial privacy laws, financial sector expectations |
-| **Australia** | APRA, OAIC, DISER | Voluntary AI Ethics Framework, financial sector prudential guidance |
-| **Japan** | METI, FSA, PPC | Social Principles implementation, APPI enforcement, financial sector guidance |
-| **Global** | OECD AI Policy Observatory, FSB, BIS, ISO/IEC JTC 1/SC 42 | AI principles updates, financial stability assessments, standards development |
+| Source | Focus Areas |
+|--------|-------------|
+| NIST | AI RMF updates, AI 600-1 (Generative AI Profile), cybersecurity frameworks, SP 800-series |
+| CISA | AI security guidelines, critical infrastructure AI guidance, secure-by-design principles |
+| OMB | M-24-10 (AI in Federal Agencies), agency AI use policy, procurement guidance |
+| OCC / Federal Reserve / FDIC | SR 11-7 model risk management, AI/ML supervisory guidance, examination procedures |
+| SEC | AI risk disclosure expectations, investment adviser AI use guidance |
+| FTC | AI enforcement actions under unfair/deceptive practices authority |
+| DOD / DARPA | AI acquisition policy, responsible AI guidelines, AI assurance frameworks |
+| OSTP / AISC | National AI strategy updates, interagency coordination |
+
+### State
+
+| Source | Focus Areas |
+|--------|-------------|
+| Virginia VITA / OAG | EO 30, EA-225, policy standard updates, Spanberger administration directives |
+| Colorado DORA | Colorado AI Act (SB 24-205) enforcement guidance (effective Feb 2026, enforcement Feb 2027) |
+| California CPPA / Legislature | CCPA/CPRA AI regulations, AI transparency bills, automated decision-making rules |
+| Illinois Legislature | IAIIA (AI Act) amendments, employment AI requirements |
+| Texas Legislature | AI governance legislation, agency AI use policies |
+| Other state legislatures | Monitor AI bills in Maryland, North Carolina, Tennessee — see [Mid-Atlantic & Southeast](us-states/mid-atlantic-southeast.md) |
+
+### Standards Bodies
+
+| Source | Focus Areas |
+|--------|-------------|
+| NIST / ITL | AI RMF profiles, measurement guidance, AI standards coordination |
+| ISO/IEC JTC 1/SC 42 | ISO 42001 updates, AI terminology and concepts standards |
+| ANSI | US adoption of international AI standards |
 
 ---
 
@@ -102,7 +117,7 @@ When a new regulation, guidance, or enforcement action is identified:
 Regulatory change monitoring is a standing agenda item at the [quarterly AI Risk Committee](../operating-model/review-cadence.md):
 
 | Agenda Item | Content |
-|------------|---------|
+|------------|---------| 
 | Regulatory horizon update | Summary of changes identified since last meeting |
 | Impact assessments completed | Results of gap analysis for new regulations |
 | Action plan status | Progress on implementation of regulatory changes |

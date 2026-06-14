@@ -76,7 +76,7 @@ This is not application logging. This is regulatory-grade audit trail designed t
 
 | Tier | Retention Period | Rationale |
 |------|-----------------|-----------|
-| T1 | 7 years | Aligned with SR 11-7, MiFID II, and general banking record-keeping |
+| T1 | 7 years | Aligned with SR 11-7 and applicable federal banking record-keeping requirements |
 | T2 | 5 years | Aligned with standard regulatory retention |
 | T3 | 3 years | Aligned with internal audit cycle |
 | T4 | 1 year | Operational purposes |
@@ -86,8 +86,8 @@ This is not application logging. This is regulatory-grade audit trail designed t
 If audit records contain PII (user queries about their own accounts, for example):
 - PII fields must be encrypted at rest with key management per data security policy
 - Access to PII fields requires additional authorization
-- GDPR right-to-erasure requests must be handled — implement pseudonymization at ingestion so that PII can be removed without destroying the audit record's integrity
-- Document the legal basis for PII retention in audit logs (legitimate interest for regulatory compliance)
+- Implement pseudonymization at ingestion so that PII can be removed without destroying the audit record's integrity — required to honor data deletion rights under applicable privacy laws (CCPA, state equivalents)
+- Document the legal basis for PII retention in audit logs
 
 ---
 

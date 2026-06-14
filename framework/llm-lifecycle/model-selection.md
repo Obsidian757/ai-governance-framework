@@ -37,7 +37,7 @@ Assess whether the model can perform the required task at the required quality l
 | Encryption | In-transit and at-rest encryption standards |
 | Certifications | SOC 2 Type II, ISO 27001, relevant financial services certifications |
 
-**For regulated financial services:** Any model processing customer data, MNPI, or regulated information must have a data processing agreement (DPA) that satisfies GDPR, local data protection laws, and sectoral regulations (e.g., banking secrecy, MiFID II data requirements).
+**For regulated financial services:** Any model processing customer data, MNPI, or regulated information must have a data processing agreement (DPA) that satisfies applicable federal and state data protection laws and sectoral regulations (e.g., GLBA, HIPAA, OCC/Fed/FDIC guidance).
 
 ### 3. Vendor Risk
 

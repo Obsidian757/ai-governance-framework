@@ -102,5 +102,5 @@ The framework's tiered approach inherently implements NIST's profile concept: ev
 ## Implementation Notes
 
 - NIST AI RMF is voluntary but increasingly referenced in US regulatory guidance (OCC, SEC, FTC)
-- Organizations subject to both EU AI Act and NIST AI RMF can use this framework as a common implementation — the two frameworks are complementary, not contradictory
+- NIST AI 600-1 (Generative AI Profile, July 2024) extends the base AI RMF specifically for generative AI systems — use it alongside this mapping for LLM and GenAI use cases
 - NIST Companion Resource: the AI RMF Playbook provides additional guidance on implementing each subcategory — use it alongside this mapping for detailed implementation

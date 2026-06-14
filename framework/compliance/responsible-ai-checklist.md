@@ -41,7 +41,7 @@ This checklist must be completed before any AI system is deployed to production.
 
 | Check | T1 | T2 | T3 | T4 | Evidence |
 |-------|----|----|----|----|----------|
-| Data Protection Impact Assessment (DPIA) completed | Required | Required | If PII | - | DPIA document |
+| Privacy Impact Assessment (PIA) completed | Required | Required | If PII | - | PIA document |
 | PII identified and minimized | Required | Required | Required | Recommended | Data inventory |
 | Consent/legal basis for data processing documented | Required | Required | Required | - | Privacy review |
 | Data retention policies defined and implemented | Required | Required | Required | Recommended | Data governance config |

@@ -14,7 +14,7 @@ Organizations pursuing ISO 42001 certification can use this governance framework
 
 | ISO 42001 Requirement | Framework Implementation | Reference |
 |----------------------|--------------------------|-----------|
-| 4.1 Understanding the organization and its context | Risk classification matrices define AI risk context; regulatory alignment maps external requirements | [Risk Matrix](../risk-classification/risk-matrix.md), [Multi-Jurisdictional Guide](multi-jurisdictional-guide.md) |
+| 4.1 Understanding the organization and its context | Risk classification matrices define AI risk context; regulatory alignment maps external requirements | [Risk Matrix](../risk-classification/risk-matrix.md), [Regulatory Change Monitoring](regulatory-change-monitoring.md) |
 | 4.2 Understanding needs and expectations of interested parties | Impact assessment template identifies stakeholders and their requirements; model cards document intended users | [Impact Assessment](../../templates/impact-assessment-template.md), [Model Card Template](../../templates/model-card-template.yaml) |
 | 4.3 Determining the scope of the AIMS | Portfolio KPIs define the AI system inventory; tier classification determines governance scope | [Governance Metrics](../operating-model/governance-metrics.md) |
 | 4.4 AI management system | This framework constitutes the AIMS: risk classification, lifecycle standards, compliance mapping, operating model, responsible AI standards | This framework |

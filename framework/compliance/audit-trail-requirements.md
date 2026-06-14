@@ -60,14 +60,14 @@ For each model version in production, maintain records of:
 
 | Data Type | Minimum Retention | Regulatory Basis |
 |-----------|------------------|-----------------|
-| Model predictions (T1) | 7 years | SR 11-7, BCBS 239, local banking regulations |
+| Model predictions (T1) | 7 years | SR 11-7, applicable federal and state banking regulations |
 | Model predictions (T2) | 5 years | General regulatory expectation |
 | Model predictions (T3/T4) | 3 years | Internal policy |
 | Training data lineage | Life of model + 3 years | Model reproducibility requirement |
 | Lifecycle events | 7 years | Audit requirements |
 | Access logs | 3 years | Security policy |
 
-Retention periods may be extended by specific regulatory requirements in certain jurisdictions. Consult compliance for jurisdiction-specific requirements.
+Retention periods may be extended by specific regulatory requirements. Consult compliance and legal counsel for sector-specific and jurisdiction-specific requirements.
 
 ## Storage and Access Controls
 
