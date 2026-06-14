@@ -8,6 +8,23 @@ Red-teaming is not optional for T1 and T2 systems. It is a deployment gate.
 
 This protocol defines scope, methodology, severity classification, and cadence. For the defenses that red-teaming validates, see [adversarial-robustness.md](adversarial-robustness.md).
 
+## Framework Alignment
+
+This protocol maps to **OWASP LLM Top 10 2025** (the primary attack taxonomy for LLM applications) and **MITRE ATLAS** (adversarial threat landscape for AI systems). Test categories in this document correspond directly to OWASP LLM Top 10 2025 entries:
+
+| OWASP LLM Top 10 2025 | Covered By |
+|------------------------|------------|
+| LLM01 — Prompt Injection | Direct + indirect injection test categories |
+| LLM02 — Sensitive Information Disclosure | Information extraction + privacy attack tests |
+| LLM03 — Supply Chain | [supply-chain-security.md](supply-chain-security.md), [mcp-tool-security.md](mcp-tool-security.md) |
+| LLM04 — Data and Model Poisoning | Data poisoning defenses in [adversarial-robustness.md](adversarial-robustness.md) |
+| LLM05 — Improper Output Handling | Output safety filter layer in defense-in-depth architecture |
+| LLM06 — Excessive Agency | Agentic-specific tests; tool misuse and privilege escalation |
+| LLM07 — System Prompt Leakage | Information extraction test category |
+| LLM08 — Vector and Embedding Weaknesses | RAG corpus integrity in [adversarial-robustness.md](adversarial-robustness.md) |
+| LLM09 — Misinformation | Hallucination policy + faithfulness evaluation |
+| LLM10 — Unbounded Consumption | Model extraction + rate limiting controls |
+
 ---
 
 ## Scope Definition
@@ -165,9 +182,19 @@ For T1 and T2 systems, red-team sign-off is a mandatory [deployment gate](../llm
 
 ---
 
+## Recommended Tooling
+
+| Tool | Use Case | Notes |
+|------|----------|-------|
+| **[Argus](https://github.com/gy15901580825/Argus)** | Automated black-box red-teaming for AI agents | 500+ probes mapped to OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF; ships CLI + GitHub Action; outputs SARIF for Code Scanning integration |
+| **[agentseal](https://github.com/getagentseal/agentseal)** | MCP supply chain + prompt injection scanning | Scans MCP configs for dangerous skills, monitors for tool poisoning, audits live MCP servers; see [mcp-tool-security.md](mcp-tool-security.md) |
+| **[bordair-multimodal](https://github.com/Josh-blythe/bordair-multimodal)** | Multimodal attack payload library | 250,000+ payloads across text, image, document, audio — backed by ACM MM 2025 and AAAI 2025 research; use for T1 multimodal system testing |
+| **[OWASP DonkAI](https://github.com/OWASP/DonkAI)** | OWASP LLM Top 10 2025 hands-on lab | Official OWASP lab for validating red-team coverage against the Top 10; no real LLM required for lab exercises |
+
 ## Implementation Notes
 
-- Start with automated adversarial scanning tools to establish a baseline, then layer manual testing
+- Start with automated scanning (Argus for agents, agentseal for MCP) to establish a baseline, then layer manual testing
 - Maintain a shared attack library — successful techniques found in one system should be tested against all others
 - Red-teaming is not a one-time activity. AI attack techniques evolve; testing must evolve with them.
 - Document all findings in a central repository for trend analysis across the portfolio
+- Gate CI/CD pipelines with automated red-team scans using Argus GitHub Action for T1 and T2 agentic systems

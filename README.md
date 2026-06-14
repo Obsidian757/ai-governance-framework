@@ -59,9 +59,10 @@ Governance standards specific to large language models and generative AI systems
 
 ### AI Security
 Standards for securing AI systems against adversarial threats.
-- [Red-Teaming Protocol](framework/ai-security/red-teaming-protocol.md) — structured adversarial testing methodology
-- [Adversarial Robustness](framework/ai-security/adversarial-robustness.md) — defenses against jailbreaking, prompt injection, model extraction, data poisoning
-- [Supply Chain Security](framework/ai-security/supply-chain-security.md) — model provenance, open-source risk, AI bill of materials
+- [Red-Teaming Protocol](framework/ai-security/red-teaming-protocol.md) — structured adversarial testing methodology; OWASP LLM Top 10 2025 mapped; recommended tooling (Argus, agentseal)
+- [Adversarial Robustness](framework/ai-security/adversarial-robustness.md) — defenses against jailbreaking, prompt injection, model extraction, data poisoning; OWASP LLM Top 10 2025 aligned
+- [Supply Chain Security](framework/ai-security/supply-chain-security.md) — model provenance, open-source license risk, AI bill of materials
+- [MCP and Agentic Tool Security](framework/ai-security/mcp-tool-security.md) — MCP server assessment, tool poisoning defenses, least-privilege tool architecture, indirect prompt injection via tool output; OWASP LLM Top 10 2025 LLM01/LLM03/LLM06
 
 ### Compliance Mapping
 How framework controls map to specific regulatory requirements.

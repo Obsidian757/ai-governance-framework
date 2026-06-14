@@ -6,6 +6,8 @@ AI systems face adversarial threats that differ fundamentally from traditional c
 
 These standards define mandatory defenses by risk tier. They complement the [red-teaming protocol](red-teaming-protocol.md) which covers testing methodology.
 
+Controls in this document are mapped to **OWASP LLM Top 10 2025** — the industry-standard vulnerability taxonomy for LLM applications. Where a control addresses a specific OWASP category, that category is noted inline. For MCP and agentic tool security, see [mcp-tool-security.md](mcp-tool-security.md).
+
 ---
 
 ## Jailbreaking Defenses
