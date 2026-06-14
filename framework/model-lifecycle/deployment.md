@@ -1,4 +1,6 @@
-# Deployment Gates and Standards
+# Deployment Gates and Standards (Traditional ML)
+
+> **Scope:** This file covers traditional ML model deployment — gradient-boosted trees, neural networks, classical ML. For GenAI / LLM deployment gates, see [llm-lifecycle/deployment-gates.md](../llm-lifecycle/deployment-gates.md). The deployment patterns (shadow, canary, direct) and rollback SLAs in this file apply to both traditional ML and GenAI systems.
 
 ## Purpose
 

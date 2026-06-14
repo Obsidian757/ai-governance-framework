@@ -1,5 +1,7 @@
 # GenAI Deployment Gates
 
+> **Scope:** This file covers GenAI / LLM deployment gates. For traditional ML deployment gates and deployment patterns (shadow, canary, direct rollout with traffic ramp schedules and rollback SLAs), see [model-lifecycle/deployment.md](../model-lifecycle/deployment.md).
+
 ## Overview
 
 No GenAI system enters production without passing a defined set of gates. The gates are graduated by risk tier — higher-risk use cases require more gates and more rigorous evidence.

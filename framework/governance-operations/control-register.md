@@ -53,7 +53,8 @@ For the end-to-end process connecting these stages, see [governance-workflow.md]
 | SR-001 | Red-team testing completed per tier depth | All GenAI systems | Security / AI Risk | Red-team report | Pre-deployment; per tier cadence | Block deployment (T1/T2); document risk acceptance (T3/T4) |
 | SR-002 | No unresolved Critical or High findings | T1/T2 systems | System owner | Red-team report showing 0 Critical, 0 unaddressed High | Before deployment | Block deployment |
 | SR-003 | Adversarial robustness defenses implemented | T1/T2 GenAI | Technical owner | Defense configuration documentation | Before deployment | Block deployment |
-| SR-004 | Supply chain security verified | Systems using open-source models | Security | AI-BOM + provenance verification | Before deployment; on model change | Block deployment |
+| SR-004 | Supply chain security verified | Systems using open-source models | Security | AI-BOM + provenance verification + national origin check | Before deployment; on model change | Block deployment |
+| SR-005 | MCP tool security assessment completed | Agentic systems using MCP servers | Security | MCP server pre-connection checklist per [mcp-tool-security.md](../ai-security/mcp-tool-security.md); tool manifest reviewed; EO 26 origin verified for Virginia deployments | Before deployment; on MCP server version change | Block deployment |
 
 ## Stage 6: Deployment Approval
 
@@ -106,4 +107,4 @@ For the end-to-end process connecting these stages, see [governance-workflow.md]
 
 ## Summary
 
-This register contains 48 controls across 10 lifecycle stages. For the full governance workflow describing how systems progress through these stages, see [governance-workflow.md](governance-workflow.md). For a complete worked example showing every control's evidence for a T1 system, see the [customer service chatbot governance case file](../../examples/customer-service-chatbot/governance-case-file.md).
+This register contains 49 controls across 10 lifecycle stages. For the full governance workflow describing how systems progress through these stages, see [governance-workflow.md](governance-workflow.md). For a complete worked example showing every control's evidence for a T1 system, see the [customer service chatbot governance case file](../../examples/customer-service-chatbot/governance-case-file.md).

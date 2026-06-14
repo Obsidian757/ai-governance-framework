@@ -169,6 +169,67 @@ prompts/
 
 ---
 
+## Structured Outputs and Constrained Decoding
+
+When a use case requires machine-readable output (JSON, YAML, function call arguments, classification labels), use structured output enforcement rather than relying on prompt instructions alone. Prompting a model to "respond in JSON" produces inconsistent results; constrained decoding guarantees it.
+
+### Structured Output Modes
+
+| Mode | How It Works | When to Use |
+|------|-------------|-------------|
+| **JSON mode** (OpenAI, Anthropic, Gemini) | Model constrained to always produce valid JSON | Any use case requiring JSON output; eliminates parse failures |
+| **Structured outputs / response schema** (OpenAI `response_format`, Anthropic tool use) | Model constrained to match a specific JSON schema | Use case requires a specific schema; rejects responses that don't match |
+| **Tool use / function calling** | Model outputs a structured tool call rather than natural language | Agentic systems; any case where the model must invoke a specific action |
+| **Grammar-constrained decoding** (open-source: llama.cpp, vLLM) | Inference engine enforces a formal grammar on output tokens | Self-hosted models; complex constrained outputs (code, structured formats) |
+
+### Governance Requirements for Structured Outputs
+
+| Requirement | Description |
+|-------------|-------------|
+| Schema versioning | Output schemas are versioned alongside prompts — a schema change is a major version bump requiring full review |
+| Schema validation in tests | Evaluation suite validates that outputs match the declared schema on every run |
+| Fallback handling | Define behavior when constrained decoding fails or produces an empty response — do not silently pass invalid output downstream |
+| Schema in model card | Document the output schema in the model card; downstream systems depend on it |
+| Token budget awareness | Structured output modes consume additional tokens for schema enforcement overhead — account for this in cost projections |
+
+---
+
+## Prompt Caching Governance
+
+Major providers (Anthropic, OpenAI) support prompt caching — reusing the KV cache for repeated prompt prefixes to reduce latency and cost. Caching introduces a governance consideration: **stale cached context**.
+
+### How Caching Affects Governance
+
+| Risk | Description | Control |
+|------|-------------|---------|
+| Stale system prompt | Cached system prompt does not reflect a recent update (policy change, guardrail addition) | Track prompt version in cache key; cache-bust on any system prompt update |
+| Stale retrieved context | RAG context cached from a previous request may be outdated by the time a new request uses it | Do not cache retrieved context across requests; only cache static system prompt portions |
+| PII in cached context | User-specific context containing PII may be inadvertently cached and reused | Isolate cacheable (static, non-PII) prompt segments from non-cacheable (user-specific, retrieved) segments; only cache the static prefix |
+| Cache invalidation on policy change | When safety instructions or guardrails change, stale cache may serve old behavior until the TTL expires | Implement explicit cache invalidation on system prompt updates; do not rely solely on TTL |
+| Audit trail | Cached responses may not log the full prompt if the cached prefix is not reconstructed | Ensure audit logging reconstructs the full effective prompt, not just the non-cached suffix |
+
+### Caching Architecture Pattern
+
+```
+[Static system prompt — CACHEABLE]
+Role, constraints, output format, guardrails (rarely change)
+
+[Dynamic context — NOT CACHED]
+Retrieved documents, user history, session context, current date
+```
+
+Only the static prefix is cached. Dynamic context is always passed fresh. The cache key includes the prompt version so updates automatically invalidate the cache.
+
+### Operational Review Checklist Addition
+
+Add to the Operational Review in the prompt review checklist:
+- [ ] Cacheable vs. non-cacheable prompt segments identified and documented
+- [ ] Cache invalidation mechanism defined for system prompt updates
+- [ ] PII is not in the cacheable segment
+- [ ] Audit logging reconstructs full effective prompt including cached prefix
+
+---
+
 ## Anti-Patterns
 
 The following practices are prohibited in production prompt engineering:

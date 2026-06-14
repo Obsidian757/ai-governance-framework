@@ -90,6 +90,33 @@ If agents share mutable state (databases, queues, shared memory):
 
 ---
 
+## MCP Tool Integration Governance
+
+The Model Context Protocol (MCP) is now the dominant standard for connecting agents to external tools, APIs, and data sources. MCP introduces a supply chain attack surface — tool poisoning, rug-pull, and indirect prompt injection via tool output — that multi-agent systems are especially vulnerable to because a single compromised tool can affect multiple agents in the chain.
+
+For the full MCP security standard, see [mcp-tool-security.md](../ai-security/mcp-tool-security.md). Multi-agent-specific requirements:
+
+| Requirement | Description |
+|-------------|-------------|
+| Per-agent tool scope | Each agent connects only to the MCP servers required for its specific task — not the full tool set available to the orchestrator |
+| Tool permission isolation | An orchestrator cannot delegate its own MCP permissions to a sub-agent; each agent's tool access is defined independently at deployment |
+| Tool output treated as untrusted | MCP server responses are data, not instructions — apply the same injection defenses as for RAG document content |
+| MCP server pre-approval | Each MCP server must pass the pre-connection assessment in [mcp-tool-security.md](../ai-security/mcp-tool-security.md) before any agent in the system may connect to it |
+| Version-pinned connections | Pin MCP server versions; treat updates as supply chain events requiring re-assessment |
+| Multi-agent MCP audit trail | All tool calls across all agents must be logged with agent ID + correlation ID so a full tool-call chain can be reconstructed for incident investigation |
+| Kill switch covers tool connections | System-level kill switch must terminate all MCP connections, not just agent execution |
+
+### MCP Threat Patterns in Multi-Agent Systems
+
+| Pattern | How It Works in Multi-Agent Context | Control |
+|---------|-------------------------------------|---------|
+| Orchestrator tool poisoning | Attacker poisons a tool the orchestrator uses; orchestrator passes adversarial instructions to all sub-agents | Orchestrator output sanitized before sub-agent dispatch |
+| Sub-agent injection propagation | Sub-agent receives injected instructions via tool; re-injects into message to orchestrator | All inter-agent messages treated as untrusted data regardless of source |
+| Permission laundering | Sub-agent claims orchestrator authority to access tools beyond its own scope | Each agent validates against its own policy; no inherited authority |
+| Cross-agent context exfiltration | Tool response designed to extract context from one agent and pass it to attacker via another agent | Data minimization at each agent boundary; no full context propagation |
+
+---
+
 ## Cascading Failure Governance
 
 ### Blast Radius Analysis

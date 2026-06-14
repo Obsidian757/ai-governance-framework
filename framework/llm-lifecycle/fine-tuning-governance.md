@@ -63,6 +63,41 @@ Maintain a complete record of:
 
 ---
 
+## Parameter-Efficient Fine-Tuning (PEFT)
+
+Full-parameter fine-tuning — updating all model weights — is rarely necessary and rarely done in enterprise deployments as of 2025-2026. Parameter-efficient methods (LoRA, QLoRA, adapter tuning) are the dominant enterprise fine-tuning approach. They require the same governance as full fine-tuning with additional method-specific controls.
+
+### PEFT Methods and Governance Implications
+
+| Method | How It Works | Governance Considerations |
+|--------|-------------|---------------------------|
+| **LoRA** (Low-Rank Adaptation) | Injects trainable low-rank weight matrices; base model weights frozen | Adapter weights are small and portable — treat as code artifacts; version-control and access-control the adapter files independently of the base model |
+| **QLoRA** (Quantized LoRA) | LoRA applied to a quantized (4-bit) base model; reduces GPU memory requirement | Quantization affects model behavior — run full eval suite on quantized + adapted model, not just on the full-precision base; quantization may degrade performance on edge cases |
+| **Adapter tuning** | Lightweight adapter modules inserted at each layer; base model frozen | Same as LoRA governance; adapters are separately licensable and portable artifacts |
+| **Prompt tuning / prefix tuning** | Trains soft prompt embeddings; no weight changes | Lower risk than weight-modifying methods; soft prompts must be version-controlled and treated as production prompt artifacts |
+
+### PEFT-Specific Governance Requirements
+
+| Requirement | Description |
+|-------------|-------------|
+| Adapter artifact governance | Adapter weights (LoRA matrices, adapter modules) are governed artifacts: version-controlled in the same artifact registry as the base model, access-controlled per the system's data classification |
+| Base model + adapter pairing | Document and enforce the exact base model version each adapter was trained on; adapter trained on model v1 is not guaranteed to work correctly on model v2 |
+| Eval on combined model | All evaluation is performed on the base model + adapter combination at the exact quantization level used in production — not on the base model alone |
+| Safety alignment preservation | PEFT can degrade safety alignment even with small adapters; re-run mandatory safety checks on the combined model (see Safety Alignment Risks section) |
+| Adapter license compliance | If distributing adapter weights, verify the base model license permits derivative works and adapter distribution |
+| Smaller minimum dataset | Instruction tuning via LoRA can be effective with 100–500 high-quality examples for well-scoped tasks — adjust the volume threshold in the "When Not to Fine-Tune" section accordingly, but quality requirements remain unchanged |
+
+### Threshold Update
+
+The "< 1,000 high-quality examples" threshold in the overview applies to full-parameter fine-tuning. For PEFT methods on well-scoped instruction-following tasks:
+- LoRA / QLoRA: 100–500 high-quality examples can be sufficient
+- General fine-tuning (behavior adaptation, style): 200–1,000 examples
+- Domain knowledge injection: typically requires 1,000+ examples regardless of method
+
+Quality requirements are unchanged: ≥ 95% inter-annotator agreement, full provenance, no train/eval leakage.
+
+---
+
 ## Fine-Tuning Process Controls
 
 ### Pre-Training

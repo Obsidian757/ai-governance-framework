@@ -42,13 +42,17 @@ Do not proceed to deployment if:
 | Apache 2.0 | Yes | Yes | Attribution; patent grant | Low | Routine |
 | MIT | Yes | Yes | Attribution | Low | Routine |
 | BSD 2/3-Clause | Yes | Yes | Attribution; no endorsement | Low | Routine |
-| Llama Community License | Yes | Yes | >700M monthly active users (MAU) threshold triggers additional commercial terms; acceptable use policy; no training competing models | Medium | Yes |
+| **Meta Llama 3.x Community License** | Yes | Yes | Acceptable use policy; if outputs used to train a competing LLM, restrictions apply; no MAU cap | Low–Medium | Yes |
+| **Meta Llama 2 Community License** | Yes (MAU-gated) | Yes | >700M MAU triggers additional commercial terms from Meta; acceptable use policy | Medium | Yes |
 | Gemma Terms of Use | Yes | Yes | Acceptable use restrictions; no building competing models | Medium | Yes |
-| DeepSeek License | Conditional | Yes | Varies by model; some have commercial restrictions | Medium | Yes |
+| Qwen (Apache 2.0) | Yes | Yes | Apache 2.0 terms — but **PRC national origin risk applies independently of license**; see National Origin Risk note below | Low (license) / **High (origin)** | Yes |
+| DeepSeek License | Conditional | Yes | Varies by model; some commercial restrictions — **PRC national origin risk; prohibited for federal/Virginia state use** | Medium (license) / **Prohibited (origin)** | Required |
 | CC BY-NC | No | Yes | Non-commercial only | High | Required |
 | Research-only licenses | No | Limited | Research/academic only | High | Required |
 
-For T1/T2 systems: only deploy models with Low or Medium license risk. High-risk licenses require CRO sign-off and documented risk acceptance.
+**National Origin Risk Note:** An open-source or Apache 2.0 license does not remove national origin risk. DeepSeek and Qwen are PRC-origin models — prohibited for use on Virginia state agency infrastructure (EO 26) and flagged under federal supply chain risk guidance regardless of their license terms. Always assess license risk AND origin risk independently. See [supply-chain-security.md](../ai-security/supply-chain-security.md) for the full geopolitical risk framework.
+
+For T1/T2 systems: only deploy models with Low or Medium **combined** license and origin risk. High risk on either dimension requires CRO sign-off and documented risk acceptance. PRC-origin models with active federal/state prohibitions require legal sign-off before any use.
 
 ### Ongoing License Obligations
 
@@ -69,13 +73,14 @@ For T1/T2 systems: only deploy models with Low or Medium license risk. High-risk
 | PII in training data | Model may have memorized PII from training data | Run PII extraction tests; deploy output PII filters |
 | Bias in training data | Training data composition may introduce demographic, cultural, or linguistic bias | Run bias evaluations; conduct counterfactual testing per [bias-detection-llm.md](../responsible-ai/bias-detection-llm.md) |
 
-### Pending Litigation Monitor
+### Copyright Litigation Monitor
 
-Maintain awareness of active lawsuits related to AI training data:
-- Track cases by model family (Llama, Stable Diffusion, etc.)
-- Assess potential impact on your deployments if rulings restrict use
+Maintain awareness of AI training data copyright cases and settled precedent:
+- **Settled/resolved cases:** Some early cases (e.g., Getty Images v. Stability AI) moved toward settlement or judgment in 2024–2025 — review outcomes with legal to understand what liability exposure is now better-defined vs. what remains uncertain
+- Track active cases by model family (Llama, Stable Diffusion derivatives, etc.)
+- Assess potential impact on your deployments if rulings restrict use or require royalties
 - Document risk acceptance for models with active litigation exposure
-- Review with legal quarterly
+- Review with legal quarterly — the landscape evolves faster than annual review cycles can track
 
 ---
 

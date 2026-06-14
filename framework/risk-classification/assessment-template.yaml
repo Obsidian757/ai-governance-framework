@@ -76,6 +76,16 @@ security:
   data_poisoning_risk: ""
   access_control_model: ""          # How is access to the system controlled?
 
+agentic_capabilities:
+  is_agentic: false                 # Does this system take autonomous actions (tool calls, file writes, API calls, code execution)?
+  tools_used: []                    # List tools/APIs the system can call
+  mcp_servers: []                   # List any MCP servers connected (name, version, source, origin-verified)
+  can_execute_code: false
+  can_write_data: false             # Can the system write to databases, files, or external systems?
+  can_send_communications: false    # Can the system send emails, messages, or notifications?
+  max_autonomous_actions: ""        # Maximum consecutive actions before human checkpoint required
+  human_checkpoint_triggers: []    # Conditions that force human review before proceeding
+
 operational:
   availability_requirement: ""      # e.g., "99.9% uptime"
   latency_requirement: ""           # e.g., "<200ms p99"

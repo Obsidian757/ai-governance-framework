@@ -86,9 +86,44 @@ These are opinionated defaults. Organizations should calibrate to their domain a
 
 ---
 
+## Reasoning Model Evaluation
+
+Reasoning models (o1, o3, Claude 3.7 Thinking / Claude 4 reasoning modes, Gemini 2.5 Pro with extended thinking) generate explicit chain-of-thought traces before producing a final answer. Standard eval methodology does not fully apply — these models require additional evaluation dimensions and have materially different performance characteristics.
+
+### Additional Eval Dimensions for Reasoning Models
+
+| Dimension | What to Test | Method |
+|-----------|-------------|--------|
+| Chain-of-thought faithfulness | Does the stated reasoning actually match the steps taken to reach the answer? | Compare CoT trace against ground truth reasoning path; flag divergences |
+| Step-level accuracy | Is each intermediate reasoning step correct, even if the final answer is right? | Annotate reasoning traces for step-correctness; a correct answer via wrong reasoning is a risk signal |
+| Reasoning trace PII/confidentiality | Does the CoT trace expose information that should not be visible to end users? | Scan traces for PII, internal system details, retrieved document content before surfacing to users |
+| Over-reasoning detection | Does the model spend excessive thinking tokens on simple problems? | Track thinking token usage distribution; alert on outliers (cost and latency risk) |
+| Consistency under reasoning | Does the same question produce consistent reasoning traces and answers across runs? | Run N=10; measure answer consistency and reasoning path variance |
+| Safety in the thinking trace | Does the model reason through harmful content in the CoT even if the final answer is safe? | Red-team specifically for "safe output, harmful reasoning" pattern |
+
+### Governance Differences for Reasoning Models
+
+| Aspect | Standard LLM | Reasoning Model |
+|--------|-------------|-----------------|
+| Latency budget | Seconds | Tens of seconds to minutes — define separate latency SLAs |
+| Cost model | Input + output tokens | Input + output + thinking tokens — budget thinking tokens separately |
+| Audit trail | Log prompt + response | Log prompt + thinking trace + response; thinking trace is additional audit evidence |
+| Eval thresholds | Apply standard thresholds | Apply standard thresholds + step-accuracy threshold; reasoning model hallucination can occur in the trace even when the answer is correct |
+| User disclosure | Disclose AI involvement | Disclose AI involvement; determine whether to surface thinking traces to users (typically not recommended for customer-facing) |
+
+### Deployment Consideration
+
+Reasoning models are typically T1 or T2 by default due to their extended autonomous processing. Before deploying a reasoning model, confirm:
+- Thinking token budget is defined and enforced (cost control)
+- Latency is acceptable for the use case (reasoning can take 30–120 seconds)
+- Thinking traces are included in audit logging
+- Users are not shown raw thinking traces without review
+
+---
+
 ## Integration
 
-- Red-team eval references [red-teaming-protocol.md](../ai-security/red-teaming-protocol.md) — this file owns "what must pass"; red-teaming owns "how to test"
+- Red-team eval references [red-teaming-protocol.md](../ai-security/red-teaming-protocol.md) (OWASP LLM Top 10 2025 mapped) — this file owns "what must pass"; red-teaming owns "how to test"
 - Production eval cadence aligned with [LLM monitoring](monitoring.md)
 - Control register IDs (EV-001 through EV-007) assigned — one per eval type
 - Eval report is a required artifact in the deployment evidence pack (see [governance-workflow.md](../governance-operations/governance-workflow.md) Stage 7)
