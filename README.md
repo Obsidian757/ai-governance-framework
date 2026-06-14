@@ -149,6 +149,9 @@ See the framework applied to real-world use cases:
 - [Agentic Research Assistant](examples/agentic-research-assistant/) — T1 (Critical), agentic AI with tool access
 - [Internal Knowledge Search](examples/internal-knowledge-search/) — T3 (Medium), internal RAG, lighter governance
 
+**Virginia State Government** *(added by 12th House AI):*
+- [Virginia Agency Policy Navigator](examples/virginia-agency-policy-navigator/) — T2 (High), internal GenAI policy Q&A assistant for a state benefits agency; full EO 30 / VITA EA-225 / VITA Policy Standard / VITA IA compliance checklist included
+
 ## Adoption Approach
 
 This framework is designed for phased rollout:

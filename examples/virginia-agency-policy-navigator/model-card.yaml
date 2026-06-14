@@ -1,0 +1,148 @@
+# Model Card — Benefits Policy Navigator
+# Virginia Department of Social Services (VDSS)
+# Framework Tier: T2 (High Risk) | Last Reviewed: June 2026
+
+system:
+  name: "Benefits Policy Navigator"
+  version: "1.0.0"
+  type: "GenAI — RAG-Based Policy Q&A"
+  tier: "T2 (High Risk)"
+  owner: "VDSS Office of Technology Services"
+  business_sponsor: "Deputy Commissioner, Economic Assistance"
+  ai_risk_analyst: "[AI Risk Analyst — complete at deployment]"
+  deployment_date: null  # pending deployment gates
+  last_reviewed: "2026-06-14"
+  vita_ctp_id: "[Assign at CTP/Planview registration]"
+
+description: |
+  The Benefits Policy Navigator is an internal GenAI assistant that helps VDSS
+  case workers quickly locate, interpret, and apply Virginia benefits policy and
+  federal regulatory guidance (SNAP, TANF, Medicaid, CHIP). The system uses
+  retrieval-augmented generation (RAG) to surface relevant policy passages in
+  response to natural language queries from authenticated VDSS staff.
+
+  The system does NOT determine eligibility, issue benefits, or communicate
+  with citizens. All eligibility determinations remain with case workers. The
+  system serves as a policy reference tool — equivalent to an AI-assisted
+  policy manual.
+
+intended_use:
+  primary_users:
+    - "VDSS benefits case workers"
+    - "VDSS supervisors and quality assurance staff"
+    - "VDSS policy analysts"
+  intended_use_cases:
+    - "Locate applicable policy sections for specific client scenarios"
+    - "Summarize lengthy federal and state regulatory guidance"
+    - "Identify policy updates and cross-reference related provisions"
+    - "Draft policy interpretation summaries for supervisor review"
+  out_of_scope:
+    - "Direct citizen-facing use"
+    - "Automated eligibility determination or recommendation"
+    - "Legal advice or authoritative legal interpretation"
+    - "Processing personally identifiable information (PII) of clients"
+    - "Access to VDSS case management systems or client records"
+
+foundation_model:
+  provider: "[Selected via VITA-approved procurement vehicle — complete at procurement]"
+  model_family: "[Model name and version — complete at procurement]"
+  hosting: "Self-hosted on Commonwealth of Virginia cloud infrastructure (COV Azure)"
+  data_processing_region: "US East (Virginia) — COV-controlled tenant"
+  vendor_certifications:
+    - "FedRAMP Moderate (verify at deployment)"
+    - "SOC 2 Type II"
+  training_data_opt_out: true
+  prompt_retention: "None — prompts not retained by vendor"
+  prc_origin_verified: false  # required before production — see virginia-compliance-checklist.md
+
+rag_configuration:
+  knowledge_base:
+    - "Virginia Benefits Programs Manual (VBPM)"
+    - "SNAP Policy Manual (USDA FNS)"
+    - "TANF State Plan and Policy Guidance"
+    - "Medicaid / CHIP Virginia Coverage Policies"
+    - "Relevant Virginia Code titles (Title 63.2)"
+    - "VITA AI policy documents (EA-225, ITRM standards)"
+  update_frequency: "Monthly — policy team reviews and refreshes corpus"
+  document_version_tracking: true
+  access_control: "VDSS authenticated staff only via Active Directory SSO"
+  corpus_staleness_alert: "Banner shown when corpus exceeds 30 days since last update"
+
+capabilities:
+  - "Natural language policy search across VDSS document corpus"
+  - "Passage retrieval with source citation and document version"
+  - "Plain-language summarization of regulatory text"
+  - "Cross-reference identification across policy sections"
+  - "Uncertainty flagging when query falls outside knowledge base scope"
+
+known_limitations:
+  - "Knowledge base reflects policy as of last corpus update; may lag recent changes"
+  - "Cannot access live VDSS case management systems or client records"
+  - "May misinterpret highly ambiguous policy language — supervisor review recommended for edge cases"
+  - "Not trained on case law; legal interpretation requires VDSS legal counsel"
+  - "English-language only in v1.0; multilingual support planned for v2.0"
+  - "Performance may degrade on highly technical federal regulatory text with dense cross-references"
+
+hallucination_controls:
+  approach: "RAG-grounded responses; system prompt prohibits generation beyond retrieved context"
+  citation_required: true
+  uncertainty_disclosure: true
+  out_of_scope_handling: >
+    System returns 'This query falls outside the available policy corpus' rather
+    than generating unsupported answers. Users are directed to VDSS Policy Division.
+  confidence_threshold: >
+    Responses below retrieval relevance threshold surface a visible warning:
+    'Low confidence — verify with policy manual directly before applying.'
+
+human_oversight:
+  level: "Human-on-the-loop"
+  rationale: |
+    All eligibility determinations are made by case workers, not the system.
+    The AI surfaces policy text and summaries; case workers apply judgment and
+    bear responsibility for all decisions affecting citizens. Supervisors
+    quality-sample AI-assisted case notes on a monthly basis.
+  override_mechanism: >
+    Case workers can flag any AI response as 'not applicable' and document
+    rationale. Flagged responses are reviewed by the policy team within 5 business days.
+  escalation: >
+    Supervisors are notified when workers flag AI responses. Policy team reviews
+    flag patterns quarterly and updates corpus or system prompt as needed.
+
+monitoring:
+  output_quality:
+    - "Weekly retrieval relevance sampling — policy team reviews 50 random query/response pairs"
+    - "Quarterly hallucination audit — 10% of responses checked against cited source document"
+    - "Worker feedback rating — thumbs up/down on every response; optional comment field"
+    - "Flag rate tracking — percentage of responses flagged by workers as not applicable"
+  safety:
+    - "PII detection scan on all inputs — block and alert if client SSN, case number, or name detected"
+    - "Prompt injection monitoring — detect and block attempts to override system prompt"
+    - "Guardrail trigger rate tracked weekly; anomalies escalated to security team"
+  performance:
+    - "Response latency (p50, p95, p99)"
+    - "Knowledge base coverage rate (queries returning no corpus results)"
+    - "User adoption and daily active session volume by office"
+  governance:
+    - "Quarterly VITA CTP/Planview registration update"
+    - "Annual EO 30 compliance self-assessment"
+    - "Policy corpus update log maintained with version history"
+
+security:
+  data_classification: "Internal Use — no client PII processed by the AI system"
+  access_control: "Role-based; VDSS authenticated staff only via SSO"
+  network: "Internal COV network; no public internet exposure"
+  pii_controls: "Input scanning blocks queries containing SSN patterns, case numbers, and client names"
+  audit_logging: "All queries and responses logged per VITA ITRM SEC 501-09 requirements"
+  log_retention: "7 years per COV records retention schedule"
+  penetration_testing: "Required before production deployment per VITA IA standards"
+  encryption: "Data encrypted in transit (TLS 1.3) and at rest (AES-256)"
+
+virginia_compliance:
+  eo_30_registered: false          # required before production
+  eo_26_prc_origin_cleared: false  # required before production
+  vita_ctp_registered: false       # required before production
+  vita_planview_registered: false  # required before production
+  agency_head_approved: false      # required before production
+  vita_security_review_complete: false
+  ai_ethics_training_deployed: false
+  full_checklist: "See virginia-compliance-checklist.md"
