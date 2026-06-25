@@ -33,7 +33,7 @@ Replace every `< >` placeholder. Delete instruction blocks (italicized) before d
 - **Maturity (one-line):** \<Ad-hoc · Developing · Defined · Managed · Optimizing>
 - **Agency-head approval status (EO 30 / VITA Policy Standard §III):** \<documented / partial / not documented>
 - **VITA registration status (Archer + CTP/Planview):** \<not started · in progress · complete>
-- **PRC-origin AI status (EO 26 / VITA procurement scope):** \<clear · flagged · unknown>
+- **PRC-origin AI status (EO 46 / VITA procurement scope):** \<clear · flagged · unknown>
 - **Top three findings:** \<bullet, plain English>
 - **Top three recommendations:** \<bullet, with sequencing>
 
@@ -44,7 +44,7 @@ Replace every `< >` placeholder. Delete instruction blocks (italicized) before d
 ### 2.1 In Scope
 
 - AI systems / use cases: \<count + names>
-- Frameworks evaluated: Virginia EO 30, EO 26, VITA AI Policy Standard (Rev 3), EA-225 (v1.2), AI Education Guidelines (if applicable), NIST AI RMF (as mapping backbone)
+- Frameworks evaluated: Virginia EO 30, EO 46, VITA AI Policy Standard (Rev 3), EA-225 (v1.2), AI Education Guidelines (if applicable), NIST AI RMF (as mapping backbone)
 - Procurement vehicles in scope: \<eVA · cooperative master · direct buy · other>
 - Spanberger administration successor standards: \<watch-only · actively in scope>
 
@@ -65,13 +65,13 @@ Replace every `< >` placeholder. Delete instruction blocks (italicized) before d
 
 - \<e.g., findings rely on agency representations; no independent technical testing of AI systems>
 - \<e.g., VITA Archer / CTP-Planview records were reviewed via screenshots, not direct system access>
-- \<e.g., EO 26 PRC-origin assessment is based on vendor-provided attestations>
+- \<e.g., EO 46 PRC-origin assessment is based on vendor-provided attestations>
 
 ---
 
 ## 3. AI System Inventory (Summary)
 
-| # | System / Use Case | Purpose | Vendor or Internal | Data Class (COV) | Decision Type | EA-225 AI Category | Agency-Head Approval (EO 30) | Archer ID | CTP/Planview ID | PRC-Origin Clear (EO 26) |
+| # | System / Use Case | Purpose | Vendor or Internal | Data Class (COV) | Decision Type | EA-225 AI Category | Agency-Head Approval (EO 30) | Archer ID | CTP/Planview ID | PRC-Origin Clear (EO 46) |
 |---|-------------------|---------|--------------------|------------------|---------------|--------------------|------------------------------|-----------|-----------------|--------------------------|
 | 1 | \<name> | \<one-line> | \<vendor / internal> | \<Sensitive / Confidential / Restricted / Public> | \<Advisory / Automated / Hybrid> | \<Stand-alone / Embedded / Generative> | ☐ Yes ☐ No ☐ N/A | \<ID or None> | \<ID or None> | ☐ Yes ☐ No ☐ Unknown |
 | 2 | | | | | | | | | | |
@@ -82,7 +82,7 @@ Replace every `< >` placeholder. Delete instruction blocks (italicized) before d
 **Systems with agency-head approval evidence:** \<n of n>
 **Systems registered in VITA Archer:** \<n of n>
 **Systems registered in CTP/Planview:** \<n of n>
-**Systems with confirmed PRC-origin clearance (EO 26):** \<n of n>
+**Systems with confirmed PRC-origin clearance (EO 46):** \<n of n>
 **Systems with EA-225 decision-path logging in place:** \<n of n>
 
 ---
@@ -126,9 +126,9 @@ Replace every `< >` placeholder. Delete instruction blocks (italicized) before d
 | Third-party / embedded / generative AI components documented | | | | |
 | AI system registered in CTP/Planview and Archer | | | | |
 
-### 4.4 EO 26 — PRC-Origin AI Ban (February 11, 2025)
+### 4.4 EO 46 — PRC-Origin AI Ban (February 11, 2025)
 
-| EO 26 Requirement | Status | Evidence | Gap | Priority |
+| EO 46 Requirement | Status | Evidence | Gap | Priority |
 |-------------------|--------|----------|-----|----------|
 | DeepSeek AI absent from Commonwealth devices and networks | ☐ Met ☐ Not met ☐ Unknown | | | H/M/L |
 | Vendor AI stacks reviewed for PRC-origin model components | | | | |
@@ -171,7 +171,7 @@ Scale: **0** = Not started · **1** = Ad-hoc · **2** = Developing · **3** = De
 | AI inventory completeness | | |
 | VITA Archer / CTP-Planview hygiene | | |
 | EA-225 instrumentation (logging, metrics) | | |
-| EO 26 PRC-origin provenance controls | | |
+| EO 46 PRC-origin provenance controls | | |
 | Procurement / vendor AI oversight | | |
 | Generative AI guardrails | | |
 | Education AI controls (if applicable) | | |
@@ -213,7 +213,7 @@ Scale: **0** = Not started · **1** = Ad-hoc · **2** = Developing · **3** = De
 - **Appendix E:** Framework crosswalk — NIST AI RMF functions to Virginia requirements (see `framework/compliance/virginia/eo-mapping.md`)
 - **Appendix F:** Primary source references
   - Virginia EO 30 (January 18, 2024)
-  - Virginia EO 26 (February 11, 2025)
+  - Virginia EO 46 (February 11, 2025)
   - Spanberger AI EO + Directive (February 4, 2026)
   - VITA Policy Standard for Utilization of AI by COV (Rev 3, June 27, 2024)
   - VITA EA-225 Enterprise Solutions Architecture for AI (v1.2, November 16, 2023)

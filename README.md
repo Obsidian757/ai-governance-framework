@@ -12,7 +12,7 @@ Governance is enablement, not gatekeeping. The goal is not to slow down AI adopt
 
 This framework provides opinionated, field-tested patterns for governing both traditional ML and GenAI/LLM systems in financial services, healthcare, state and local government, and other industries where model risk, data privacy, and regulatory compliance are non-negotiable.
 
-The Virginia compliance module (`framework/compliance/virginia/`) extends the base framework with jurisdiction-specific controls for organizations operating under Virginia EO 30, EO 26, VITA EA-225, VITA Policy Standards, and the Spanberger administration's 2026 AI directives.
+The Virginia compliance module (`framework/compliance/virginia/`) extends the base framework with jurisdiction-specific controls for organizations operating under Virginia EO 30, EO 46, VITA EA-225, VITA Policy Standards, and the Spanberger administration's 2026 AI directives.
 
 ## Who This Is For
 
@@ -81,7 +81,7 @@ How framework controls map to specific regulatory requirements.
 Virginia operates a layered AI governance regime: executive orders set direction, VITA standards define technical and policy controls, and IA standards govern security. This module maps all layers to framework controls.
 
 - [Virginia Overview](framework/compliance/virginia/README.md) — instruments, procurement paths, Spanberger administration watch items
-- [Executive Order Mapping](framework/compliance/virginia/eo-mapping.md) — EO 30 (2024), EO 26 (PRC-origin ban 2025), Spanberger EO/Directive (2026), HB 2094 (vetoed)
+- [Executive Order Mapping](framework/compliance/virginia/eo-mapping.md) — EO 30 (2024), EO 46 (PRC-origin ban 2025), Spanberger EO/Directive (2026), HB 2094 (vetoed)
 - [VITA EA-225 Mapping](framework/compliance/virginia/vita-ea225-mapping.md) — architecture standard: CTP/Planview registration, decision-path logging, performance monitoring
 - [VITA Policy Standard Mapping](framework/compliance/virginia/vita-policy-standard-mapping.md) — governance policy: agency-head approval workflow, ethical-use controls, vendor obligations
 - [VITA IA Standards Mapping](framework/compliance/virginia/vita-ia-standards.md) — ITRM SEC 501-09, SEC 525-01, SEC 528-02, GOV 519-02 — security and privacy controls for AI systems on COV infrastructure

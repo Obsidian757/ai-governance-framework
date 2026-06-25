@@ -44,19 +44,19 @@ This is a supply chain risk category with no equivalent in traditional software 
 
 Models developed by companies headquartered in or controlled by the People's Republic of China carry specific risks for US federal, state, and regulated-sector deployments.
 
-| Provider | Origin | Federal Risk | Virginia (EO 26) | Notes |
+| Provider | Origin | Federal Risk | Virginia (EO 46) | Notes |
 |----------|--------|:------------:|:-----------------:|-------|
-| DeepSeek (DeepSeek AI) | PRC | **Prohibited** for federal use per multiple DoD/agency directives | **Prohibited** per EO 26 | Multiple US states have also enacted independent bans |
-| Qwen (Alibaba Cloud) | PRC | **High risk**; review against applicable procurement rules | **Prohibited** per EO 26 | Qwen 2.5 Apache 2.0 license does not remove national origin risk |
-| Kimi / Moonshot AI | PRC | **High risk** | **Prohibited** per EO 26 | |
-| Baidu ERNIE | PRC | **Prohibited** for federal use | **Prohibited** per EO 26 | |
-| ByteDance / Doubao | PRC | **Prohibited** for federal use | **Prohibited** per EO 26 | TikTok parent company |
+| DeepSeek (DeepSeek AI) | PRC | **Prohibited** for federal use per multiple DoD/agency directives | **Prohibited** per EO 46 | Multiple US states have also enacted independent bans |
+| Qwen (Alibaba Cloud) | PRC | **High risk**; review against applicable procurement rules | **Prohibited** per EO 46 | Qwen 2.5 Apache 2.0 license does not remove national origin risk |
+| Kimi / Moonshot AI | PRC | **High risk** | **Prohibited** per EO 46 | |
+| Baidu ERNIE | PRC | **Prohibited** for federal use | **Prohibited** per EO 46 | |
+| ByteDance / Doubao | PRC | **Prohibited** for federal use | **Prohibited** per EO 46 | TikTok parent company |
 
 **Controls for PRC-origin model risk:**
 
 - Verify country of incorporation, beneficial ownership, and board composition for all model providers — open licensing (Apache 2.0, MIT) does not remove national origin risk
 - Add PRC-origin check to AI-BOM and pre-deployment checklist
-- For Virginia state agency deployments: EO 26 (2025) prohibits use of PRC-origin technology on Commonwealth infrastructure; verify all models, embedding models, and inference infrastructure are non-PRC-origin
+- For Virginia state agency deployments: EO 46 (2025) prohibits use of PRC-origin technology on Commonwealth infrastructure; verify all models, embedding models, and inference infrastructure are non-PRC-origin
 - For federal deployments: check against current DoD supply chain risk management (SCRM) designations; Anthropic is separately designated as supply chain risk by DoD (2026) — use Groq, AWS Bedrock (Llama 3 70B), or Azure OpenAI for federal-facing work
 - Monitor for supply chain changes: a model or tool that is clean today may be acquired by or become dependent on a PRC-origin entity
 

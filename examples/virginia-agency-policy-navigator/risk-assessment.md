@@ -111,13 +111,13 @@
 
 ## Virginia-Specific Risk Factors
 
-The following factors apply in addition to the base risk dimensions because this system is deployed by a Virginia executive branch agency subject to EO 30, EO 26, and VITA standards.
+The following factors apply in addition to the base risk dimensions because this system is deployed by a Virginia executive branch agency subject to EO 30, EO 46, and VITA standards.
 
 | Virginia Risk Factor | Assessment | Required Control |
 |---------------------|:----------:|-----------------|
 | EO 30 applicability | **Applies** — AI system used by a state agency in state operations | Register with VITA before production; complete annual compliance review |
 | Prohibited use check (EO 30) | **Clear** — no autonomous citizen-affecting decisions; no biometric data; no law enforcement use | Document in deployment gate checklist |
-| PRC-origin technology prohibition (EO 26) | **Pending verification** — must confirm all components are non-PRC origin | Verify at procurement; document in AI-BOM; block deployment if any component fails |
+| PRC-origin technology prohibition (EO 46) | **Pending verification** — must confirm all components are non-PRC origin | Verify at procurement; document in AI-BOM; block deployment if any component fails |
 | VITA EA-225 registration | **Required** — system is an AI system on COV infrastructure | CTP/Planview registration before production |
 | VITA Policy Standard | **Required** — agency-head approval mandatory | Deputy Commissioner sign-off before deployment |
 | VITA IA security standards | **Required** — ITRM SEC 501-09, SEC 525-01, GOV 519-02 | Security assessment and penetration test before production |
@@ -137,7 +137,7 @@ The following factors apply in addition to the base risk dimensions because this
 | Security review (VITA IA) | Yes | Not started | VITA / VDSS CISO |
 | Penetration test completed | Yes | Not started | VITA IA |
 | Vendor / DPA review completed | Yes | In progress | Legal / Procurement |
-| EO 26 PRC-origin component verification | Yes | Not started | Procurement |
+| EO 46 PRC-origin component verification | Yes | Not started | Procurement |
 | Human oversight model documented | Yes | **Complete** | AI Risk Analyst |
 | Fallback / graceful degradation procedure | Yes | Not started | VDSS OTS |
 | Production monitoring plan operational | Yes | In design | VDSS OTS |
@@ -159,7 +159,7 @@ Outstanding blockers (must all be resolved before production):
 2. Hallucination rate on Virginia policy corpus not measured
 3. PII detection system not tested end-to-end
 4. VITA security review and penetration test not completed
-5. EO 26 PRC-origin verification not completed for all components
+5. EO 46 PRC-origin verification not completed for all components
 6. VITA EO 30 and CTP/Planview registration not submitted
 7. Agency-head approval not obtained
 8. AI ethics training not deployed to user population

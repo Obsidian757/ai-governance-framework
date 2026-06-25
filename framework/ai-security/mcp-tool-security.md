@@ -39,7 +39,7 @@ Before connecting an agent to any MCP server — internal or third-party — com
 | Tool manifest reviewed — all tools and descriptions read and approved | Required | Required | Understand every tool before connecting |
 | Tool permissions scoped to minimum required | Required | Required | Reject servers that require broader permissions than the use case needs |
 | Vendor / maintainer identity confirmed | Required | Recommended | Check GitHub org, recent commits, maintainer reputation |
-| No PRC-origin components in MCP server | Required | Required | Apply same EO 26 / supply chain standard as for models |
+| No PRC-origin components in MCP server | Required | Required | Apply same EO 46 / supply chain standard as for models |
 | Security scan of MCP server package dependencies | Required | Recommended | Use agentseal or equivalent scanner |
 | Behavior tested in sandbox before production connection | Required | Required | Verify tool does what its description claims |
 | MCP server added to AI-BOM | Required | Required | Document in AI Bill of Materials |
@@ -174,4 +174,4 @@ MCP tool connections must pass a security gate before production deployment. Thi
 - The highest-risk pattern is an agent with both read access to sensitive data and write/action tools connected simultaneously — separate these where possible
 - Use [agentseal](https://github.com/getagentseal/agentseal) to scan MCP configurations continuously; it detects tool poisoning, dangerous skill configurations, and supply chain anomalies
 - Maintain an MCP server allowlist at the organizational level — agents may only connect to pre-approved servers; new server additions require security review
-- For Virginia state agency deployments: MCP server connections to external services are subject to the same EO 26 PRC-origin verification and VITA supply chain controls as foundation models
+- For Virginia state agency deployments: MCP server connections to external services are subject to the same EO 46 PRC-origin verification and VITA supply chain controls as foundation models

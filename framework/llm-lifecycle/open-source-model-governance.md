@@ -50,7 +50,7 @@ Do not proceed to deployment if:
 | CC BY-NC | No | Yes | Non-commercial only | High | Required |
 | Research-only licenses | No | Limited | Research/academic only | High | Required |
 
-**National Origin Risk Note:** An open-source or Apache 2.0 license does not remove national origin risk. DeepSeek and Qwen are PRC-origin models — prohibited for use on Virginia state agency infrastructure (EO 26) and flagged under federal supply chain risk guidance regardless of their license terms. Always assess license risk AND origin risk independently. See [supply-chain-security.md](../ai-security/supply-chain-security.md) for the full geopolitical risk framework.
+**National Origin Risk Note:** An open-source or Apache 2.0 license does not remove national origin risk. DeepSeek and Qwen are PRC-origin models — prohibited for use on Virginia state agency infrastructure (EO 46) and flagged under federal supply chain risk guidance regardless of their license terms. Always assess license risk AND origin risk independently. See [supply-chain-security.md](../ai-security/supply-chain-security.md) for the full geopolitical risk framework.
 
 For T1/T2 systems: only deploy models with Low or Medium **combined** license and origin risk. High risk on either dimension requires CRO sign-off and documented risk acceptance. PRC-origin models with active federal/state prohibitions require legal sign-off before any use.
 

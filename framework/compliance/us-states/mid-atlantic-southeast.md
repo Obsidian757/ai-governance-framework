@@ -20,11 +20,11 @@ ISO/IEC 42001 and CMMC are not named in any state AI policy reviewed for this do
 
 ## Cross-State Critical Facts
 
-- **PRC-origin AI is explicitly banned or administratively prohibited in three of the six states.** Virginia (EO 26, Feb 2025) bans DeepSeek on Commonwealth devices and networks. Tennessee (Gov. Lee, March 6, 2025) bans DeepSeek and Manus on the state network. North Carolina (NCDIT, early 2025) banned DeepSeek administratively. Maryland and South Carolina enforce through procurement review rather than statutory ban.
+- **PRC-origin AI is explicitly banned or administratively prohibited in three of the six states.** Virginia (EO 46, Feb 2025) bans DeepSeek on Commonwealth devices and networks. Tennessee (Gov. Lee, March 6, 2025) bans DeepSeek and Manus on the state network. North Carolina (NCDIT, early 2025) banned DeepSeek administratively. Maryland and South Carolina enforce through procurement review rather than statutory ban.
 - **Human-in-the-loop is required for consequential decisions in every active state regime.** No exceptions across VA, MD, NC, TN. Any vendor describing AI as "autonomous" in a benefits, eligibility, or rights-affecting context will be screened out.
 - **Maryland is the strictest codified regime.** SB 818 (2024) codifies risk tiers and mandates contractor compliance flow-down on every contract.
 - **Tennessee is the most operationally rigorous.** STS AI Review Committee gate plus the Standards Products List for LLM/NLP/LAM tools means vendors clear a real procurement gauntlet before contract.
-- **Virginia has strong governance but vetoed statutory teeth.** HB 2094 (High-Risk AI Developer and Deployer Act) passed the legislature in February 2025 and was vetoed March 24, 2025. VITA AI IT Standards plus EO 30 and EO 26 are the operative instruments. The Spanberger administration (took office January 2026) issued a new EO on February 4, 2026 advancing law enforcement AI governance.
+- **Virginia has strong governance but vetoed statutory teeth.** HB 2094 (High-Risk AI Developer and Deployer Act) passed the legislature in February 2025 and was vetoed March 24, 2025. VITA AI IT Standards plus EO 30 and EO 46 are the operative instruments. The Spanberger administration (took office January 2026) issued a new EO on February 4, 2026 advancing law enforcement AI governance.
 - **North Carolina has a new EO 24** (Gov. Stein, September 2, 2025), built on the NCDIT Responsible Use framework (August 2024).
 - **West Virginia and South Carolina are task-force / strategy only.** Neither has binding procurement rules yet.
 
@@ -36,7 +36,7 @@ ISO/IEC 42001 and CMMC are not named in any state AI policy reviewed for this do
 
 **Primary instruments:**
 - **Executive Order 30 (Jan 18, 2024)** — Comprehensive state AI standards. Five directives: VITA Policy Standard, EA-225, Education Guidelines, law enforcement standards, AI Task Force.
-- **Executive Order 26 (Feb 11, 2025)** — Bans DeepSeek AI on Commonwealth devices and networks.
+- **Executive Order 46 (Feb 11, 2025)** — Bans DeepSeek AI on Commonwealth devices and networks.
 - **Spanberger AI EO + Directive (Feb 4, 2026)** — Advances law enforcement AI standards under new administration.
 - **VITA EA-225 / VITA AI Policy Standard Rev 3** — Enterprise AI architecture standard and governance policy. All Commonwealth agencies and suppliers must follow. NIST AI RMF is the explicit reference methodology.
 - **HB 2094** — Passed February 2025, vetoed March 24, 2025. Not in force. Signals future legislative direction.
@@ -150,8 +150,8 @@ ISO/IEC 42001 and CMMC are not named in any state AI policy reviewed for this do
 | Requirement | VA | MD | NC | TN | WV | SC |
 |---|---|---|---|---|---|---|
 | Binding procurement rules | Yes | Yes | Partial | Yes | No | No |
-| Executive order on AI | Yes (EO 30 + EO 26 + Spanberger) | Yes | Yes (EO 24) | Policy-level | No | No |
-| PRC-origin AI ban (explicit) | Yes (EO 26) | Informal | Informal | Yes | No | No |
+| Executive order on AI | Yes (EO 30 + EO 46 + Spanberger) | Yes | Yes (EO 24) | Policy-level | No | No |
+| PRC-origin AI ban (explicit) | Yes (EO 46) | Informal | Informal | Yes | No | No |
 | Human-in-the-loop required | Yes | Yes | Yes | Yes | Expected | Expected |
 | Vendor flow-down obligations | Yes (VITA std) | Yes (SB 818) | Partial | Yes (STS) | No | No |
 | Bias testing required | Implied | Yes (high-risk) | Yes (EO 24) | Yes | No | No |

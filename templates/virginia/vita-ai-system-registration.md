@@ -59,7 +59,7 @@ Gather the following before entering either system.
 | Decision type | Advisory (human decides) / Automated (AI decides) / Hybrid | `../../responsible-ai/human-in-loop-patterns.md` |
 | Consequential decision flag | Does AI support or automate decisions affecting individual rights, benefits, or safety? | |
 | Foreign AI components | Yes / No — if Yes, identify country of origin and model | `../../ai-security/supply-chain-security.md` |
-| PRC-origin AI component | Yes / No (EO 26 prohibition applies) | `eo-mapping.md` |
+| PRC-origin AI component | Yes / No (EO 46 prohibition applies) | `eo-mapping.md` |
 
 ### 2.3 Technical Architecture Data (for Archer and EA-225)
 
@@ -136,7 +136,7 @@ Gather the following before entering either system.
 | AI impact assessment | Risk, stakeholder, fairness, privacy analysis | `../impact-assessment-template.md` |
 | Risk tier and treatment plan | How risks will be managed | `../../risk-classification/assessment-template.yaml` |
 | Ethical use attestation | Affirms fairness, transparency, human oversight, harm minimization | `vita-policy-standard-mapping.md` |
-| PRC-origin clearance | Attestation that no EO 26-prohibited AI components are present | `eo-mapping.md` |
+| PRC-origin clearance | Attestation that no EO 46-prohibited AI components are present | `eo-mapping.md` |
 | Performance monitoring plan | How the system will be monitored post-deployment | `../../llm-lifecycle/monitoring.md` |
 | Disclaimer plan | How AI-generated outputs will carry required public disclosures | `vita-policy-standard-mapping.md` |
 
@@ -167,7 +167,7 @@ Vendors selling AI systems to COV agencies are not typically direct users of CTP
 
 1. **Provide the data elements in Section 2** as part of the procurement response or post-award onboarding
 2. **Deliver a decision-path logging implementation** that satisfies EA-225 requirements (not just state that logging is supported)
-3. **Provide annual attestations** confirming continued PRC-origin clearance (EO 26) and no material changes to AI components
+3. **Provide annual attestations** confirming continued PRC-origin clearance (EO 46) and no material changes to AI components
 4. **Notify the agency** of any material changes to the AI system (new foundation model, new training data, architectural changes) so the agency can update registrations and re-seek approval if needed
 
 **Vendor evidence artifacts:**
@@ -184,7 +184,7 @@ Vendors selling AI systems to COV agencies are not typically direct users of CTP
 |-----|------|--------|
 | AI embedded in SaaS not registered separately | EO 30 non-compliance; CTP/Archer record for the SaaS does not capture AI-specific risk | Register embedded AI as a sub-record or annotation on the parent SaaS record; consult AITR |
 | Generative AI feature added post-registration | Registration is stale; agency-head approval may be required for the new capability | Trigger a material-change review; update records |
-| PRC-origin clearance not obtained at procurement | EO 26 risk; contract may be voidable | Obtain vendor attestation retroactively; escalate to ISO if unclear |
+| PRC-origin clearance not obtained at procurement | EO 46 risk; contract may be voidable | Obtain vendor attestation retroactively; escalate to ISO if unclear |
 | Decision-path logging not implemented | EA-225 non-conformance; traceability gap for audit | Engage vendor for logging configuration; document gap and remediation timeline in Archer |
 | Agency-head approval documented in email only | Approval may not survive audit scrutiny | Transfer approval record to Archer; obtain signed approval memo if not already obtained |
 

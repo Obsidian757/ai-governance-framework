@@ -54,7 +54,7 @@ For the end-to-end process connecting these stages, see [governance-workflow.md]
 | SR-002 | No unresolved Critical or High findings | T1/T2 systems | System owner | Red-team report showing 0 Critical, 0 unaddressed High | Before deployment | Block deployment |
 | SR-003 | Adversarial robustness defenses implemented | T1/T2 GenAI | Technical owner | Defense configuration documentation | Before deployment | Block deployment |
 | SR-004 | Supply chain security verified | Systems using open-source models | Security | AI-BOM + provenance verification + national origin check | Before deployment; on model change | Block deployment |
-| SR-005 | MCP tool security assessment completed | Agentic systems using MCP servers | Security | MCP server pre-connection checklist per [mcp-tool-security.md](../ai-security/mcp-tool-security.md); tool manifest reviewed; EO 26 origin verified for Virginia deployments | Before deployment; on MCP server version change | Block deployment |
+| SR-005 | MCP tool security assessment completed | Agentic systems using MCP servers | Security | MCP server pre-connection checklist per [mcp-tool-security.md](../ai-security/mcp-tool-security.md); tool manifest reviewed; EO 46 origin verified for Virginia deployments | Before deployment; on MCP server version change | Block deployment |
 
 ## Stage 6: Deployment Approval
 

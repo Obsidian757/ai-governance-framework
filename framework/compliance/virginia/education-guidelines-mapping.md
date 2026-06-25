@@ -88,7 +88,7 @@ The framework's [human-in-loop-patterns.md](../../../responsible-ai/human-in-loo
 
 1. Data processing agreement (DPA) designating vendor as school official under FERPA with documented legitimate educational interest
 2. No-training clause prohibiting use of student data to train or improve AI models without explicit written institutional consent
-3. Data residency commitment — student PII stored in the United States; no PRC-origin processing (EO 26)
+3. Data residency commitment — student PII stored in the United States; no PRC-origin processing (EO 46)
 4. Retention and deletion schedule aligned with the institution's FERPA records retention policy; deletion verified in writing upon contract termination
 5. Breach notification within 72 hours of discovery (Va. Code § 18.2-186.6)
 6. Sub-processor disclosure — complete list with institution approval required before adding new sub-processors
@@ -112,7 +112,7 @@ The framework's [human-in-loop-patterns.md](../../../responsible-ai/human-in-loo
 - [ ] Product qualifies as a "school official" under FERPA, or alternative lawful basis documented
 - [ ] COPPA compliance documentation available if product accessible to children under 13
 - [ ] VCDPA data processing terms included in standard contract or available as addendum
-- [ ] No PRC-origin AI components (EO 26) — country of origin for all AI model providers documented
+- [ ] No PRC-origin AI components (EO 46) — country of origin for all AI model providers documented
 - [ ] No student data used for commercial advertising or model training without institutional consent
 - [ ] Sub-processor list current and available for institutional review
 - [ ] U.S.-only data residency confirmed, or written exception approved by institution

@@ -4,7 +4,7 @@
 
 Virginia operates one of the more layered state AI governance regimes in the US. Unlike the EU AI Act — which imposes binding obligations organized by risk tier — Virginia's regime is built primarily through executive authority: back-to-back governors have used EOs to set direction before the General Assembly acted, and VITA has layered technical policy standards beneath the EOs. Practitioners must track both layers simultaneously: the executive instruments define *what* agencies must do, while VITA standards define *how* they must do it within Commonwealth technology infrastructure.
 
-Two administrations have now shaped this landscape. Governor Youngkin's EO 30 (January 2024) created the foundational governance scaffold — agency-head approval requirements, a public-facing Inventory of AI Tools, and alignment with NIST AI RMF. His EO 26 (February 2025) added a supply-chain dimension by prohibiting PRC-origin AI platforms (naming DeepSeek) on COV systems. Governor Spanberger took office in January 2026 and issued her own AI EO and an accompanying Directive focused on law enforcement AI use; further administrative guidance is expected as her team reviews existing VITA standards.
+Two administrations have now shaped this landscape. Governor Youngkin's EO 30 (January 2024) created the foundational governance scaffold — agency-head approval requirements, a public-facing Inventory of AI Tools, and alignment with NIST AI RMF. His EO 46 (February 2025) added a supply-chain dimension by prohibiting PRC-origin AI platforms (naming DeepSeek) on COV systems. Governor Spanberger took office in January 2026 and issued her own AI EO and an accompanying Directive focused on law enforcement AI use; further administrative guidance is expected as her team reviews existing VITA standards.
 
 On the legislative side, HB 2094 (the High-Risk AI Act, session 2025) passed both chambers but was vetoed on March 24, 2025. Its provisions — modeled loosely on Colorado SB 23-205 and the EU AI Act's high-risk categories — signal where the General Assembly is headed. Vendors and agencies that read HB 2094 carefully are better positioned for the legislation that will eventually pass.
 
@@ -19,7 +19,7 @@ For vendors selling into Virginia agencies, the practical gatekeeping sequence i
 | Instrument | Type | Effective | Status |
 |---|---|---|---|
 | EO 30 (Youngkin) | Executive Order | Jan 18, 2024 | Active |
-| EO 26 (Youngkin) | Executive Order | Feb 11, 2025 | Active |
+| EO 46 (Youngkin) | Executive Order | Feb 11, 2025 | Active |
 | Spanberger AI EO | Executive Order | Feb 4, 2026 | Active |
 | Spanberger AI Directive | Executive Directive | Feb 4, 2026 | Active |
 | HB 2094 | Legislation (vetoed) | — | Vetoed Mar 24, 2025 |
@@ -37,7 +37,7 @@ For vendors selling into Virginia agencies, the practical gatekeeping sequence i
 
 | File | Covers | Primary Audience |
 |---|---|---|
-| [eo-mapping.md](eo-mapping.md) | EO 30, EO 26, Spanberger EO/Directive — control requirements, agency-head approval gates, prohibited platforms, law enforcement AI constraints | Agency AI leads, vendors pursuing state contracts |
+| [eo-mapping.md](eo-mapping.md) | EO 30, EO 46, Spanberger EO/Directive — control requirements, agency-head approval gates, prohibited platforms, law enforcement AI constraints | Agency AI leads, vendors pursuing state contracts |
 | [vita-ea225-mapping.md](vita-ea225-mapping.md) | EA-225 Enterprise Solutions Architecture for AI — architecture patterns, CTP/Planview registration, decision-path logging, performance monitoring | Enterprise architects, IT procurement officers, AI platform vendors |
 | [vita-policy-standard-mapping.md](vita-policy-standard-mapping.md) | VITA AI Utilization Policy Standard Rev 3 — use-case approval workflow, inventory requirements, responsible-use controls | Agency technology officers, program managers, vendors |
 | [vita-ia-standards.md](vita-ia-standards.md) | ITRM SEC 501-09, SEC 525-01, SEC 528-02, GOV 519-02 — security controls, risk assessment, encryption, privacy requirements for AI systems on COV infrastructure | CISOs, security engineers, FedRAMP/StateRAMP practitioners |

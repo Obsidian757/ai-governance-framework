@@ -21,9 +21,9 @@ Governor Youngkin's EO 30 requires all executive branch agencies to govern AI us
 
 ---
 
-## EO 26 (2025) — Prohibition on PRC-Origin Technology
+## EO 46 (2025) — Prohibition on PRC-Origin Technology
 
-Governor Youngkin's EO 26 prohibits Virginia executive branch agencies from procuring or using technology products with ties to the People's Republic of China on COV systems.
+Governor Youngkin's EO 46 prohibits Virginia executive branch agencies from procuring or using technology products with ties to the People's Republic of China on COV systems.
 
 | Component | PRC-Origin Status | Verification Method | Cleared? |
 |-----------|:-----------------:|---------------------|:--------:|
@@ -33,7 +33,7 @@ Governor Youngkin's EO 26 prohibits Virginia executive branch agencies from proc
 | Vector database | Pending | Verify vendor origin and ownership | No |
 | RAG pipeline libraries / dependencies | Pending | Software Bill of Materials (SBOM) review | No |
 
-**Action required:** Complete EO 26 verification for all pending components before production deployment. Document findings in AI-BOM. Any PRC-origin component finding must be escalated to VDSS CISO and VITA before deployment.
+**Action required:** Complete EO 46 verification for all pending components before production deployment. Document findings in AI-BOM. Any PRC-origin component finding must be escalated to VDSS CISO and VITA before deployment.
 
 ---
 
@@ -154,7 +154,7 @@ All items in this table must be complete and evidenced before the Benefits Polic
 |---------------|-----------|:------:|
 | Risk assessment approved | VDSS AI Risk Analyst | **Complete** |
 | Model card completed | VDSS AI Risk Analyst | **Complete** |
-| EO 26 PRC-origin clearance for all components | VDSS CISO / Procurement | Not started |
+| EO 46 PRC-origin clearance for all components | VDSS CISO / Procurement | Not started |
 | Vendor / DPA review completed | VDSS Legal | In progress |
 | Domain eval suite executed; hallucination rate documented | VDSS OTS | Not started |
 | PII detection end-to-end test completed | Security team | Not started |
@@ -180,7 +180,7 @@ After production deployment, the following obligations apply on a recurring basi
 | VITA CTP / Planview registration review and update | Annual or on material change | VDSS OTS |
 | VITA EA-225 architecture review | Annual | VDSS OTS |
 | VITA IA security review | Annual | VDSS CISO |
-| EO 26 supply chain re-verification (vendor changes) | On material vendor change | Procurement / CISO |
+| EO 46 supply chain re-verification (vendor changes) | On material vendor change | Procurement / CISO |
 | AI ethics training refresh — new users | On-hire / on-access provisioning | VDSS HR / OTS |
 | AI ethics training annual refresh — existing users | Annual | VDSS HR |
 | Policy corpus update | Monthly | VDSS Policy Division |

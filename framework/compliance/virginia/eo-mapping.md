@@ -13,7 +13,7 @@ The mapping follows two axes: (1) specific framework controls by directory, and 
 | Instrument | Type | Signed | Status | Scope |
 |---|---|---|---|---|
 | Executive Order 30 (Youngkin) | Executive Order | January 18, 2024 | **Active** | All COV executive branch agencies + procurement vendors |
-| Executive Order 26 (Youngkin) | Executive Order | February 11, 2025 | **Active** — supersedes informal guidance | All COV devices, networks, and vendor solutions |
+| Executive Order 46 (Youngkin) | Executive Order | February 11, 2025 | **Active** — supersedes informal guidance | All COV devices, networks, and vendor solutions |
 | VITA Policy Standard (EA-225) | IT Standard | Issued under EO 30, Directive 2 | **Active** — revision expected 2026 | COV agencies and technology vendors |
 | VITA AI Policy Standard | Policy Standard | Issued under EO 30, Directive 1 | **Active** — revision expected 2026 | COV agencies and technology vendors |
 | EO + Directive (Spanberger, Feb 4 2026) | Executive Order + Directive | February 4, 2026 | **Active** — successor to EO 30 Directive 4 | Law enforcement AI; broader COV AI posture updates in progress |
@@ -86,17 +86,17 @@ Directive 5 established the Virginia AI Task Force to advise the Governor on AI 
 
 ---
 
-## EO 26 — Youngkin DeepSeek / PRC-Origin AI Ban (February 11, 2025)
+## EO 46 — Youngkin DeepSeek / PRC-Origin AI Ban (February 11, 2025)
 
 ### Background
 
-Executive Order 26, signed February 11, 2025, prohibited the use of DeepSeek AI on all Commonwealth-managed devices, networks, and information systems. The underlying rationale — PRC-origin AI presenting data exfiltration and supply chain risk — was reinforced when Attorney General Miyares joined a 21-state coalition supporting a federal legislative ban on PRC-origin AI.
+Executive Order 46, signed February 11, 2025, prohibited the use of DeepSeek AI on all Commonwealth-managed devices, networks, and information systems. The underlying rationale — PRC-origin AI presenting data exfiltration and supply chain risk — was reinforced when Attorney General Miyares joined a 21-state coalition supporting a federal legislative ban on PRC-origin AI.
 
-EO 26 has direct procurement implications: vendor solutions containing PRC-origin AI components create disqualification risk under COV contracts. This requirement is not limited to DeepSeek by name; it reflects a broader principle that AI components with PRC provenance are incompatible with COV systems.
+EO 46 has direct procurement implications: vendor solutions containing PRC-origin AI components create disqualification risk under COV contracts. This requirement is not limited to DeepSeek by name; it reflects a broader principle that AI components with PRC provenance are incompatible with COV systems.
 
-### EO 26 Control Mapping
+### EO 46 Control Mapping
 
-| EO 26 Requirement | Framework Control | NIST AI RMF | Reference |
+| EO 46 Requirement | Framework Control | NIST AI RMF | Reference |
 |---|---|---|---|
 | Prohibition on PRC-origin AI on COV devices and networks | Supply chain security — origin and provenance verification for all AI components; third-party model provenance screening | MAP (MP.4); MANAGE (MG.2) | [ai-security/supply-chain-security.md](../../ai-security/supply-chain-security.md), [compliance/third-party-model-risk.md](../third-party-model-risk.md) |
 | Vendor solutions must not incorporate PRC-origin AI components | Model selection criteria include provenance check; foreign AI component identification in procurement intake | MAP (MP.4) | [llm-lifecycle/model-selection.md](../../llm-lifecycle/model-selection.md) |
@@ -176,10 +176,10 @@ HB 2094 is documented here because:
 
 ### Vendor Compliance Obligations in COV Procurement
 
-The following obligations flow from EO 30, EO 26, and EA-225 to vendors providing AI-enabled solutions under COV contracts:
+The following obligations flow from EO 30, EO 46, and EA-225 to vendors providing AI-enabled solutions under COV contracts:
 
 1. **Pre-award disclosure**: Identify all AI components in the proposed solution, including foundation models, inference APIs, and AI-enabled subcomponents.
-2. **Provenance attestation**: Certify that no AI components originate from PRC-controlled entities (EO 26).
+2. **Provenance attestation**: Certify that no AI components originate from PRC-controlled entities (EO 46).
 3. **Risk classification support**: Provide documentation supporting the agency's EA-225 risk assessment, including system purpose, data inputs, output types, and human oversight design.
 4. **VITA Archer/Planview registration support**: Provide technical documentation in formats compatible with agency registration requirements.
 5. **Ongoing monitoring reporting**: Define SLAs for anomaly and incident reporting to agency IT security teams.
@@ -194,7 +194,7 @@ Use this checklist for AI system deployments touching COV agencies or COV-funded
 ### Pre-Deployment
 
 - [ ] Complete risk classification assessment (T1–T4) using framework risk matrix
-- [ ] Verify all AI components for PRC provenance — document findings (EO 26)
+- [ ] Verify all AI components for PRC provenance — document findings (EO 46)
 - [ ] Obtain agency-head or designee approval in writing before go-live (EO 30, Directive 1)
 - [ ] Register system in agency Archer GRC instance and CTP/Planview (EA-225)
 - [ ] Document system purpose, data inputs, outputs, and human oversight level
@@ -219,7 +219,7 @@ Use this checklist for AI system deployments touching COV agencies or COV-funded
 Governor Spanberger took office January 2026. As of the date of this document (June 2026), the following is the operative posture:
 
 - EO 30 (Youngkin, January 2024) remains in effect. Its directives have not been rescinded.
-- EO 26 (Youngkin, February 2025) remains in effect.
+- EO 46 (Youngkin, February 2025) remains in effect.
 - VITA EA-225 and VITA AI Policy Standard remain operative; VITA has not yet published successor standards under the new administration, though revision is expected.
 - The February 4, 2026 Spanberger EO and Directive addressed the unmet EO 30 Directive 4 law enforcement AI obligation and signals the new administration's intent to be more active on AI governance.
 - HB 2094 successor legislation is not currently pending but should be monitored for the 2026 and 2027 General Assembly sessions.
@@ -233,11 +233,11 @@ Governor Spanberger took office January 2026. As of the date of this document (J
 | Related Document | Relevance |
 |---|---|
 | [compliance/nist-ai-rmf-mapping.md](../nist-ai-rmf-mapping.md) | Full NIST AI RMF function-to-control mapping; Virginia EOs use AI RMF vocabulary |
-| [compliance/third-party-model-risk.md](../third-party-model-risk.md) | Third-party model risk framework; applies to EO 26 provenance screening |
+| [compliance/third-party-model-risk.md](../third-party-model-risk.md) | Third-party model risk framework; applies to EO 46 provenance screening |
 | [compliance/audit-trail-requirements.md](../audit-trail-requirements.md) | Audit trail standards; required for EA-225 documentation and law enforcement AI obligations |
 | [compliance/data-residency-llm.md](../data-residency-llm.md) | Data residency controls; applies to COV data handled by LLM-based systems |
 | [compliance/responsible-ai-checklist.md](../responsible-ai-checklist.md) | Responsible AI checklist; maps to EO 30 ethical use principles |
-| [ai-security/supply-chain-security.md](../../ai-security/supply-chain-security.md) | Supply chain security; primary control for EO 26 PRC-origin AI prohibition |
+| [ai-security/supply-chain-security.md](../../ai-security/supply-chain-security.md) | Supply chain security; primary control for EO 46 PRC-origin AI prohibition |
 | [responsible-ai/human-in-loop-patterns.md](../../responsible-ai/human-in-loop-patterns.md) | Human oversight patterns; required for T1 law enforcement and consequential decision systems |
 | [risk-classification/agentic-ai-risk.md](../../risk-classification/agentic-ai-risk.md) | Agentic AI risk taxonomy; applies to autonomous decision support in COV contexts |
 
